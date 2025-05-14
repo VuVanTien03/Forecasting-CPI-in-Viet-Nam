@@ -1,0 +1,484 @@
+2025-05-14 12:55:02,461 - INFO - Kiểm tra dữ liệu đầu vào: (349, 17)
+2025-05-14 12:55:02,467 - INFO - Thống kê cpi_mom: count    349.000000
+mean     100.449140
+std        0.761658
+min       98.460000
+25%      100.020000
+50%      100.300000
+75%      100.750000
+max      103.910000
+Name: cpi_mom, dtype: float64
+2025-05-14 12:55:02,471 - INFO - Thống kê cpi_yoy: count    349.000000
+mean     105.688883
+std        5.404596
+min       97.400000
+25%      102.630000
+50%      104.310000
+75%      107.620000
+max      128.200000
+Name: cpi_yoy, dtype: float64
+2025-05-14 12:55:02,471 - INFO - Kích thước dữ liệu gốc: 349
+2025-05-14 12:55:02,471 - INFO - Phương sai cpi_mom: 0.5784611522072891, cpi_yoy: 29.125961788491054
+2025-05-14 12:55:02,472 - INFO - Tạo đặc trưng cho cpi_mom, kích thước dữ liệu: (349, 17)
+2025-05-14 12:55:02,475 - INFO - Đã clip outliers cho cpi_mom: min=98.92499999999998, max=101.845
+2025-05-14 12:55:02,479 - INFO - Đã clip outliers cho cpi_yoy: min=97.4, max=115.10500000000002
+2025-05-14 12:55:02,488 - INFO - Điền NaN trong cột interest_rate bằng trung bình: 14.26690724637681
+2025-05-14 12:55:02,490 - INFO - Điền NaN trong cột cpi_yoy_diff bằng trung bình: -0.028591954022988517
+2025-05-14 12:55:02,492 - INFO - Điền NaN trong cột cpi_mom_diff bằng trung bình: -2.8735632183880425e-05
+2025-05-14 12:55:02,494 - INFO - Điền NaN trong cột cpi_mom_rolling_mean bằng trung bình: 100.45202169625246
+2025-05-14 12:55:02,495 - INFO - Điền NaN trong cột cpi_mom_rolling_std bằng trung bình: 0.6143360951880126
+2025-05-14 12:55:02,497 - INFO - Điền NaN trong cột cpi_yoy_rolling_mean bằng trung bình: 105.68397928994082
+2025-05-14 12:55:02,498 - INFO - Điền NaN trong cột cpi_yoy_rolling_std bằng trung bình: 1.7596452025502374
+2025-05-14 12:55:02,499 - INFO - Điền NaN trong cột cpi_mom_lag_1 bằng trung bình: 100.40965517241379
+2025-05-14 12:55:02,500 - INFO - Điền NaN trong cột cpi_yoy_lag_1 bằng trung bình: 105.26231321839083
+2025-05-14 12:55:02,502 - INFO - Điền NaN trong cột cpi_mom_lag_2 bằng trung bình: 100.41046109510086
+2025-05-14 12:55:02,503 - INFO - Điền NaN trong cột cpi_yoy_lag_2 bằng trung bình: 105.26943804034582
+2025-05-14 12:55:02,504 - INFO - Điền NaN trong cột cpi_mom_lag_3 bằng trung bình: 100.4106936416185
+2025-05-14 12:55:02,505 - INFO - Điền NaN trong cột cpi_yoy_lag_3 bằng trung bình: 105.27625722543354
+2025-05-14 12:55:02,507 - INFO - Điền NaN trong cột cpi_mom_roll_mean_3 bằng trung bình: 100.40954851104706
+2025-05-14 12:55:02,508 - INFO - Điền NaN trong cột cpi_mom_roll_std_3 bằng trung bình: 0.3747483603831309
+2025-05-14 12:55:02,509 - INFO - Điền NaN trong cột cpi_yoy_roll_mean_3 bằng trung bình: 105.24346301633045
+2025-05-14 12:55:02,511 - INFO - Điền NaN trong cột cpi_mom_roll_mean_6 bằng trung bình: 100.40757025193798
+2025-05-14 12:55:02,512 - INFO - Điền NaN trong cột cpi_mom_roll_std_6 bằng trung bình: 0.4715661642619925
+2025-05-14 12:55:02,513 - INFO - Điền NaN trong cột cpi_yoy_roll_mean_6 bằng trung bình: 105.23478682170541
+2025-05-14 12:55:02,515 - INFO - Đặc trưng sau khi xử lý: ['cpi_mom', 'cpi_yoy', 'oil_price', 'gold_price', 'interest_rate', 'cpi_mom_smoothed', 'cpi_yoy_smoothed', 'cpi_mom_log', 'cpi_yoy_log', 'cpi_yoy_diff', 'month', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_mom_lag_1', 'cpi_yoy_lag_1', 'cpi_mom_lag_2', 'cpi_yoy_lag_2', 'cpi_mom_lag_3', 'cpi_yoy_lag_3', 'cpi_mom_roll_mean_3', 'cpi_mom_roll_std_3', 'cpi_yoy_roll_mean_3', 'cpi_mom_roll_mean_6', 'cpi_mom_roll_std_6', 'cpi_yoy_roll_mean_6', 'cpi_yoy_current', 'quarter']
+2025-05-14 12:55:02,516 - INFO - Tạo đặc trưng cho cpi_yoy, kích thước dữ liệu: (349, 17)
+2025-05-14 12:55:02,519 - INFO - Đã clip outliers cho cpi_yoy: min=97.4, max=115.10500000000002
+2025-05-14 12:55:02,523 - INFO - Đã clip outliers cho cpi_mom: min=98.92499999999998, max=101.845
+2025-05-14 12:55:02,531 - INFO - Điền NaN trong cột interest_rate bằng trung bình: 14.26690724637681
+2025-05-14 12:55:02,534 - INFO - Điền NaN trong cột cpi_yoy_diff bằng trung bình: -0.028591954022988517
+2025-05-14 12:55:02,536 - INFO - Điền NaN trong cột cpi_mom_diff bằng trung bình: -2.8735632183880425e-05
+2025-05-14 12:55:02,538 - INFO - Điền NaN trong cột cpi_mom_rolling_mean bằng trung bình: 100.45202169625246
+2025-05-14 12:55:02,539 - INFO - Điền NaN trong cột cpi_mom_rolling_std bằng trung bình: 0.6143360951880126
+2025-05-14 12:55:02,541 - INFO - Điền NaN trong cột cpi_yoy_rolling_mean bằng trung bình: 105.68397928994082
+2025-05-14 12:55:02,542 - INFO - Điền NaN trong cột cpi_yoy_rolling_std bằng trung bình: 1.7596452025502374
+2025-05-14 12:55:02,544 - INFO - Điền NaN trong cột cpi_yoy_lag_1 bằng trung bình: 105.26231321839083
+2025-05-14 12:55:02,545 - INFO - Điền NaN trong cột cpi_mom_lag_1 bằng trung bình: 100.40965517241379
+2025-05-14 12:55:02,547 - INFO - Điền NaN trong cột cpi_yoy_lag_2 bằng trung bình: 105.26943804034582
+2025-05-14 12:55:02,549 - INFO - Điền NaN trong cột cpi_mom_lag_2 bằng trung bình: 100.41046109510086
+2025-05-14 12:55:02,550 - INFO - Điền NaN trong cột cpi_yoy_lag_3 bằng trung bình: 105.27625722543354
+2025-05-14 12:55:02,552 - INFO - Điền NaN trong cột cpi_mom_lag_3 bằng trung bình: 100.4106936416185
+2025-05-14 12:55:02,553 - INFO - Điền NaN trong cột cpi_yoy_roll_mean_3 bằng trung bình: 105.24346301633045
+2025-05-14 12:55:02,556 - INFO - Điền NaN trong cột cpi_yoy_roll_std_3 bằng trung bình: 0.5198367329490022
+2025-05-14 12:55:02,557 - INFO - Điền NaN trong cột cpi_mom_roll_mean_3 bằng trung bình: 100.40954851104706
+2025-05-14 12:55:02,559 - INFO - Điền NaN trong cột cpi_yoy_roll_mean_6 bằng trung bình: 105.23478682170541
+2025-05-14 12:55:02,560 - INFO - Điền NaN trong cột cpi_yoy_roll_std_6 bằng trung bình: 0.8640579671493237
+2025-05-14 12:55:02,562 - INFO - Điền NaN trong cột cpi_mom_roll_mean_6 bằng trung bình: 100.40757025193798
+2025-05-14 12:55:02,564 - INFO - Đặc trưng sau khi xử lý: ['cpi_mom', 'cpi_yoy', 'oil_price', 'gold_price', 'interest_rate', 'cpi_mom_smoothed', 'cpi_yoy_smoothed', 'cpi_mom_log', 'cpi_yoy_log', 'cpi_yoy_diff', 'month', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_yoy_lag_1', 'cpi_mom_lag_1', 'cpi_yoy_lag_2', 'cpi_mom_lag_2', 'cpi_yoy_lag_3', 'cpi_mom_lag_3', 'cpi_yoy_roll_mean_3', 'cpi_yoy_roll_std_3', 'cpi_mom_roll_mean_3', 'cpi_yoy_roll_mean_6', 'cpi_yoy_roll_std_6', 'cpi_mom_roll_mean_6', 'cpi_mom_current', 'quarter']
+2025-05-14 12:55:02,564 - INFO - Kích thước tập dữ liệu cho cpi_mom: Train=325, Val=12, Test=12
+2025-05-14 12:55:02,565 - INFO - Kích thước tập dữ liệu cho cpi_yoy: Train=325, Val=12, Test=12
+2025-05-14 12:55:02,985 - INFO - Đã lưu biểu đồ phân chia dữ liệu: cpi_mom_train_val_test_split.png
+2025-05-14 12:55:03,367 - INFO - Đã lưu biểu đồ phân chia dữ liệu: cpi_yoy_train_val_test_split.png
+2025-05-14 12:55:03,367 - INFO - Đặc trưng cho cpi_mom: ['oil_price', 'gold_price', 'interest_rate', 'cpi_mom_smoothed', 'cpi_yoy_smoothed', 'cpi_mom_log', 'cpi_yoy_log', 'cpi_yoy_diff', 'month', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_mom_lag_1', 'cpi_yoy_lag_1', 'cpi_mom_lag_2', 'cpi_yoy_lag_2', 'cpi_mom_lag_3', 'cpi_yoy_lag_3', 'cpi_mom_roll_mean_3', 'cpi_mom_roll_std_3', 'cpi_yoy_roll_mean_3', 'cpi_mom_roll_mean_6', 'cpi_mom_roll_std_6', 'cpi_yoy_roll_mean_6', 'cpi_yoy_current', 'quarter']
+2025-05-14 12:55:03,367 - INFO - Đặc trưng cho cpi_yoy: ['oil_price', 'gold_price', 'interest_rate', 'cpi_mom_smoothed', 'cpi_yoy_smoothed', 'cpi_mom_log', 'cpi_yoy_log', 'cpi_yoy_diff', 'month', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_yoy_lag_1', 'cpi_mom_lag_1', 'cpi_yoy_lag_2', 'cpi_mom_lag_2', 'cpi_yoy_lag_3', 'cpi_mom_lag_3', 'cpi_yoy_roll_mean_3', 'cpi_yoy_roll_std_3', 'cpi_mom_roll_mean_3', 'cpi_yoy_roll_mean_6', 'cpi_yoy_roll_std_6', 'cpi_mom_roll_mean_6', 'cpi_mom_current', 'quarter']
+2025-05-14 12:55:03,367 - INFO - Chạy các mô hình cho cpi_mom
+2025-05-14 12:55:08,354 - INFO - Chạy các mô hình cho cpi_yoy
+2025-05-14 12:55:08,354 - INFO - Chạy Random Forest cho cpi_yoy
+2025-05-14 12:55:08,364 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
+2025-05-14 12:55:08,368 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
+mean     105.388600
+std        4.243821
+min       97.400000
+25%      102.590000
+50%      104.440000
+75%      108.060000
+max      115.105000
+Name: cpi_yoy, dtype: float64
+2025-05-14 12:55:08,368 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
+2025-05-14 12:55:11,291 - INFO - Cross-validation: Mean Train RMSE=0.1436, Mean Test RMSE=0.7064
+2025-05-14 12:55:11,936 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[112.23988637 109.70059527 108.81021517 109.45370224 108.34810842]
+2025-05-14 12:55:11,938 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.81356603 104.4446144  103.39425424 102.84933158 102.45868471]
+2025-05-14 12:55:11,940 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.40925915 103.94917778 103.95520521 104.48928239 104.50976351]
+2025-05-14 12:55:12,184 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_random_forest_residuals.png
+2025-05-14 12:55:12,446 - INFO - Đã lưu biểu đồ: cpi_yoy_random_forest_forecast.png
+2025-05-14 12:55:12,446 - INFO - Random Forest (cpi_yoy): Train RMSE=0.0814, Val RMSE=0.0594, Test RMSE=0.0627, Train MAE=0.0527, Val MAE=0.0438, Test MAE=0.0560, Train MAPE=0.0498, Val MAPE=0.0422, Test MAPE=0.0539, Time=4.09s
+2025-05-14 12:55:12,447 - INFO - Hoàn thành Random Forest cho cpi_yoy trong 4.09s
+2025-05-14 12:55:12,447 - INFO - Chạy XGBoost cho cpi_yoy
+2025-05-14 12:55:12,453 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
+2025-05-14 12:55:12,455 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
+mean     105.388600
+std        4.243821
+min       97.400000
+25%      102.590000
+50%      104.440000
+75%      108.060000
+max      115.105000
+Name: cpi_yoy, dtype: float64
+2025-05-14 12:55:12,455 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
+2025-05-14 12:55:13,166 - INFO - Cross-validation: Mean Train RMSE=0.0013, Mean Test RMSE=0.7083
+2025-05-14 12:55:13,319 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[112.90464783 109.76335907 108.80117798 109.46160889 108.48345184]
+2025-05-14 12:55:13,322 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.90071106 104.31707764 103.5927887  102.91841125 102.4254303 ]
+2025-05-14 12:55:13,325 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.67758942 103.58867645 104.16735077 104.54090118 104.52843475]
+2025-05-14 12:55:13,658 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_xgboost_residuals.png
+2025-05-14 12:55:14,034 - INFO - Đã lưu biểu đồ: cpi_yoy_xgboost_forecast.png
+2025-05-14 12:55:14,034 - INFO - XGBoost (cpi_yoy): Train RMSE=0.0046, Val RMSE=0.1242, Test RMSE=0.1785, Train MAE=0.0036, Val MAE=0.0886, Test MAE=0.1348, Train MAPE=0.0034, Val MAPE=0.0861, Test MAPE=0.1301, Time=1.59s
+2025-05-14 12:55:14,034 - INFO - Hoàn thành XGBoost cho cpi_yoy trong 1.59s
+2025-05-14 12:55:14,034 - INFO - Chạy LightGBM cho cpi_yoy
+2025-05-14 12:55:14,040 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
+2025-05-14 12:55:14,042 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
+mean     105.388600
+std        4.243821
+min       97.400000
+25%      102.590000
+50%      104.440000
+75%      108.060000
+max      115.105000
+Name: cpi_yoy, dtype: float64
+2025-05-14 12:55:14,042 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
+2025-05-14 12:55:14,513 - INFO - Cross-validation: Mean Train RMSE=0.2130, Mean Test RMSE=1.0970
+2025-05-14 12:55:14,574 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[112.8692674  109.74121354 108.80012149 109.4149172  108.45507328]
+2025-05-14 12:55:14,577 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.82004187 104.37121675 103.44724595 102.89685614 102.47646408]
+2025-05-14 12:55:14,580 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.58471447 104.03501896 104.03445933 104.3988527  104.46654915]
+2025-05-14 12:55:14,879 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_lightgbm_residuals.png
+2025-05-14 12:55:15,183 - INFO - Đã lưu biểu đồ: cpi_yoy_lightgbm_forecast.png
+2025-05-14 12:55:15,183 - INFO - LightGBM (cpi_yoy): Train RMSE=0.0565, Val RMSE=0.1079, Test RMSE=0.0742, Train MAE=0.0345, Val MAE=0.0899, Test MAE=0.0507, Train MAPE=0.0331, Val MAPE=0.0870, Test MAPE=0.0491, Time=1.15s
+2025-05-14 12:55:15,183 - INFO - Hoàn thành LightGBM cho cpi_yoy trong 1.15s
+2025-05-14 12:55:15,183 - INFO - Chạy Linear Regression cho cpi_yoy
+2025-05-14 12:55:15,188 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
+2025-05-14 12:55:15,190 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
+mean     105.388600
+std        4.243821
+min       97.400000
+25%      102.590000
+50%      104.440000
+75%      108.060000
+max      115.105000
+Name: cpi_yoy, dtype: float64
+2025-05-14 12:55:15,191 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
+2025-05-14 12:55:15,220 - INFO - Cross-validation: Mean Train RMSE=0.1712, Mean Test RMSE=0.9811
+2025-05-14 12:55:15,234 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[110.91809196 109.19380957 109.6395366  109.92370948 109.26619053]
+2025-05-14 12:55:15,236 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.74650065 104.27287531 103.23623794 102.61853049 102.53651719]
+2025-05-14 12:55:15,238 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.29971404 103.77735484 103.89313452 104.29489216 104.44369783]
+2025-05-14 12:55:15,472 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_linear_residuals.png
+2025-05-14 12:55:15,773 - INFO - Đã lưu biểu đồ: cpi_yoy_linear_forecast.png
+2025-05-14 12:55:15,773 - INFO - Linear Regression (cpi_yoy): Train RMSE=0.2618, Val RMSE=0.1466, Test RMSE=0.1353, Train MAE=0.1691, Val MAE=0.1354, Test MAE=0.1095, Train MAPE=0.1596, Val MAPE=0.1312, Test MAPE=0.1059, Time=0.59s
+2025-05-14 12:55:15,774 - INFO - Hoàn thành Linear Regression cho cpi_yoy trong 0.59s
+2025-05-14 12:55:15,774 - INFO - Chạy Ridge cho cpi_yoy
+2025-05-14 12:55:15,780 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
+2025-05-14 12:55:15,782 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
+mean     105.388600
+std        4.243821
+min       97.400000
+25%      102.590000
+50%      104.440000
+75%      108.060000
+max      115.105000
+Name: cpi_yoy, dtype: float64
+2025-05-14 12:55:15,783 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
+2025-05-14 12:55:15,817 - INFO - Cross-validation: Mean Train RMSE=0.3134, Mean Test RMSE=1.0542
+2025-05-14 12:55:15,820 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[109.36870743 109.59656711 109.99341793 109.43038017 108.66049948]
+2025-05-14 12:55:15,824 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.47041328 104.07993872 103.21928088 102.54715617 102.36024791]
+2025-05-14 12:55:15,826 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.19086184 103.7133251  103.77498513 104.1239261  104.25721557]
+2025-05-14 12:55:16,093 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_ridge_residuals.png
+2025-05-14 12:55:16,440 - INFO - Đã lưu biểu đồ: cpi_yoy_ridge_forecast.png
+2025-05-14 12:55:16,440 - INFO - Ridge (cpi_yoy): Train RMSE=0.3596, Val RMSE=0.2202, Test RMSE=0.1777, Train MAE=0.2259, Val MAE=0.1965, Test MAE=0.1575, Train MAPE=0.2103, Val MAPE=0.1897, Test MAPE=0.1519, Time=0.67s
+2025-05-14 12:55:16,440 - INFO - Hoàn thành Ridge cho cpi_yoy trong 0.67s
+2025-05-14 12:55:16,440 - INFO - Chạy Lasso cho cpi_yoy
+2025-05-14 12:55:16,447 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
+2025-05-14 12:55:16,450 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
+mean     105.388600
+std        4.243821
+min       97.400000
+25%      102.590000
+50%      104.440000
+75%      108.060000
+max      115.105000
+Name: cpi_yoy, dtype: float64
+2025-05-14 12:55:16,451 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
+2025-05-14 12:55:16,514 - INFO - Cross-validation: Mean Train RMSE=0.4709, Mean Test RMSE=0.9560
+2025-05-14 12:55:16,520 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[107.0138397  108.72664944 109.19823272 108.95391168 108.30115558]
+2025-05-14 12:55:16,522 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.75083776 104.52139847 103.78790221 103.16150236 102.76761738]
+2025-05-14 12:55:16,526 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.58791252 103.90810164 103.96728674 104.22279214 104.37374133]
+2025-05-14 12:55:16,973 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_lasso_residuals.png
+2025-05-14 12:55:17,274 - INFO - Đã lưu biểu đồ: cpi_yoy_lasso_forecast.png
+2025-05-14 12:55:17,274 - INFO - Lasso (cpi_yoy): Train RMSE=0.6030, Val RMSE=0.2498, Test RMSE=0.2266, Train MAE=0.3947, Val MAE=0.2130, Test MAE=0.1691, Train MAPE=0.3682, Val MAPE=0.2068, Test MAPE=0.1637, Time=0.83s
+2025-05-14 12:55:17,274 - INFO - Hoàn thành Lasso cho cpi_yoy trong 0.83s
+2025-05-14 12:55:17,275 - INFO - Chạy ElasticNet cho cpi_yoy
+2025-05-14 12:55:17,279 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
+2025-05-14 12:55:17,282 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
+mean     105.388600
+std        4.243821
+min       97.400000
+25%      102.590000
+50%      104.440000
+75%      108.060000
+max      115.105000
+Name: cpi_yoy, dtype: float64
+2025-05-14 12:55:17,282 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
+2025-05-14 12:55:17,331 - INFO - Cross-validation: Mean Train RMSE=0.5811, Mean Test RMSE=0.9408
+2025-05-14 12:55:17,338 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[107.03293738 107.79103513 108.99351134 108.50900154 107.62389386]
+2025-05-14 12:55:17,341 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.69585559 104.47410841 103.7852067  103.19999858 102.83307588]
+2025-05-14 12:55:17,345 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.65407876 104.04878832 103.93075654 104.17924026 104.27131147]
+2025-05-14 12:55:17,732 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_elasticnet_residuals.png
+2025-05-14 12:55:18,038 - INFO - Đã lưu biểu đồ: cpi_yoy_elasticnet_forecast.png
+2025-05-14 12:55:18,039 - INFO - ElasticNet (cpi_yoy): Train RMSE=0.6700, Val RMSE=0.3019, Test RMSE=0.3000, Train MAE=0.4525, Val MAE=0.2438, Test MAE=0.2354, Train MAPE=0.4225, Val MAPE=0.2370, Test MAPE=0.2280, Time=0.76s
+2025-05-14 12:55:18,039 - INFO - Hoàn thành ElasticNet cho cpi_yoy trong 0.76s
+2025-05-14 12:55:18,039 - INFO - Chạy SVR cho cpi_yoy
+2025-05-14 12:55:18,044 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
+2025-05-14 12:55:18,046 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
+mean     105.388600
+std        4.243821
+min       97.400000
+25%      102.590000
+50%      104.440000
+75%      108.060000
+max      115.105000
+Name: cpi_yoy, dtype: float64
+2025-05-14 12:55:18,046 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
+2025-05-14 12:55:18,095 - INFO - Cross-validation: Mean Train RMSE=1.1233, Mean Test RMSE=2.0491
+2025-05-14 12:55:18,111 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[108.25663483 107.93179951 108.61141001 108.96604513 108.11289448]
+2025-05-14 12:55:18,114 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.73448508 104.42329436 103.73837514 102.98258784 102.57325019]
+2025-05-14 12:55:18,115 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.4994694  103.95730778 104.05753407 104.39643001 104.42229267]
+2025-05-14 12:55:18,342 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_svr_residuals.png
+2025-05-14 12:55:18,578 - INFO - Đã lưu biểu đồ: cpi_yoy_svr_forecast.png
+2025-05-14 12:55:18,579 - INFO - SVR (cpi_yoy): Train RMSE=0.8344, Val RMSE=0.2460, Test RMSE=0.4257, Train MAE=0.4246, Val MAE=0.2194, Test MAE=0.3034, Train MAPE=0.3985, Val MAPE=0.2128, Test MAPE=0.2944, Time=0.54s
+2025-05-14 12:55:18,579 - INFO - Hoàn thành SVR cho cpi_yoy trong 0.54s
+2025-05-14 12:55:18,947 - INFO - Đã lưu biểu đồ so sánh: cpi_mom_ml_model_comparison.png
+2025-05-14 12:55:19,395 - INFO - Đã lưu biểu đồ so sánh: cpi_yoy_ml_model_comparison.png
+2025-05-14 12:55:19,403 - INFO - Dự báo ensemble cho cpi_mom đã được lưu
+2025-05-14 12:55:19,405 - INFO - Dự báo ensemble cho cpi_yoy đã được lưu
+2025-05-14 12:55:19,420 - INFO - Kết quả đã được lưu vào ml_model_results/ml_model_results.csv
+2025-05-14 12:55:19,431 - INFO - Dự báo kết hợp cho cpi_mom đã được lưu vào ml_model_results/combined_forecast_cpi_mom.csv
+2025-05-14 12:55:19,441 - INFO - Dự báo kết hợp cho cpi_yoy đã được lưu vào ml_model_results/combined_forecast_cpi_yoy.csv
+2025-05-14 13:33:54,789 - INFO - Kiểm tra dữ liệu đầu vào: (349, 17)
+2025-05-14 13:33:54,801 - INFO - Thống kê cpi_mom: count    349.000000
+mean     100.449140
+std        0.761658
+min       98.460000
+25%      100.020000
+50%      100.300000
+75%      100.750000
+max      103.910000
+Name: cpi_mom, dtype: float64
+2025-05-14 13:33:54,803 - INFO - Thống kê cpi_yoy: count    349.000000
+mean     105.688883
+std        5.404596
+min       97.400000
+25%      102.630000
+50%      104.310000
+75%      107.620000
+max      128.200000
+Name: cpi_yoy, dtype: float64
+2025-05-14 13:33:54,803 - INFO - Kích thước dữ liệu gốc: 349
+2025-05-14 13:33:54,803 - INFO - Phương sai cpi_mom: 0.5784611522072891, cpi_yoy: 29.125961788491054
+2025-05-14 13:33:54,803 - INFO - Tạo đặc trưng cho cpi_mom, kích thước dữ liệu: (349, 17)
+2025-05-14 13:33:54,806 - INFO - Đã clip outliers cho cpi_mom: min=98.92499999999998, max=101.845
+2025-05-14 13:33:54,809 - INFO - Đã clip outliers cho cpi_yoy: min=97.4, max=115.10500000000002
+2025-05-14 13:33:54,816 - INFO - Điền NaN trong cột interest_rate bằng trung bình: 14.26690724637681
+2025-05-14 13:33:54,818 - INFO - Điền NaN trong cột cpi_yoy_diff bằng trung bình: -0.028591954022988517
+2025-05-14 13:33:54,819 - INFO - Điền NaN trong cột cpi_mom_diff bằng trung bình: -2.8735632183880425e-05
+2025-05-14 13:33:54,820 - INFO - Điền NaN trong cột cpi_mom_rolling_mean bằng trung bình: 100.45202169625246
+2025-05-14 13:33:54,821 - INFO - Điền NaN trong cột cpi_mom_rolling_std bằng trung bình: 0.6143360951880126
+2025-05-14 13:33:54,822 - INFO - Điền NaN trong cột cpi_yoy_rolling_mean bằng trung bình: 105.68397928994082
+2025-05-14 13:33:54,822 - INFO - Điền NaN trong cột cpi_yoy_rolling_std bằng trung bình: 1.7596452025502374
+2025-05-14 13:33:54,823 - INFO - Điền NaN trong cột cpi_mom_lag_1 bằng trung bình: 100.40965517241379
+2025-05-14 13:33:54,824 - INFO - Điền NaN trong cột cpi_yoy_lag_1 bằng trung bình: 105.26231321839083
+2025-05-14 13:33:54,825 - INFO - Điền NaN trong cột cpi_mom_lag_2 bằng trung bình: 100.41046109510086
+2025-05-14 13:33:54,826 - INFO - Điền NaN trong cột cpi_yoy_lag_2 bằng trung bình: 105.26943804034582
+2025-05-14 13:33:54,827 - INFO - Điền NaN trong cột cpi_mom_lag_3 bằng trung bình: 100.4106936416185
+2025-05-14 13:33:54,828 - INFO - Điền NaN trong cột cpi_yoy_lag_3 bằng trung bình: 105.27625722543354
+2025-05-14 13:33:54,829 - INFO - Điền NaN trong cột cpi_mom_roll_mean_3 bằng trung bình: 100.40954851104706
+2025-05-14 13:33:54,829 - INFO - Điền NaN trong cột cpi_mom_roll_std_3 bằng trung bình: 0.3747483603831309
+2025-05-14 13:33:54,830 - INFO - Điền NaN trong cột cpi_yoy_roll_mean_3 bằng trung bình: 105.24346301633045
+2025-05-14 13:33:54,831 - INFO - Điền NaN trong cột cpi_mom_roll_mean_6 bằng trung bình: 100.40757025193798
+2025-05-14 13:33:54,831 - INFO - Điền NaN trong cột cpi_mom_roll_std_6 bằng trung bình: 0.4715661642619925
+2025-05-14 13:33:54,832 - INFO - Điền NaN trong cột cpi_yoy_roll_mean_6 bằng trung bình: 105.23478682170541
+2025-05-14 13:33:54,833 - INFO - Đặc trưng sau khi xử lý: ['cpi_mom', 'cpi_yoy', 'oil_price', 'gold_price', 'interest_rate', 'cpi_mom_smoothed', 'cpi_yoy_smoothed', 'cpi_mom_log', 'cpi_yoy_log', 'cpi_yoy_diff', 'month', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_mom_lag_1', 'cpi_yoy_lag_1', 'cpi_mom_lag_2', 'cpi_yoy_lag_2', 'cpi_mom_lag_3', 'cpi_yoy_lag_3', 'cpi_mom_roll_mean_3', 'cpi_mom_roll_std_3', 'cpi_yoy_roll_mean_3', 'cpi_mom_roll_mean_6', 'cpi_mom_roll_std_6', 'cpi_yoy_roll_mean_6', 'cpi_yoy_current', 'quarter']
+2025-05-14 13:33:54,834 - INFO - Tạo đặc trưng cho cpi_yoy, kích thước dữ liệu: (349, 17)
+2025-05-14 13:33:54,836 - INFO - Đã clip outliers cho cpi_yoy: min=97.4, max=115.10500000000002
+2025-05-14 13:33:54,837 - INFO - Đã clip outliers cho cpi_mom: min=98.92499999999998, max=101.845
+2025-05-14 13:33:54,842 - INFO - Điền NaN trong cột interest_rate bằng trung bình: 14.26690724637681
+2025-05-14 13:33:54,843 - INFO - Điền NaN trong cột cpi_yoy_diff bằng trung bình: -0.028591954022988517
+2025-05-14 13:33:54,844 - INFO - Điền NaN trong cột cpi_mom_diff bằng trung bình: -2.8735632183880425e-05
+2025-05-14 13:33:54,845 - INFO - Điền NaN trong cột cpi_mom_rolling_mean bằng trung bình: 100.45202169625246
+2025-05-14 13:33:54,845 - INFO - Điền NaN trong cột cpi_mom_rolling_std bằng trung bình: 0.6143360951880126
+2025-05-14 13:33:54,846 - INFO - Điền NaN trong cột cpi_yoy_rolling_mean bằng trung bình: 105.68397928994082
+2025-05-14 13:33:54,847 - INFO - Điền NaN trong cột cpi_yoy_rolling_std bằng trung bình: 1.7596452025502374
+2025-05-14 13:33:54,848 - INFO - Điền NaN trong cột cpi_yoy_lag_1 bằng trung bình: 105.26231321839083
+2025-05-14 13:33:54,849 - INFO - Điền NaN trong cột cpi_mom_lag_1 bằng trung bình: 100.40965517241379
+2025-05-14 13:33:54,849 - INFO - Điền NaN trong cột cpi_yoy_lag_2 bằng trung bình: 105.26943804034582
+2025-05-14 13:33:54,850 - INFO - Điền NaN trong cột cpi_mom_lag_2 bằng trung bình: 100.41046109510086
+2025-05-14 13:33:54,850 - INFO - Điền NaN trong cột cpi_yoy_lag_3 bằng trung bình: 105.27625722543354
+2025-05-14 13:33:54,851 - INFO - Điền NaN trong cột cpi_mom_lag_3 bằng trung bình: 100.4106936416185
+2025-05-14 13:33:54,852 - INFO - Điền NaN trong cột cpi_yoy_roll_mean_3 bằng trung bình: 105.24346301633045
+2025-05-14 13:33:54,853 - INFO - Điền NaN trong cột cpi_yoy_roll_std_3 bằng trung bình: 0.5198367329490022
+2025-05-14 13:33:54,853 - INFO - Điền NaN trong cột cpi_mom_roll_mean_3 bằng trung bình: 100.40954851104706
+2025-05-14 13:33:54,854 - INFO - Điền NaN trong cột cpi_yoy_roll_mean_6 bằng trung bình: 105.23478682170541
+2025-05-14 13:33:54,855 - INFO - Điền NaN trong cột cpi_yoy_roll_std_6 bằng trung bình: 0.8640579671493237
+2025-05-14 13:33:54,856 - INFO - Điền NaN trong cột cpi_mom_roll_mean_6 bằng trung bình: 100.40757025193798
+2025-05-14 13:33:54,857 - INFO - Đặc trưng sau khi xử lý: ['cpi_mom', 'cpi_yoy', 'oil_price', 'gold_price', 'interest_rate', 'cpi_mom_smoothed', 'cpi_yoy_smoothed', 'cpi_mom_log', 'cpi_yoy_log', 'cpi_yoy_diff', 'month', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_yoy_lag_1', 'cpi_mom_lag_1', 'cpi_yoy_lag_2', 'cpi_mom_lag_2', 'cpi_yoy_lag_3', 'cpi_mom_lag_3', 'cpi_yoy_roll_mean_3', 'cpi_yoy_roll_std_3', 'cpi_mom_roll_mean_3', 'cpi_yoy_roll_mean_6', 'cpi_yoy_roll_std_6', 'cpi_mom_roll_mean_6', 'cpi_mom_current', 'quarter']
+2025-05-14 13:33:54,858 - INFO - Kích thước tập dữ liệu cho cpi_mom: Train=325, Val=12, Test=12
+2025-05-14 13:33:54,858 - INFO - Kích thước tập dữ liệu cho cpi_yoy: Train=325, Val=12, Test=12
+2025-05-14 13:33:55,094 - INFO - Đã lưu biểu đồ phân chia dữ liệu: cpi_mom_train_val_test_split.png
+2025-05-14 13:33:55,308 - INFO - Đã lưu biểu đồ phân chia dữ liệu: cpi_yoy_train_val_test_split.png
+2025-05-14 13:33:55,308 - INFO - Đặc trưng cho cpi_mom: ['oil_price', 'gold_price', 'interest_rate', 'cpi_mom_smoothed', 'cpi_yoy_smoothed', 'cpi_mom_log', 'cpi_yoy_log', 'cpi_yoy_diff', 'month', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_mom_lag_1', 'cpi_yoy_lag_1', 'cpi_mom_lag_2', 'cpi_yoy_lag_2', 'cpi_mom_lag_3', 'cpi_yoy_lag_3', 'cpi_mom_roll_mean_3', 'cpi_mom_roll_std_3', 'cpi_yoy_roll_mean_3', 'cpi_mom_roll_mean_6', 'cpi_mom_roll_std_6', 'cpi_yoy_roll_mean_6', 'cpi_yoy_current', 'quarter']
+2025-05-14 13:33:55,308 - INFO - Đặc trưng cho cpi_yoy: ['oil_price', 'gold_price', 'interest_rate', 'cpi_mom_smoothed', 'cpi_yoy_smoothed', 'cpi_mom_log', 'cpi_yoy_log', 'cpi_yoy_diff', 'month', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_yoy_lag_1', 'cpi_mom_lag_1', 'cpi_yoy_lag_2', 'cpi_mom_lag_2', 'cpi_yoy_lag_3', 'cpi_mom_lag_3', 'cpi_yoy_roll_mean_3', 'cpi_yoy_roll_std_3', 'cpi_mom_roll_mean_3', 'cpi_yoy_roll_mean_6', 'cpi_yoy_roll_std_6', 'cpi_mom_roll_mean_6', 'cpi_mom_current', 'quarter']
+2025-05-14 13:33:55,308 - INFO - Chạy các mô hình cho cpi_mom
+2025-05-14 13:34:01,785 - INFO - Chạy các mô hình cho cpi_yoy
+2025-05-14 13:34:01,785 - INFO - Chạy Random Forest cho cpi_yoy
+2025-05-14 13:34:01,792 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
+2025-05-14 13:34:01,794 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
+mean     105.388600
+std        4.243821
+min       97.400000
+25%      102.590000
+50%      104.440000
+75%      108.060000
+max      115.105000
+Name: cpi_yoy, dtype: float64
+2025-05-14 13:34:01,794 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
+2025-05-14 13:34:02,410 - INFO - Cross-validation: Mean Train RMSE=0.1845, Mean Test RMSE=0.7132
+2025-05-14 13:34:02,564 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[111.86632669 109.79031816 108.79396593 109.47675854 108.34962692]
+2025-05-14 13:34:02,567 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.89691654 104.44159148 103.3509763  102.84898473 102.45055003]
+2025-05-14 13:34:02,569 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.41871115 103.96489581 103.96489581 104.47011757 104.49527035]
+2025-05-14 13:34:03,093 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_random_forest_residuals.png
+2025-05-14 13:34:03,324 - INFO - Đã lưu biểu đồ: cpi_yoy_random_forest_forecast.png
+2025-05-14 13:34:03,324 - INFO - Random Forest (cpi_yoy): Train RMSE=0.1136, Val RMSE=0.0704, Test RMSE=0.0651, Train MAE=0.0704, Val MAE=0.0467, Test MAE=0.0535, Train MAPE=0.0668, Val MAPE=0.0450, Test MAPE=0.0516, Time=1.54s
+2025-05-14 13:34:03,325 - INFO - Hoàn thành Random Forest cho cpi_yoy trong 1.54s
+2025-05-14 13:34:03,325 - INFO - Chạy XGBoost cho cpi_yoy
+2025-05-14 13:34:03,330 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
+2025-05-14 13:34:03,333 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
+mean     105.388600
+std        4.243821
+min       97.400000
+25%      102.590000
+50%      104.440000
+75%      108.060000
+max      115.105000
+Name: cpi_yoy, dtype: float64
+2025-05-14 13:34:03,334 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
+2025-05-14 13:34:03,832 - INFO - Cross-validation: Mean Train RMSE=0.0013, Mean Test RMSE=0.7083
+2025-05-14 13:34:03,968 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[112.90464783 109.76335907 108.80117798 109.46160889 108.48345184]
+2025-05-14 13:34:03,971 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.90071106 104.31707764 103.5927887  102.91841125 102.4254303 ]
+2025-05-14 13:34:03,973 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.67758942 103.58867645 104.16735077 104.54090118 104.52843475]
+2025-05-14 13:34:04,217 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_xgboost_residuals.png
+2025-05-14 13:34:04,430 - INFO - Đã lưu biểu đồ: cpi_yoy_xgboost_forecast.png
+2025-05-14 13:34:04,430 - INFO - XGBoost (cpi_yoy): Train RMSE=0.0046, Val RMSE=0.1242, Test RMSE=0.1785, Train MAE=0.0036, Val MAE=0.0886, Test MAE=0.1348, Train MAPE=0.0034, Val MAPE=0.0861, Test MAPE=0.1301, Time=1.11s
+2025-05-14 13:34:04,430 - INFO - Hoàn thành XGBoost cho cpi_yoy trong 1.11s
+2025-05-14 13:34:04,430 - INFO - Chạy LightGBM cho cpi_yoy
+2025-05-14 13:34:04,434 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
+2025-05-14 13:34:04,436 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
+mean     105.388600
+std        4.243821
+min       97.400000
+25%      102.590000
+50%      104.440000
+75%      108.060000
+max      115.105000
+Name: cpi_yoy, dtype: float64
+2025-05-14 13:34:04,437 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
+2025-05-14 13:34:04,995 - INFO - Cross-validation: Mean Train RMSE=0.0258, Mean Test RMSE=0.8070
+2025-05-14 13:34:05,121 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[112.87780683 109.76915451 108.7996694  109.4497903  108.47965593]
+2025-05-14 13:34:05,124 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.84607619 104.36061399 103.45691577 102.79618664 102.4160246 ]
+2025-05-14 13:34:05,127 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.59590683 104.03650215 104.03973099 104.39116795 104.39800658]
+2025-05-14 13:34:05,394 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_lightgbm_residuals.png
+2025-05-14 13:34:05,606 - INFO - Đã lưu biểu đồ: cpi_yoy_lightgbm_forecast.png
+2025-05-14 13:34:05,606 - INFO - LightGBM (cpi_yoy): Train RMSE=0.0161, Val RMSE=0.1093, Test RMSE=0.0729, Train MAE=0.0115, Val MAE=0.0787, Test MAE=0.0444, Train MAPE=0.0109, Val MAPE=0.0760, Test MAPE=0.0429, Time=1.18s
+2025-05-14 13:34:05,606 - INFO - Hoàn thành LightGBM cho cpi_yoy trong 1.18s
+2025-05-14 13:34:05,606 - INFO - Chạy Linear Regression cho cpi_yoy
+2025-05-14 13:34:05,611 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
+2025-05-14 13:34:05,614 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
+mean     105.388600
+std        4.243821
+min       97.400000
+25%      102.590000
+50%      104.440000
+75%      108.060000
+max      115.105000
+Name: cpi_yoy, dtype: float64
+2025-05-14 13:34:05,614 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
+2025-05-14 13:34:05,647 - INFO - Cross-validation: Mean Train RMSE=0.1712, Mean Test RMSE=0.9811
+2025-05-14 13:34:05,655 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[110.91809196 109.19380957 109.6395366  109.92370948 109.26619053]
+2025-05-14 13:34:05,656 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.74650065 104.27287531 103.23623794 102.61853049 102.53651719]
+2025-05-14 13:34:05,657 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.29971404 103.77735484 103.89313452 104.29489216 104.44369783]
+2025-05-14 13:34:05,851 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_linear_residuals.png
+2025-05-14 13:34:06,079 - INFO - Đã lưu biểu đồ: cpi_yoy_linear_forecast.png
+2025-05-14 13:34:06,079 - INFO - Linear Regression (cpi_yoy): Train RMSE=0.2618, Val RMSE=0.1466, Test RMSE=0.1353, Train MAE=0.1691, Val MAE=0.1354, Test MAE=0.1095, Train MAPE=0.1596, Val MAPE=0.1312, Test MAPE=0.1059, Time=0.47s
+2025-05-14 13:34:06,079 - INFO - Hoàn thành Linear Regression cho cpi_yoy trong 0.47s
+2025-05-14 13:34:06,079 - INFO - Chạy Ridge cho cpi_yoy
+2025-05-14 13:34:06,083 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
+2025-05-14 13:34:06,085 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
+mean     105.388600
+std        4.243821
+min       97.400000
+25%      102.590000
+50%      104.440000
+75%      108.060000
+max      115.105000
+Name: cpi_yoy, dtype: float64
+2025-05-14 13:34:06,085 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
+2025-05-14 13:34:06,105 - INFO - Cross-validation: Mean Train RMSE=0.3134, Mean Test RMSE=1.0542
+2025-05-14 13:34:06,107 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[109.36870743 109.59656711 109.99341793 109.43038017 108.66049948]
+2025-05-14 13:34:06,109 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.47041328 104.07993872 103.21928088 102.54715617 102.36024791]
+2025-05-14 13:34:06,110 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.19086184 103.7133251  103.77498513 104.1239261  104.25721557]
+2025-05-14 13:34:06,289 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_ridge_residuals.png
+2025-05-14 13:34:06,515 - INFO - Đã lưu biểu đồ: cpi_yoy_ridge_forecast.png
+2025-05-14 13:34:06,515 - INFO - Ridge (cpi_yoy): Train RMSE=0.3596, Val RMSE=0.2202, Test RMSE=0.1777, Train MAE=0.2259, Val MAE=0.1965, Test MAE=0.1575, Train MAPE=0.2103, Val MAPE=0.1897, Test MAPE=0.1519, Time=0.44s
+2025-05-14 13:34:06,515 - INFO - Hoàn thành Ridge cho cpi_yoy trong 0.44s
+2025-05-14 13:34:06,515 - INFO - Chạy Lasso cho cpi_yoy
+2025-05-14 13:34:06,522 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
+2025-05-14 13:34:06,523 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
+mean     105.388600
+std        4.243821
+min       97.400000
+25%      102.590000
+50%      104.440000
+75%      108.060000
+max      115.105000
+Name: cpi_yoy, dtype: float64
+2025-05-14 13:34:06,523 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
+2025-05-14 13:34:06,560 - INFO - Cross-validation: Mean Train RMSE=0.4709, Mean Test RMSE=0.9560
+2025-05-14 13:34:06,564 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[107.0138397  108.72664944 109.19823272 108.95391168 108.30115558]
+2025-05-14 13:34:06,566 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.75083776 104.52139847 103.78790221 103.16150236 102.76761738]
+2025-05-14 13:34:06,567 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.58791252 103.90810164 103.96728674 104.22279214 104.37374133]
+2025-05-14 13:34:06,792 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_lasso_residuals.png
+2025-05-14 13:34:07,003 - INFO - Đã lưu biểu đồ: cpi_yoy_lasso_forecast.png
+2025-05-14 13:34:07,003 - INFO - Lasso (cpi_yoy): Train RMSE=0.6030, Val RMSE=0.2498, Test RMSE=0.2266, Train MAE=0.3947, Val MAE=0.2130, Test MAE=0.1691, Train MAPE=0.3682, Val MAPE=0.2068, Test MAPE=0.1637, Time=0.49s
+2025-05-14 13:34:07,003 - INFO - Hoàn thành Lasso cho cpi_yoy trong 0.49s
+2025-05-14 13:34:07,003 - INFO - Chạy ElasticNet cho cpi_yoy
+2025-05-14 13:34:07,008 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
+2025-05-14 13:34:07,009 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
+mean     105.388600
+std        4.243821
+min       97.400000
+25%      102.590000
+50%      104.440000
+75%      108.060000
+max      115.105000
+Name: cpi_yoy, dtype: float64
+2025-05-14 13:34:07,010 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
+2025-05-14 13:34:07,039 - INFO - Cross-validation: Mean Train RMSE=0.5811, Mean Test RMSE=0.9408
+2025-05-14 13:34:07,042 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[107.03293738 107.79103513 108.99351134 108.50900154 107.62389386]
+2025-05-14 13:34:07,044 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.69585559 104.47410841 103.7852067  103.19999858 102.83307588]
+2025-05-14 13:34:07,045 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.65407876 104.04878832 103.93075654 104.17924026 104.27131147]
+2025-05-14 13:34:07,247 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_elasticnet_residuals.png
+2025-05-14 13:34:07,451 - INFO - Đã lưu biểu đồ: cpi_yoy_elasticnet_forecast.png
+2025-05-14 13:34:07,451 - INFO - ElasticNet (cpi_yoy): Train RMSE=0.6700, Val RMSE=0.3019, Test RMSE=0.3000, Train MAE=0.4525, Val MAE=0.2438, Test MAE=0.2354, Train MAPE=0.4225, Val MAPE=0.2370, Test MAPE=0.2280, Time=0.45s
+2025-05-14 13:34:07,451 - INFO - Hoàn thành ElasticNet cho cpi_yoy trong 0.45s
+2025-05-14 13:34:07,451 - INFO - Chạy SVR cho cpi_yoy
+2025-05-14 13:34:07,456 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
+2025-05-14 13:34:07,458 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
+mean     105.388600
+std        4.243821
+min       97.400000
+25%      102.590000
+50%      104.440000
+75%      108.060000
+max      115.105000
+Name: cpi_yoy, dtype: float64
+2025-05-14 13:34:07,458 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
+2025-05-14 13:34:07,500 - INFO - Cross-validation: Mean Train RMSE=1.1233, Mean Test RMSE=2.0491
+2025-05-14 13:34:07,513 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[108.25663483 107.93179951 108.61141001 108.96604513 108.11289448]
+2025-05-14 13:34:07,514 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.73448508 104.42329436 103.73837514 102.98258784 102.57325019]
+2025-05-14 13:34:07,515 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.4994694  103.95730778 104.05753407 104.39643001 104.42229267]
+2025-05-14 13:34:07,690 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_svr_residuals.png
+2025-05-14 13:34:07,896 - INFO - Đã lưu biểu đồ: cpi_yoy_svr_forecast.png
+2025-05-14 13:34:07,896 - INFO - SVR (cpi_yoy): Train RMSE=0.8344, Val RMSE=0.2460, Test RMSE=0.4257, Train MAE=0.4246, Val MAE=0.2194, Test MAE=0.3034, Train MAPE=0.3985, Val MAPE=0.2128, Test MAPE=0.2944, Time=0.44s
+2025-05-14 13:34:07,896 - INFO - Hoàn thành SVR cho cpi_yoy trong 0.44s
+2025-05-14 13:34:08,303 - INFO - Đã lưu biểu đồ so sánh: cpi_mom_ml_model_comparison.png
+2025-05-14 13:34:08,626 - INFO - Đã lưu biểu đồ so sánh: cpi_yoy_ml_model_comparison.png
+2025-05-14 13:34:08,630 - INFO - Dự báo ensemble cho cpi_mom đã được lưu
+2025-05-14 13:34:08,631 - INFO - Dự báo ensemble cho cpi_yoy đã được lưu
+2025-05-14 13:34:08,638 - INFO - Kết quả đã được lưu vào ml_model_results/ml_model_results.csv
+2025-05-14 13:34:08,649 - INFO - Dự báo kết hợp cho cpi_mom đã được lưu vào ml_model_results/combined_forecast_cpi_mom.csv
+2025-05-14 13:34:08,656 - INFO - Dự báo kết hợp cho cpi_yoy đã được lưu vào ml_model_results/combined_forecast_cpi_yoy.csv
