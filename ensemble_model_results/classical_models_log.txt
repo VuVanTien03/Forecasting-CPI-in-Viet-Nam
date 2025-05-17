@@ -4,3 +4,40 @@
 2025-05-17 22:59:47,648 - INFO - Added seasonal features
 2025-05-17 22:59:47,651 - INFO - Dropping low-correlation features: ['cpi_mom_lag_2', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_yoy_lag_5', 'cpi_yoy_lag_6', 'month_sin', 'quarter']
 2025-05-17 22:59:47,651 - INFO - Features after processing: ['cpi_mom', 'cpi_yoy', 'cpi_mom_lag_1', 'cpi_mom_roll_mean_3', 'cpi_mom_roll_mean_12', 'cpi_yoy_lag_1', 'cpi_yoy_lag_2', 'cpi_yoy_lag_3', 'cpi_yoy_lag_4', 'cpi_yoy_roll_mean_3', 'cpi_yoy_roll_mean_12', 'month_cos']
+2025-05-17 22:59:52,794 - INFO - Saved decomposition plot: cpi_mom_decomposition.png
+2025-05-17 22:59:52,794 - INFO - Running base and hybrid models for cpi_mom
+2025-05-17 23:00:25,884 - WARNING - Result for a cpi_mom model is None, skipping!
+2025-05-17 23:00:25,884 - WARNING - Result for a cpi_mom model is None, skipping!
+2025-05-17 23:00:25,884 - WARNING - Result for a cpi_mom model is None, skipping!
+2025-05-17 23:00:25,884 - INFO - Running Weighted Ensemble for cpi_mom
+2025-05-17 23:00:47,068 - INFO - Weighted Ensemble (weights={'ARIMA': 0.05263157894736842, 'Exponential Smoothing': 0.05263157894736842, 'Prophet': 0.05263157894736842, 'SARIMA': 0.05263157894736842, 'SARIMAX': 0.05263157894736842, 'Linear Regression': 0.05263157894736842, 'XGBoost': 0.05263157894736842, 'ARIMA-XGBoost Hybrid': 0.05263157894736842, 'SARIMA-LSTM Hybrid': 0.05263157894736842, 'ETS-Gradient Boosting Hybrid': 0.47368421052631576, 'SARIMA-GRU Hybrid': 0.05263157894736842}): RMSE=0.2558, Time=21.18s
+2025-05-17 23:00:54,001 - INFO - Saved plot: cpi_mom_Weighted Ensemble_forecast.png
+2025-05-17 23:00:54,002 - INFO - Completed Weighted Ensemble for cpi_mom in 28.12s
+2025-05-17 23:00:54,002 - INFO - Running Stacking Ensemble for cpi_mom
+2025-05-17 23:00:54,141 - INFO - Stacking Ensemble: RMSE=0.3336, Time=0.14s
+2025-05-17 23:00:54,618 - INFO - Saved plot: cpi_mom_Stacking Ensemble_forecast.png
+2025-05-17 23:00:54,618 - INFO - Completed Stacking Ensemble for cpi_mom in 0.62s
+2025-05-17 23:00:54,618 - INFO - Running Voting Ensemble for cpi_mom
+2025-05-17 23:00:54,627 - INFO - Voting Ensemble (Median): RMSE=0.2961, Time=0.01s
+2025-05-17 23:00:55,126 - INFO - Saved plot: cpi_mom_Voting Ensemble_forecast.png
+2025-05-17 23:00:55,126 - INFO - Completed Voting Ensemble for cpi_mom in 0.51s
+2025-05-17 23:00:55,126 - INFO - Running BMA Ensemble for cpi_mom
+2025-05-17 23:00:55,135 - INFO - BMA Ensemble (weights={'ARIMA': 0.06251643866878444, 'Exponential Smoothing': 0.07001047014686218, 'Prophet': 0.08878423005281612, 'SARIMA': 0.0680813733669674, 'SARIMAX': 0.0680813733669674, 'Linear Regression': 0.06729924009549089, 'XGBoost': 0.07075172097225946, 'ARIMA-XGBoost Hybrid': 0.06905002230694027, 'SARIMA-LSTM Hybrid': 0.06490437431713514, 'ETS-Gradient Boosting Hybrid': 0.08262281404125683, 'SARIMA-GRU Hybrid': 0.0675519907604464, 'Weighted Ensemble': 0.08375515781429782, 'Stacking Ensemble': 0.06423264190210377, 'Voting Ensemble': 0.07235815218767187}): RMSE=0.2696, Time=0.01s
+2025-05-17 23:00:55,583 - INFO - Saved plot: cpi_mom_BMA Ensemble_forecast.png
+2025-05-17 23:00:55,583 - INFO - Completed BMA Ensemble for cpi_mom in 0.46s
+2025-05-17 23:00:55,584 - INFO - Running DES Ensemble for cpi_mom
+2025-05-17 23:00:55,768 - INFO - DES Ensemble: RMSE=0.3166, Time=0.18s
+2025-05-17 23:00:56,651 - INFO - Saved plot: cpi_mom_DES Ensemble_forecast.png
+2025-05-17 23:00:56,652 - INFO - Completed DES Ensemble for cpi_mom in 1.07s
+2025-05-17 23:00:56,652 - INFO - Running Temporal Weighted Ensemble for cpi_mom
+2025-05-17 23:00:56,657 - INFO - Temporal Weighted Ensemble (weights={'ARIMA': 0.056275584687474546, 'Exponential Smoothing': 0.0627526996186449, 'Prophet': 0.07924080636692103, 'SARIMA': 0.06050412648113597, 'SARIMAX': 0.06024605709433607, 'Linear Regression': 0.0592999210713801, 'XGBoost': 0.06207612468760276, 'ARIMA-XGBoost Hybrid': 0.060324682613628396, 'SARIMA-LSTM Hybrid': 0.056461033544063816, 'ETS-Gradient Boosting Hybrid': 0.07156793270192854, 'SARIMA-GRU Hybrid': 0.05826399718522636, 'Weighted Ensemble': 0.07193120219691804, 'Stacking Ensemble': 0.05492944061165174, 'Voting Ensemble': 0.061614154435539685, 'BMA Ensemble': 0.06737699897713638, 'DES Ensemble': 0.0571352377264117}): RMSE=0.2719, Time=0.00s
+2025-05-17 23:00:57,050 - INFO - Saved plot: cpi_mom_Temporal Weighted Ensemble_forecast.png
+2025-05-17 23:00:57,050 - INFO - Completed Temporal Weighted Ensemble for cpi_mom in 0.40s
+2025-05-17 23:00:57,051 - INFO - Running Rank-Based Ensemble for cpi_mom
+2025-05-17 23:00:57,056 - INFO - Rank-Based Ensemble (weights={'ARIMA': 0.01710424058294343, 'Exponential Smoothing': 0.03634651123875479, 'Prophet': 0.29077208991003833, 'SARIMA': 0.02769257999143222, 'SARIMAX': 0.02769257999143222, 'Linear Regression': 0.020769434993574164, 'XGBoost': 0.04153886998714833, 'ARIMA-XGBoost Hybrid': 0.03230800999000426, 'SARIMA-LSTM Hybrid': 0.019384805994002555, 'ETS-Gradient Boosting Hybrid': 0.09692402997001276, 'SARIMA-GRU Hybrid': 0.022367083839233717, 'Weighted Ensemble': 0.14538604495501917, 'Stacking Ensemble': 0.018173255619377396, 'Voting Ensemble': 0.04846201498500638, 'BMA Ensemble': 0.07269302247750958, 'DES Ensemble': 0.02423100749250319, 'Temporal Weighted Ensemble': 0.05815441798200766}): RMSE=0.2313, Time=0.00s
+2025-05-17 23:00:57,433 - INFO - Saved plot: cpi_mom_Rank-Based Ensemble_forecast.png
+2025-05-17 23:00:57,433 - INFO - Completed Rank-Based Ensemble for cpi_mom in 0.38s
+2025-05-17 23:00:58,156 - INFO - Saved comparison plot: cpi_mom_model_comparison.png
+2025-05-17 23:00:58,171 - INFO - Results saved to ensemble_model_results/classical_model_results.csv
+2025-05-17 23:01:00,688 - INFO - Saved metrics bar plot: cpi_mom_metrics_comparison.png
+2025-05-17 23:01:00,700 - INFO - Combined forecasts saved to ensemble_model_results/combined_forecast_cpi_mom.csv
