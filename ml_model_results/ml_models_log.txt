@@ -1,484 +1,588 @@
-2025-05-14 12:55:02,461 - INFO - Kiểm tra dữ liệu đầu vào: (349, 17)
-2025-05-14 12:55:02,467 - INFO - Thống kê cpi_mom: count    349.000000
-mean     100.449140
-std        0.761658
-min       98.460000
-25%      100.020000
-50%      100.300000
-75%      100.750000
-max      103.910000
-Name: cpi_mom, dtype: float64
-2025-05-14 12:55:02,471 - INFO - Thống kê cpi_yoy: count    349.000000
-mean     105.688883
-std        5.404596
-min       97.400000
-25%      102.630000
-50%      104.310000
-75%      107.620000
-max      128.200000
-Name: cpi_yoy, dtype: float64
-2025-05-14 12:55:02,471 - INFO - Kích thước dữ liệu gốc: 349
-2025-05-14 12:55:02,471 - INFO - Phương sai cpi_mom: 0.5784611522072891, cpi_yoy: 29.125961788491054
-2025-05-14 12:55:02,472 - INFO - Tạo đặc trưng cho cpi_mom, kích thước dữ liệu: (349, 17)
-2025-05-14 12:55:02,475 - INFO - Đã clip outliers cho cpi_mom: min=98.92499999999998, max=101.845
-2025-05-14 12:55:02,479 - INFO - Đã clip outliers cho cpi_yoy: min=97.4, max=115.10500000000002
-2025-05-14 12:55:02,488 - INFO - Điền NaN trong cột interest_rate bằng trung bình: 14.26690724637681
-2025-05-14 12:55:02,490 - INFO - Điền NaN trong cột cpi_yoy_diff bằng trung bình: -0.028591954022988517
-2025-05-14 12:55:02,492 - INFO - Điền NaN trong cột cpi_mom_diff bằng trung bình: -2.8735632183880425e-05
-2025-05-14 12:55:02,494 - INFO - Điền NaN trong cột cpi_mom_rolling_mean bằng trung bình: 100.45202169625246
-2025-05-14 12:55:02,495 - INFO - Điền NaN trong cột cpi_mom_rolling_std bằng trung bình: 0.6143360951880126
-2025-05-14 12:55:02,497 - INFO - Điền NaN trong cột cpi_yoy_rolling_mean bằng trung bình: 105.68397928994082
-2025-05-14 12:55:02,498 - INFO - Điền NaN trong cột cpi_yoy_rolling_std bằng trung bình: 1.7596452025502374
-2025-05-14 12:55:02,499 - INFO - Điền NaN trong cột cpi_mom_lag_1 bằng trung bình: 100.40965517241379
-2025-05-14 12:55:02,500 - INFO - Điền NaN trong cột cpi_yoy_lag_1 bằng trung bình: 105.26231321839083
-2025-05-14 12:55:02,502 - INFO - Điền NaN trong cột cpi_mom_lag_2 bằng trung bình: 100.41046109510086
-2025-05-14 12:55:02,503 - INFO - Điền NaN trong cột cpi_yoy_lag_2 bằng trung bình: 105.26943804034582
-2025-05-14 12:55:02,504 - INFO - Điền NaN trong cột cpi_mom_lag_3 bằng trung bình: 100.4106936416185
-2025-05-14 12:55:02,505 - INFO - Điền NaN trong cột cpi_yoy_lag_3 bằng trung bình: 105.27625722543354
-2025-05-14 12:55:02,507 - INFO - Điền NaN trong cột cpi_mom_roll_mean_3 bằng trung bình: 100.40954851104706
-2025-05-14 12:55:02,508 - INFO - Điền NaN trong cột cpi_mom_roll_std_3 bằng trung bình: 0.3747483603831309
-2025-05-14 12:55:02,509 - INFO - Điền NaN trong cột cpi_yoy_roll_mean_3 bằng trung bình: 105.24346301633045
-2025-05-14 12:55:02,511 - INFO - Điền NaN trong cột cpi_mom_roll_mean_6 bằng trung bình: 100.40757025193798
-2025-05-14 12:55:02,512 - INFO - Điền NaN trong cột cpi_mom_roll_std_6 bằng trung bình: 0.4715661642619925
-2025-05-14 12:55:02,513 - INFO - Điền NaN trong cột cpi_yoy_roll_mean_6 bằng trung bình: 105.23478682170541
-2025-05-14 12:55:02,515 - INFO - Đặc trưng sau khi xử lý: ['cpi_mom', 'cpi_yoy', 'oil_price', 'gold_price', 'interest_rate', 'cpi_mom_smoothed', 'cpi_yoy_smoothed', 'cpi_mom_log', 'cpi_yoy_log', 'cpi_yoy_diff', 'month', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_mom_lag_1', 'cpi_yoy_lag_1', 'cpi_mom_lag_2', 'cpi_yoy_lag_2', 'cpi_mom_lag_3', 'cpi_yoy_lag_3', 'cpi_mom_roll_mean_3', 'cpi_mom_roll_std_3', 'cpi_yoy_roll_mean_3', 'cpi_mom_roll_mean_6', 'cpi_mom_roll_std_6', 'cpi_yoy_roll_mean_6', 'cpi_yoy_current', 'quarter']
-2025-05-14 12:55:02,516 - INFO - Tạo đặc trưng cho cpi_yoy, kích thước dữ liệu: (349, 17)
-2025-05-14 12:55:02,519 - INFO - Đã clip outliers cho cpi_yoy: min=97.4, max=115.10500000000002
-2025-05-14 12:55:02,523 - INFO - Đã clip outliers cho cpi_mom: min=98.92499999999998, max=101.845
-2025-05-14 12:55:02,531 - INFO - Điền NaN trong cột interest_rate bằng trung bình: 14.26690724637681
-2025-05-14 12:55:02,534 - INFO - Điền NaN trong cột cpi_yoy_diff bằng trung bình: -0.028591954022988517
-2025-05-14 12:55:02,536 - INFO - Điền NaN trong cột cpi_mom_diff bằng trung bình: -2.8735632183880425e-05
-2025-05-14 12:55:02,538 - INFO - Điền NaN trong cột cpi_mom_rolling_mean bằng trung bình: 100.45202169625246
-2025-05-14 12:55:02,539 - INFO - Điền NaN trong cột cpi_mom_rolling_std bằng trung bình: 0.6143360951880126
-2025-05-14 12:55:02,541 - INFO - Điền NaN trong cột cpi_yoy_rolling_mean bằng trung bình: 105.68397928994082
-2025-05-14 12:55:02,542 - INFO - Điền NaN trong cột cpi_yoy_rolling_std bằng trung bình: 1.7596452025502374
-2025-05-14 12:55:02,544 - INFO - Điền NaN trong cột cpi_yoy_lag_1 bằng trung bình: 105.26231321839083
-2025-05-14 12:55:02,545 - INFO - Điền NaN trong cột cpi_mom_lag_1 bằng trung bình: 100.40965517241379
-2025-05-14 12:55:02,547 - INFO - Điền NaN trong cột cpi_yoy_lag_2 bằng trung bình: 105.26943804034582
-2025-05-14 12:55:02,549 - INFO - Điền NaN trong cột cpi_mom_lag_2 bằng trung bình: 100.41046109510086
-2025-05-14 12:55:02,550 - INFO - Điền NaN trong cột cpi_yoy_lag_3 bằng trung bình: 105.27625722543354
-2025-05-14 12:55:02,552 - INFO - Điền NaN trong cột cpi_mom_lag_3 bằng trung bình: 100.4106936416185
-2025-05-14 12:55:02,553 - INFO - Điền NaN trong cột cpi_yoy_roll_mean_3 bằng trung bình: 105.24346301633045
-2025-05-14 12:55:02,556 - INFO - Điền NaN trong cột cpi_yoy_roll_std_3 bằng trung bình: 0.5198367329490022
-2025-05-14 12:55:02,557 - INFO - Điền NaN trong cột cpi_mom_roll_mean_3 bằng trung bình: 100.40954851104706
-2025-05-14 12:55:02,559 - INFO - Điền NaN trong cột cpi_yoy_roll_mean_6 bằng trung bình: 105.23478682170541
-2025-05-14 12:55:02,560 - INFO - Điền NaN trong cột cpi_yoy_roll_std_6 bằng trung bình: 0.8640579671493237
-2025-05-14 12:55:02,562 - INFO - Điền NaN trong cột cpi_mom_roll_mean_6 bằng trung bình: 100.40757025193798
-2025-05-14 12:55:02,564 - INFO - Đặc trưng sau khi xử lý: ['cpi_mom', 'cpi_yoy', 'oil_price', 'gold_price', 'interest_rate', 'cpi_mom_smoothed', 'cpi_yoy_smoothed', 'cpi_mom_log', 'cpi_yoy_log', 'cpi_yoy_diff', 'month', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_yoy_lag_1', 'cpi_mom_lag_1', 'cpi_yoy_lag_2', 'cpi_mom_lag_2', 'cpi_yoy_lag_3', 'cpi_mom_lag_3', 'cpi_yoy_roll_mean_3', 'cpi_yoy_roll_std_3', 'cpi_mom_roll_mean_3', 'cpi_yoy_roll_mean_6', 'cpi_yoy_roll_std_6', 'cpi_mom_roll_mean_6', 'cpi_mom_current', 'quarter']
-2025-05-14 12:55:02,564 - INFO - Kích thước tập dữ liệu cho cpi_mom: Train=325, Val=12, Test=12
-2025-05-14 12:55:02,565 - INFO - Kích thước tập dữ liệu cho cpi_yoy: Train=325, Val=12, Test=12
-2025-05-14 12:55:02,985 - INFO - Đã lưu biểu đồ phân chia dữ liệu: cpi_mom_train_val_test_split.png
-2025-05-14 12:55:03,367 - INFO - Đã lưu biểu đồ phân chia dữ liệu: cpi_yoy_train_val_test_split.png
-2025-05-14 12:55:03,367 - INFO - Đặc trưng cho cpi_mom: ['oil_price', 'gold_price', 'interest_rate', 'cpi_mom_smoothed', 'cpi_yoy_smoothed', 'cpi_mom_log', 'cpi_yoy_log', 'cpi_yoy_diff', 'month', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_mom_lag_1', 'cpi_yoy_lag_1', 'cpi_mom_lag_2', 'cpi_yoy_lag_2', 'cpi_mom_lag_3', 'cpi_yoy_lag_3', 'cpi_mom_roll_mean_3', 'cpi_mom_roll_std_3', 'cpi_yoy_roll_mean_3', 'cpi_mom_roll_mean_6', 'cpi_mom_roll_std_6', 'cpi_yoy_roll_mean_6', 'cpi_yoy_current', 'quarter']
-2025-05-14 12:55:03,367 - INFO - Đặc trưng cho cpi_yoy: ['oil_price', 'gold_price', 'interest_rate', 'cpi_mom_smoothed', 'cpi_yoy_smoothed', 'cpi_mom_log', 'cpi_yoy_log', 'cpi_yoy_diff', 'month', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_yoy_lag_1', 'cpi_mom_lag_1', 'cpi_yoy_lag_2', 'cpi_mom_lag_2', 'cpi_yoy_lag_3', 'cpi_mom_lag_3', 'cpi_yoy_roll_mean_3', 'cpi_yoy_roll_std_3', 'cpi_mom_roll_mean_3', 'cpi_yoy_roll_mean_6', 'cpi_yoy_roll_std_6', 'cpi_mom_roll_mean_6', 'cpi_mom_current', 'quarter']
-2025-05-14 12:55:03,367 - INFO - Chạy các mô hình cho cpi_mom
-2025-05-14 12:55:08,354 - INFO - Chạy các mô hình cho cpi_yoy
-2025-05-14 12:55:08,354 - INFO - Chạy Random Forest cho cpi_yoy
-2025-05-14 12:55:08,364 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
-2025-05-14 12:55:08,368 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
-mean     105.388600
-std        4.243821
-min       97.400000
-25%      102.590000
-50%      104.440000
-75%      108.060000
-max      115.105000
-Name: cpi_yoy, dtype: float64
-2025-05-14 12:55:08,368 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
-2025-05-14 12:55:11,291 - INFO - Cross-validation: Mean Train RMSE=0.1436, Mean Test RMSE=0.7064
-2025-05-14 12:55:11,936 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[112.23988637 109.70059527 108.81021517 109.45370224 108.34810842]
-2025-05-14 12:55:11,938 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.81356603 104.4446144  103.39425424 102.84933158 102.45868471]
-2025-05-14 12:55:11,940 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.40925915 103.94917778 103.95520521 104.48928239 104.50976351]
-2025-05-14 12:55:12,184 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_random_forest_residuals.png
-2025-05-14 12:55:12,446 - INFO - Đã lưu biểu đồ: cpi_yoy_random_forest_forecast.png
-2025-05-14 12:55:12,446 - INFO - Random Forest (cpi_yoy): Train RMSE=0.0814, Val RMSE=0.0594, Test RMSE=0.0627, Train MAE=0.0527, Val MAE=0.0438, Test MAE=0.0560, Train MAPE=0.0498, Val MAPE=0.0422, Test MAPE=0.0539, Time=4.09s
-2025-05-14 12:55:12,447 - INFO - Hoàn thành Random Forest cho cpi_yoy trong 4.09s
-2025-05-14 12:55:12,447 - INFO - Chạy XGBoost cho cpi_yoy
-2025-05-14 12:55:12,453 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
-2025-05-14 12:55:12,455 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
-mean     105.388600
-std        4.243821
-min       97.400000
-25%      102.590000
-50%      104.440000
-75%      108.060000
-max      115.105000
-Name: cpi_yoy, dtype: float64
-2025-05-14 12:55:12,455 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
-2025-05-14 12:55:13,166 - INFO - Cross-validation: Mean Train RMSE=0.0013, Mean Test RMSE=0.7083
-2025-05-14 12:55:13,319 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[112.90464783 109.76335907 108.80117798 109.46160889 108.48345184]
-2025-05-14 12:55:13,322 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.90071106 104.31707764 103.5927887  102.91841125 102.4254303 ]
-2025-05-14 12:55:13,325 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.67758942 103.58867645 104.16735077 104.54090118 104.52843475]
-2025-05-14 12:55:13,658 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_xgboost_residuals.png
-2025-05-14 12:55:14,034 - INFO - Đã lưu biểu đồ: cpi_yoy_xgboost_forecast.png
-2025-05-14 12:55:14,034 - INFO - XGBoost (cpi_yoy): Train RMSE=0.0046, Val RMSE=0.1242, Test RMSE=0.1785, Train MAE=0.0036, Val MAE=0.0886, Test MAE=0.1348, Train MAPE=0.0034, Val MAPE=0.0861, Test MAPE=0.1301, Time=1.59s
-2025-05-14 12:55:14,034 - INFO - Hoàn thành XGBoost cho cpi_yoy trong 1.59s
-2025-05-14 12:55:14,034 - INFO - Chạy LightGBM cho cpi_yoy
-2025-05-14 12:55:14,040 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
-2025-05-14 12:55:14,042 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
-mean     105.388600
-std        4.243821
-min       97.400000
-25%      102.590000
-50%      104.440000
-75%      108.060000
-max      115.105000
-Name: cpi_yoy, dtype: float64
-2025-05-14 12:55:14,042 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
-2025-05-14 12:55:14,513 - INFO - Cross-validation: Mean Train RMSE=0.2130, Mean Test RMSE=1.0970
-2025-05-14 12:55:14,574 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[112.8692674  109.74121354 108.80012149 109.4149172  108.45507328]
-2025-05-14 12:55:14,577 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.82004187 104.37121675 103.44724595 102.89685614 102.47646408]
-2025-05-14 12:55:14,580 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.58471447 104.03501896 104.03445933 104.3988527  104.46654915]
-2025-05-14 12:55:14,879 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_lightgbm_residuals.png
-2025-05-14 12:55:15,183 - INFO - Đã lưu biểu đồ: cpi_yoy_lightgbm_forecast.png
-2025-05-14 12:55:15,183 - INFO - LightGBM (cpi_yoy): Train RMSE=0.0565, Val RMSE=0.1079, Test RMSE=0.0742, Train MAE=0.0345, Val MAE=0.0899, Test MAE=0.0507, Train MAPE=0.0331, Val MAPE=0.0870, Test MAPE=0.0491, Time=1.15s
-2025-05-14 12:55:15,183 - INFO - Hoàn thành LightGBM cho cpi_yoy trong 1.15s
-2025-05-14 12:55:15,183 - INFO - Chạy Linear Regression cho cpi_yoy
-2025-05-14 12:55:15,188 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
-2025-05-14 12:55:15,190 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
-mean     105.388600
-std        4.243821
-min       97.400000
-25%      102.590000
-50%      104.440000
-75%      108.060000
-max      115.105000
-Name: cpi_yoy, dtype: float64
-2025-05-14 12:55:15,191 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
-2025-05-14 12:55:15,220 - INFO - Cross-validation: Mean Train RMSE=0.1712, Mean Test RMSE=0.9811
-2025-05-14 12:55:15,234 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[110.91809196 109.19380957 109.6395366  109.92370948 109.26619053]
-2025-05-14 12:55:15,236 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.74650065 104.27287531 103.23623794 102.61853049 102.53651719]
-2025-05-14 12:55:15,238 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.29971404 103.77735484 103.89313452 104.29489216 104.44369783]
-2025-05-14 12:55:15,472 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_linear_residuals.png
-2025-05-14 12:55:15,773 - INFO - Đã lưu biểu đồ: cpi_yoy_linear_forecast.png
-2025-05-14 12:55:15,773 - INFO - Linear Regression (cpi_yoy): Train RMSE=0.2618, Val RMSE=0.1466, Test RMSE=0.1353, Train MAE=0.1691, Val MAE=0.1354, Test MAE=0.1095, Train MAPE=0.1596, Val MAPE=0.1312, Test MAPE=0.1059, Time=0.59s
-2025-05-14 12:55:15,774 - INFO - Hoàn thành Linear Regression cho cpi_yoy trong 0.59s
-2025-05-14 12:55:15,774 - INFO - Chạy Ridge cho cpi_yoy
-2025-05-14 12:55:15,780 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
-2025-05-14 12:55:15,782 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
-mean     105.388600
-std        4.243821
-min       97.400000
-25%      102.590000
-50%      104.440000
-75%      108.060000
-max      115.105000
-Name: cpi_yoy, dtype: float64
-2025-05-14 12:55:15,783 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
-2025-05-14 12:55:15,817 - INFO - Cross-validation: Mean Train RMSE=0.3134, Mean Test RMSE=1.0542
-2025-05-14 12:55:15,820 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[109.36870743 109.59656711 109.99341793 109.43038017 108.66049948]
-2025-05-14 12:55:15,824 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.47041328 104.07993872 103.21928088 102.54715617 102.36024791]
-2025-05-14 12:55:15,826 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.19086184 103.7133251  103.77498513 104.1239261  104.25721557]
-2025-05-14 12:55:16,093 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_ridge_residuals.png
-2025-05-14 12:55:16,440 - INFO - Đã lưu biểu đồ: cpi_yoy_ridge_forecast.png
-2025-05-14 12:55:16,440 - INFO - Ridge (cpi_yoy): Train RMSE=0.3596, Val RMSE=0.2202, Test RMSE=0.1777, Train MAE=0.2259, Val MAE=0.1965, Test MAE=0.1575, Train MAPE=0.2103, Val MAPE=0.1897, Test MAPE=0.1519, Time=0.67s
-2025-05-14 12:55:16,440 - INFO - Hoàn thành Ridge cho cpi_yoy trong 0.67s
-2025-05-14 12:55:16,440 - INFO - Chạy Lasso cho cpi_yoy
-2025-05-14 12:55:16,447 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
-2025-05-14 12:55:16,450 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
-mean     105.388600
-std        4.243821
-min       97.400000
-25%      102.590000
-50%      104.440000
-75%      108.060000
-max      115.105000
-Name: cpi_yoy, dtype: float64
-2025-05-14 12:55:16,451 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
-2025-05-14 12:55:16,514 - INFO - Cross-validation: Mean Train RMSE=0.4709, Mean Test RMSE=0.9560
-2025-05-14 12:55:16,520 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[107.0138397  108.72664944 109.19823272 108.95391168 108.30115558]
-2025-05-14 12:55:16,522 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.75083776 104.52139847 103.78790221 103.16150236 102.76761738]
-2025-05-14 12:55:16,526 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.58791252 103.90810164 103.96728674 104.22279214 104.37374133]
-2025-05-14 12:55:16,973 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_lasso_residuals.png
-2025-05-14 12:55:17,274 - INFO - Đã lưu biểu đồ: cpi_yoy_lasso_forecast.png
-2025-05-14 12:55:17,274 - INFO - Lasso (cpi_yoy): Train RMSE=0.6030, Val RMSE=0.2498, Test RMSE=0.2266, Train MAE=0.3947, Val MAE=0.2130, Test MAE=0.1691, Train MAPE=0.3682, Val MAPE=0.2068, Test MAPE=0.1637, Time=0.83s
-2025-05-14 12:55:17,274 - INFO - Hoàn thành Lasso cho cpi_yoy trong 0.83s
-2025-05-14 12:55:17,275 - INFO - Chạy ElasticNet cho cpi_yoy
-2025-05-14 12:55:17,279 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
-2025-05-14 12:55:17,282 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
-mean     105.388600
-std        4.243821
-min       97.400000
-25%      102.590000
-50%      104.440000
-75%      108.060000
-max      115.105000
-Name: cpi_yoy, dtype: float64
-2025-05-14 12:55:17,282 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
-2025-05-14 12:55:17,331 - INFO - Cross-validation: Mean Train RMSE=0.5811, Mean Test RMSE=0.9408
-2025-05-14 12:55:17,338 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[107.03293738 107.79103513 108.99351134 108.50900154 107.62389386]
-2025-05-14 12:55:17,341 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.69585559 104.47410841 103.7852067  103.19999858 102.83307588]
-2025-05-14 12:55:17,345 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.65407876 104.04878832 103.93075654 104.17924026 104.27131147]
-2025-05-14 12:55:17,732 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_elasticnet_residuals.png
-2025-05-14 12:55:18,038 - INFO - Đã lưu biểu đồ: cpi_yoy_elasticnet_forecast.png
-2025-05-14 12:55:18,039 - INFO - ElasticNet (cpi_yoy): Train RMSE=0.6700, Val RMSE=0.3019, Test RMSE=0.3000, Train MAE=0.4525, Val MAE=0.2438, Test MAE=0.2354, Train MAPE=0.4225, Val MAPE=0.2370, Test MAPE=0.2280, Time=0.76s
-2025-05-14 12:55:18,039 - INFO - Hoàn thành ElasticNet cho cpi_yoy trong 0.76s
-2025-05-14 12:55:18,039 - INFO - Chạy SVR cho cpi_yoy
-2025-05-14 12:55:18,044 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
-2025-05-14 12:55:18,046 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
-mean     105.388600
-std        4.243821
-min       97.400000
-25%      102.590000
-50%      104.440000
-75%      108.060000
-max      115.105000
-Name: cpi_yoy, dtype: float64
-2025-05-14 12:55:18,046 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
-2025-05-14 12:55:18,095 - INFO - Cross-validation: Mean Train RMSE=1.1233, Mean Test RMSE=2.0491
-2025-05-14 12:55:18,111 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[108.25663483 107.93179951 108.61141001 108.96604513 108.11289448]
-2025-05-14 12:55:18,114 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.73448508 104.42329436 103.73837514 102.98258784 102.57325019]
-2025-05-14 12:55:18,115 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.4994694  103.95730778 104.05753407 104.39643001 104.42229267]
-2025-05-14 12:55:18,342 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_svr_residuals.png
-2025-05-14 12:55:18,578 - INFO - Đã lưu biểu đồ: cpi_yoy_svr_forecast.png
-2025-05-14 12:55:18,579 - INFO - SVR (cpi_yoy): Train RMSE=0.8344, Val RMSE=0.2460, Test RMSE=0.4257, Train MAE=0.4246, Val MAE=0.2194, Test MAE=0.3034, Train MAPE=0.3985, Val MAPE=0.2128, Test MAPE=0.2944, Time=0.54s
-2025-05-14 12:55:18,579 - INFO - Hoàn thành SVR cho cpi_yoy trong 0.54s
-2025-05-14 12:55:18,947 - INFO - Đã lưu biểu đồ so sánh: cpi_mom_ml_model_comparison.png
-2025-05-14 12:55:19,395 - INFO - Đã lưu biểu đồ so sánh: cpi_yoy_ml_model_comparison.png
-2025-05-14 12:55:19,403 - INFO - Dự báo ensemble cho cpi_mom đã được lưu
-2025-05-14 12:55:19,405 - INFO - Dự báo ensemble cho cpi_yoy đã được lưu
-2025-05-14 12:55:19,420 - INFO - Kết quả đã được lưu vào ml_model_results/ml_model_results.csv
-2025-05-14 12:55:19,431 - INFO - Dự báo kết hợp cho cpi_mom đã được lưu vào ml_model_results/combined_forecast_cpi_mom.csv
-2025-05-14 12:55:19,441 - INFO - Dự báo kết hợp cho cpi_yoy đã được lưu vào ml_model_results/combined_forecast_cpi_yoy.csv
-2025-05-14 13:33:54,789 - INFO - Kiểm tra dữ liệu đầu vào: (349, 17)
-2025-05-14 13:33:54,801 - INFO - Thống kê cpi_mom: count    349.000000
-mean     100.449140
-std        0.761658
-min       98.460000
-25%      100.020000
-50%      100.300000
-75%      100.750000
-max      103.910000
-Name: cpi_mom, dtype: float64
-2025-05-14 13:33:54,803 - INFO - Thống kê cpi_yoy: count    349.000000
-mean     105.688883
-std        5.404596
-min       97.400000
-25%      102.630000
-50%      104.310000
-75%      107.620000
-max      128.200000
-Name: cpi_yoy, dtype: float64
-2025-05-14 13:33:54,803 - INFO - Kích thước dữ liệu gốc: 349
-2025-05-14 13:33:54,803 - INFO - Phương sai cpi_mom: 0.5784611522072891, cpi_yoy: 29.125961788491054
-2025-05-14 13:33:54,803 - INFO - Tạo đặc trưng cho cpi_mom, kích thước dữ liệu: (349, 17)
-2025-05-14 13:33:54,806 - INFO - Đã clip outliers cho cpi_mom: min=98.92499999999998, max=101.845
-2025-05-14 13:33:54,809 - INFO - Đã clip outliers cho cpi_yoy: min=97.4, max=115.10500000000002
-2025-05-14 13:33:54,816 - INFO - Điền NaN trong cột interest_rate bằng trung bình: 14.26690724637681
-2025-05-14 13:33:54,818 - INFO - Điền NaN trong cột cpi_yoy_diff bằng trung bình: -0.028591954022988517
-2025-05-14 13:33:54,819 - INFO - Điền NaN trong cột cpi_mom_diff bằng trung bình: -2.8735632183880425e-05
-2025-05-14 13:33:54,820 - INFO - Điền NaN trong cột cpi_mom_rolling_mean bằng trung bình: 100.45202169625246
-2025-05-14 13:33:54,821 - INFO - Điền NaN trong cột cpi_mom_rolling_std bằng trung bình: 0.6143360951880126
-2025-05-14 13:33:54,822 - INFO - Điền NaN trong cột cpi_yoy_rolling_mean bằng trung bình: 105.68397928994082
-2025-05-14 13:33:54,822 - INFO - Điền NaN trong cột cpi_yoy_rolling_std bằng trung bình: 1.7596452025502374
-2025-05-14 13:33:54,823 - INFO - Điền NaN trong cột cpi_mom_lag_1 bằng trung bình: 100.40965517241379
-2025-05-14 13:33:54,824 - INFO - Điền NaN trong cột cpi_yoy_lag_1 bằng trung bình: 105.26231321839083
-2025-05-14 13:33:54,825 - INFO - Điền NaN trong cột cpi_mom_lag_2 bằng trung bình: 100.41046109510086
-2025-05-14 13:33:54,826 - INFO - Điền NaN trong cột cpi_yoy_lag_2 bằng trung bình: 105.26943804034582
-2025-05-14 13:33:54,827 - INFO - Điền NaN trong cột cpi_mom_lag_3 bằng trung bình: 100.4106936416185
-2025-05-14 13:33:54,828 - INFO - Điền NaN trong cột cpi_yoy_lag_3 bằng trung bình: 105.27625722543354
-2025-05-14 13:33:54,829 - INFO - Điền NaN trong cột cpi_mom_roll_mean_3 bằng trung bình: 100.40954851104706
-2025-05-14 13:33:54,829 - INFO - Điền NaN trong cột cpi_mom_roll_std_3 bằng trung bình: 0.3747483603831309
-2025-05-14 13:33:54,830 - INFO - Điền NaN trong cột cpi_yoy_roll_mean_3 bằng trung bình: 105.24346301633045
-2025-05-14 13:33:54,831 - INFO - Điền NaN trong cột cpi_mom_roll_mean_6 bằng trung bình: 100.40757025193798
-2025-05-14 13:33:54,831 - INFO - Điền NaN trong cột cpi_mom_roll_std_6 bằng trung bình: 0.4715661642619925
-2025-05-14 13:33:54,832 - INFO - Điền NaN trong cột cpi_yoy_roll_mean_6 bằng trung bình: 105.23478682170541
-2025-05-14 13:33:54,833 - INFO - Đặc trưng sau khi xử lý: ['cpi_mom', 'cpi_yoy', 'oil_price', 'gold_price', 'interest_rate', 'cpi_mom_smoothed', 'cpi_yoy_smoothed', 'cpi_mom_log', 'cpi_yoy_log', 'cpi_yoy_diff', 'month', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_mom_lag_1', 'cpi_yoy_lag_1', 'cpi_mom_lag_2', 'cpi_yoy_lag_2', 'cpi_mom_lag_3', 'cpi_yoy_lag_3', 'cpi_mom_roll_mean_3', 'cpi_mom_roll_std_3', 'cpi_yoy_roll_mean_3', 'cpi_mom_roll_mean_6', 'cpi_mom_roll_std_6', 'cpi_yoy_roll_mean_6', 'cpi_yoy_current', 'quarter']
-2025-05-14 13:33:54,834 - INFO - Tạo đặc trưng cho cpi_yoy, kích thước dữ liệu: (349, 17)
-2025-05-14 13:33:54,836 - INFO - Đã clip outliers cho cpi_yoy: min=97.4, max=115.10500000000002
-2025-05-14 13:33:54,837 - INFO - Đã clip outliers cho cpi_mom: min=98.92499999999998, max=101.845
-2025-05-14 13:33:54,842 - INFO - Điền NaN trong cột interest_rate bằng trung bình: 14.26690724637681
-2025-05-14 13:33:54,843 - INFO - Điền NaN trong cột cpi_yoy_diff bằng trung bình: -0.028591954022988517
-2025-05-14 13:33:54,844 - INFO - Điền NaN trong cột cpi_mom_diff bằng trung bình: -2.8735632183880425e-05
-2025-05-14 13:33:54,845 - INFO - Điền NaN trong cột cpi_mom_rolling_mean bằng trung bình: 100.45202169625246
-2025-05-14 13:33:54,845 - INFO - Điền NaN trong cột cpi_mom_rolling_std bằng trung bình: 0.6143360951880126
-2025-05-14 13:33:54,846 - INFO - Điền NaN trong cột cpi_yoy_rolling_mean bằng trung bình: 105.68397928994082
-2025-05-14 13:33:54,847 - INFO - Điền NaN trong cột cpi_yoy_rolling_std bằng trung bình: 1.7596452025502374
-2025-05-14 13:33:54,848 - INFO - Điền NaN trong cột cpi_yoy_lag_1 bằng trung bình: 105.26231321839083
-2025-05-14 13:33:54,849 - INFO - Điền NaN trong cột cpi_mom_lag_1 bằng trung bình: 100.40965517241379
-2025-05-14 13:33:54,849 - INFO - Điền NaN trong cột cpi_yoy_lag_2 bằng trung bình: 105.26943804034582
-2025-05-14 13:33:54,850 - INFO - Điền NaN trong cột cpi_mom_lag_2 bằng trung bình: 100.41046109510086
-2025-05-14 13:33:54,850 - INFO - Điền NaN trong cột cpi_yoy_lag_3 bằng trung bình: 105.27625722543354
-2025-05-14 13:33:54,851 - INFO - Điền NaN trong cột cpi_mom_lag_3 bằng trung bình: 100.4106936416185
-2025-05-14 13:33:54,852 - INFO - Điền NaN trong cột cpi_yoy_roll_mean_3 bằng trung bình: 105.24346301633045
-2025-05-14 13:33:54,853 - INFO - Điền NaN trong cột cpi_yoy_roll_std_3 bằng trung bình: 0.5198367329490022
-2025-05-14 13:33:54,853 - INFO - Điền NaN trong cột cpi_mom_roll_mean_3 bằng trung bình: 100.40954851104706
-2025-05-14 13:33:54,854 - INFO - Điền NaN trong cột cpi_yoy_roll_mean_6 bằng trung bình: 105.23478682170541
-2025-05-14 13:33:54,855 - INFO - Điền NaN trong cột cpi_yoy_roll_std_6 bằng trung bình: 0.8640579671493237
-2025-05-14 13:33:54,856 - INFO - Điền NaN trong cột cpi_mom_roll_mean_6 bằng trung bình: 100.40757025193798
-2025-05-14 13:33:54,857 - INFO - Đặc trưng sau khi xử lý: ['cpi_mom', 'cpi_yoy', 'oil_price', 'gold_price', 'interest_rate', 'cpi_mom_smoothed', 'cpi_yoy_smoothed', 'cpi_mom_log', 'cpi_yoy_log', 'cpi_yoy_diff', 'month', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_yoy_lag_1', 'cpi_mom_lag_1', 'cpi_yoy_lag_2', 'cpi_mom_lag_2', 'cpi_yoy_lag_3', 'cpi_mom_lag_3', 'cpi_yoy_roll_mean_3', 'cpi_yoy_roll_std_3', 'cpi_mom_roll_mean_3', 'cpi_yoy_roll_mean_6', 'cpi_yoy_roll_std_6', 'cpi_mom_roll_mean_6', 'cpi_mom_current', 'quarter']
-2025-05-14 13:33:54,858 - INFO - Kích thước tập dữ liệu cho cpi_mom: Train=325, Val=12, Test=12
-2025-05-14 13:33:54,858 - INFO - Kích thước tập dữ liệu cho cpi_yoy: Train=325, Val=12, Test=12
-2025-05-14 13:33:55,094 - INFO - Đã lưu biểu đồ phân chia dữ liệu: cpi_mom_train_val_test_split.png
-2025-05-14 13:33:55,308 - INFO - Đã lưu biểu đồ phân chia dữ liệu: cpi_yoy_train_val_test_split.png
-2025-05-14 13:33:55,308 - INFO - Đặc trưng cho cpi_mom: ['oil_price', 'gold_price', 'interest_rate', 'cpi_mom_smoothed', 'cpi_yoy_smoothed', 'cpi_mom_log', 'cpi_yoy_log', 'cpi_yoy_diff', 'month', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_mom_lag_1', 'cpi_yoy_lag_1', 'cpi_mom_lag_2', 'cpi_yoy_lag_2', 'cpi_mom_lag_3', 'cpi_yoy_lag_3', 'cpi_mom_roll_mean_3', 'cpi_mom_roll_std_3', 'cpi_yoy_roll_mean_3', 'cpi_mom_roll_mean_6', 'cpi_mom_roll_std_6', 'cpi_yoy_roll_mean_6', 'cpi_yoy_current', 'quarter']
-2025-05-14 13:33:55,308 - INFO - Đặc trưng cho cpi_yoy: ['oil_price', 'gold_price', 'interest_rate', 'cpi_mom_smoothed', 'cpi_yoy_smoothed', 'cpi_mom_log', 'cpi_yoy_log', 'cpi_yoy_diff', 'month', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_yoy_lag_1', 'cpi_mom_lag_1', 'cpi_yoy_lag_2', 'cpi_mom_lag_2', 'cpi_yoy_lag_3', 'cpi_mom_lag_3', 'cpi_yoy_roll_mean_3', 'cpi_yoy_roll_std_3', 'cpi_mom_roll_mean_3', 'cpi_yoy_roll_mean_6', 'cpi_yoy_roll_std_6', 'cpi_mom_roll_mean_6', 'cpi_mom_current', 'quarter']
-2025-05-14 13:33:55,308 - INFO - Chạy các mô hình cho cpi_mom
-2025-05-14 13:34:01,785 - INFO - Chạy các mô hình cho cpi_yoy
-2025-05-14 13:34:01,785 - INFO - Chạy Random Forest cho cpi_yoy
-2025-05-14 13:34:01,792 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
-2025-05-14 13:34:01,794 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
-mean     105.388600
-std        4.243821
-min       97.400000
-25%      102.590000
-50%      104.440000
-75%      108.060000
-max      115.105000
-Name: cpi_yoy, dtype: float64
-2025-05-14 13:34:01,794 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
-2025-05-14 13:34:02,410 - INFO - Cross-validation: Mean Train RMSE=0.1845, Mean Test RMSE=0.7132
-2025-05-14 13:34:02,564 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[111.86632669 109.79031816 108.79396593 109.47675854 108.34962692]
-2025-05-14 13:34:02,567 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.89691654 104.44159148 103.3509763  102.84898473 102.45055003]
-2025-05-14 13:34:02,569 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.41871115 103.96489581 103.96489581 104.47011757 104.49527035]
-2025-05-14 13:34:03,093 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_random_forest_residuals.png
-2025-05-14 13:34:03,324 - INFO - Đã lưu biểu đồ: cpi_yoy_random_forest_forecast.png
-2025-05-14 13:34:03,324 - INFO - Random Forest (cpi_yoy): Train RMSE=0.1136, Val RMSE=0.0704, Test RMSE=0.0651, Train MAE=0.0704, Val MAE=0.0467, Test MAE=0.0535, Train MAPE=0.0668, Val MAPE=0.0450, Test MAPE=0.0516, Time=1.54s
-2025-05-14 13:34:03,325 - INFO - Hoàn thành Random Forest cho cpi_yoy trong 1.54s
-2025-05-14 13:34:03,325 - INFO - Chạy XGBoost cho cpi_yoy
-2025-05-14 13:34:03,330 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
-2025-05-14 13:34:03,333 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
-mean     105.388600
-std        4.243821
-min       97.400000
-25%      102.590000
-50%      104.440000
-75%      108.060000
-max      115.105000
-Name: cpi_yoy, dtype: float64
-2025-05-14 13:34:03,334 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
-2025-05-14 13:34:03,832 - INFO - Cross-validation: Mean Train RMSE=0.0013, Mean Test RMSE=0.7083
-2025-05-14 13:34:03,968 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[112.90464783 109.76335907 108.80117798 109.46160889 108.48345184]
-2025-05-14 13:34:03,971 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.90071106 104.31707764 103.5927887  102.91841125 102.4254303 ]
-2025-05-14 13:34:03,973 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.67758942 103.58867645 104.16735077 104.54090118 104.52843475]
-2025-05-14 13:34:04,217 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_xgboost_residuals.png
-2025-05-14 13:34:04,430 - INFO - Đã lưu biểu đồ: cpi_yoy_xgboost_forecast.png
-2025-05-14 13:34:04,430 - INFO - XGBoost (cpi_yoy): Train RMSE=0.0046, Val RMSE=0.1242, Test RMSE=0.1785, Train MAE=0.0036, Val MAE=0.0886, Test MAE=0.1348, Train MAPE=0.0034, Val MAPE=0.0861, Test MAPE=0.1301, Time=1.11s
-2025-05-14 13:34:04,430 - INFO - Hoàn thành XGBoost cho cpi_yoy trong 1.11s
-2025-05-14 13:34:04,430 - INFO - Chạy LightGBM cho cpi_yoy
-2025-05-14 13:34:04,434 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
-2025-05-14 13:34:04,436 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
-mean     105.388600
-std        4.243821
-min       97.400000
-25%      102.590000
-50%      104.440000
-75%      108.060000
-max      115.105000
-Name: cpi_yoy, dtype: float64
-2025-05-14 13:34:04,437 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
-2025-05-14 13:34:04,995 - INFO - Cross-validation: Mean Train RMSE=0.0258, Mean Test RMSE=0.8070
-2025-05-14 13:34:05,121 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[112.87780683 109.76915451 108.7996694  109.4497903  108.47965593]
-2025-05-14 13:34:05,124 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.84607619 104.36061399 103.45691577 102.79618664 102.4160246 ]
-2025-05-14 13:34:05,127 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.59590683 104.03650215 104.03973099 104.39116795 104.39800658]
-2025-05-14 13:34:05,394 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_lightgbm_residuals.png
-2025-05-14 13:34:05,606 - INFO - Đã lưu biểu đồ: cpi_yoy_lightgbm_forecast.png
-2025-05-14 13:34:05,606 - INFO - LightGBM (cpi_yoy): Train RMSE=0.0161, Val RMSE=0.1093, Test RMSE=0.0729, Train MAE=0.0115, Val MAE=0.0787, Test MAE=0.0444, Train MAPE=0.0109, Val MAPE=0.0760, Test MAPE=0.0429, Time=1.18s
-2025-05-14 13:34:05,606 - INFO - Hoàn thành LightGBM cho cpi_yoy trong 1.18s
-2025-05-14 13:34:05,606 - INFO - Chạy Linear Regression cho cpi_yoy
-2025-05-14 13:34:05,611 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
-2025-05-14 13:34:05,614 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
-mean     105.388600
-std        4.243821
-min       97.400000
-25%      102.590000
-50%      104.440000
-75%      108.060000
-max      115.105000
-Name: cpi_yoy, dtype: float64
-2025-05-14 13:34:05,614 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
-2025-05-14 13:34:05,647 - INFO - Cross-validation: Mean Train RMSE=0.1712, Mean Test RMSE=0.9811
-2025-05-14 13:34:05,655 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[110.91809196 109.19380957 109.6395366  109.92370948 109.26619053]
-2025-05-14 13:34:05,656 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.74650065 104.27287531 103.23623794 102.61853049 102.53651719]
-2025-05-14 13:34:05,657 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.29971404 103.77735484 103.89313452 104.29489216 104.44369783]
-2025-05-14 13:34:05,851 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_linear_residuals.png
-2025-05-14 13:34:06,079 - INFO - Đã lưu biểu đồ: cpi_yoy_linear_forecast.png
-2025-05-14 13:34:06,079 - INFO - Linear Regression (cpi_yoy): Train RMSE=0.2618, Val RMSE=0.1466, Test RMSE=0.1353, Train MAE=0.1691, Val MAE=0.1354, Test MAE=0.1095, Train MAPE=0.1596, Val MAPE=0.1312, Test MAPE=0.1059, Time=0.47s
-2025-05-14 13:34:06,079 - INFO - Hoàn thành Linear Regression cho cpi_yoy trong 0.47s
-2025-05-14 13:34:06,079 - INFO - Chạy Ridge cho cpi_yoy
-2025-05-14 13:34:06,083 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
-2025-05-14 13:34:06,085 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
-mean     105.388600
-std        4.243821
-min       97.400000
-25%      102.590000
-50%      104.440000
-75%      108.060000
-max      115.105000
-Name: cpi_yoy, dtype: float64
-2025-05-14 13:34:06,085 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
-2025-05-14 13:34:06,105 - INFO - Cross-validation: Mean Train RMSE=0.3134, Mean Test RMSE=1.0542
-2025-05-14 13:34:06,107 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[109.36870743 109.59656711 109.99341793 109.43038017 108.66049948]
-2025-05-14 13:34:06,109 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.47041328 104.07993872 103.21928088 102.54715617 102.36024791]
-2025-05-14 13:34:06,110 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.19086184 103.7133251  103.77498513 104.1239261  104.25721557]
-2025-05-14 13:34:06,289 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_ridge_residuals.png
-2025-05-14 13:34:06,515 - INFO - Đã lưu biểu đồ: cpi_yoy_ridge_forecast.png
-2025-05-14 13:34:06,515 - INFO - Ridge (cpi_yoy): Train RMSE=0.3596, Val RMSE=0.2202, Test RMSE=0.1777, Train MAE=0.2259, Val MAE=0.1965, Test MAE=0.1575, Train MAPE=0.2103, Val MAPE=0.1897, Test MAPE=0.1519, Time=0.44s
-2025-05-14 13:34:06,515 - INFO - Hoàn thành Ridge cho cpi_yoy trong 0.44s
-2025-05-14 13:34:06,515 - INFO - Chạy Lasso cho cpi_yoy
-2025-05-14 13:34:06,522 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
-2025-05-14 13:34:06,523 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
-mean     105.388600
-std        4.243821
-min       97.400000
-25%      102.590000
-50%      104.440000
-75%      108.060000
-max      115.105000
-Name: cpi_yoy, dtype: float64
-2025-05-14 13:34:06,523 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
-2025-05-14 13:34:06,560 - INFO - Cross-validation: Mean Train RMSE=0.4709, Mean Test RMSE=0.9560
-2025-05-14 13:34:06,564 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[107.0138397  108.72664944 109.19823272 108.95391168 108.30115558]
-2025-05-14 13:34:06,566 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.75083776 104.52139847 103.78790221 103.16150236 102.76761738]
-2025-05-14 13:34:06,567 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.58791252 103.90810164 103.96728674 104.22279214 104.37374133]
-2025-05-14 13:34:06,792 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_lasso_residuals.png
-2025-05-14 13:34:07,003 - INFO - Đã lưu biểu đồ: cpi_yoy_lasso_forecast.png
-2025-05-14 13:34:07,003 - INFO - Lasso (cpi_yoy): Train RMSE=0.6030, Val RMSE=0.2498, Test RMSE=0.2266, Train MAE=0.3947, Val MAE=0.2130, Test MAE=0.1691, Train MAPE=0.3682, Val MAPE=0.2068, Test MAPE=0.1637, Time=0.49s
-2025-05-14 13:34:07,003 - INFO - Hoàn thành Lasso cho cpi_yoy trong 0.49s
-2025-05-14 13:34:07,003 - INFO - Chạy ElasticNet cho cpi_yoy
-2025-05-14 13:34:07,008 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
-2025-05-14 13:34:07,009 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
-mean     105.388600
-std        4.243821
-min       97.400000
-25%      102.590000
-50%      104.440000
-75%      108.060000
-max      115.105000
-Name: cpi_yoy, dtype: float64
-2025-05-14 13:34:07,010 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
-2025-05-14 13:34:07,039 - INFO - Cross-validation: Mean Train RMSE=0.5811, Mean Test RMSE=0.9408
-2025-05-14 13:34:07,042 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[107.03293738 107.79103513 108.99351134 108.50900154 107.62389386]
-2025-05-14 13:34:07,044 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.69585559 104.47410841 103.7852067  103.19999858 102.83307588]
-2025-05-14 13:34:07,045 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.65407876 104.04878832 103.93075654 104.17924026 104.27131147]
-2025-05-14 13:34:07,247 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_elasticnet_residuals.png
-2025-05-14 13:34:07,451 - INFO - Đã lưu biểu đồ: cpi_yoy_elasticnet_forecast.png
-2025-05-14 13:34:07,451 - INFO - ElasticNet (cpi_yoy): Train RMSE=0.6700, Val RMSE=0.3019, Test RMSE=0.3000, Train MAE=0.4525, Val MAE=0.2438, Test MAE=0.2354, Train MAPE=0.4225, Val MAPE=0.2370, Test MAPE=0.2280, Time=0.45s
-2025-05-14 13:34:07,451 - INFO - Hoàn thành ElasticNet cho cpi_yoy trong 0.45s
-2025-05-14 13:34:07,451 - INFO - Chạy SVR cho cpi_yoy
-2025-05-14 13:34:07,456 - INFO - Kích thước X_train sau khi loại NaN (cpi_yoy): 325
-2025-05-14 13:34:07,458 - INFO - Thống kê y_train (cpi_yoy): count    325.000000
-mean     105.388600
-std        4.243821
-min       97.400000
-25%      102.590000
-50%      104.440000
-75%      108.060000
-max      115.105000
-Name: cpi_yoy, dtype: float64
-2025-05-14 13:34:07,458 - INFO - Phương sai của y_train (cpi_yoy): 17.954597963076946
-2025-05-14 13:34:07,500 - INFO - Cross-validation: Mean Train RMSE=1.1233, Mean Test RMSE=2.0491
-2025-05-14 13:34:07,513 - INFO - Kiểm tra calculate_metrics: actual=[112.91 109.76 108.8  109.46 108.48], predicted=[108.25663483 107.93179951 108.61141001 108.96604513 108.11289448]
-2025-05-14 13:34:07,514 - INFO - Kiểm tra calculate_metrics: actual=[104.9  104.33 103.37 102.83 102.45], predicted=[104.73448508 104.42329436 103.73837514 102.98258784 102.57325019]
-2025-05-14 13:34:07,515 - INFO - Kiểm tra calculate_metrics: actual=[103.37 103.98 103.98 104.41 104.45], predicted=[103.4994694  103.95730778 104.05753407 104.39643001 104.42229267]
-2025-05-14 13:34:07,690 - INFO - Đã lưu biểu đồ phần dư: cpi_yoy_svr_residuals.png
-2025-05-14 13:34:07,896 - INFO - Đã lưu biểu đồ: cpi_yoy_svr_forecast.png
-2025-05-14 13:34:07,896 - INFO - SVR (cpi_yoy): Train RMSE=0.8344, Val RMSE=0.2460, Test RMSE=0.4257, Train MAE=0.4246, Val MAE=0.2194, Test MAE=0.3034, Train MAPE=0.3985, Val MAPE=0.2128, Test MAPE=0.2944, Time=0.44s
-2025-05-14 13:34:07,896 - INFO - Hoàn thành SVR cho cpi_yoy trong 0.44s
-2025-05-14 13:34:08,303 - INFO - Đã lưu biểu đồ so sánh: cpi_mom_ml_model_comparison.png
-2025-05-14 13:34:08,626 - INFO - Đã lưu biểu đồ so sánh: cpi_yoy_ml_model_comparison.png
-2025-05-14 13:34:08,630 - INFO - Dự báo ensemble cho cpi_mom đã được lưu
-2025-05-14 13:34:08,631 - INFO - Dự báo ensemble cho cpi_yoy đã được lưu
-2025-05-14 13:34:08,638 - INFO - Kết quả đã được lưu vào ml_model_results/ml_model_results.csv
-2025-05-14 13:34:08,649 - INFO - Dự báo kết hợp cho cpi_mom đã được lưu vào ml_model_results/combined_forecast_cpi_mom.csv
-2025-05-14 13:34:08,656 - INFO - Dự báo kết hợp cho cpi_yoy đã được lưu vào ml_model_results/combined_forecast_cpi_yoy.csv
+2025-05-17 01:27:02,460 - INFO - Kiểm tra NaN/Inf trong dữ liệu gốc: {'cpi_mom': 0, 'oil_price': 0}
+2025-05-17 01:27:02,463 - INFO - Kiểm tra Inf trong dữ liệu gốc: {'cpi_mom': 0, 'oil_price': 0}
+2025-05-17 01:27:02,466 - INFO - Kích thước dữ liệu gốc: 349
+2025-05-17 01:27:02,467 - INFO - Tạo đặc trưng cho cpi_mom, kích thước dữ liệu: (349, 17)
+2025-05-17 01:27:02,478 - INFO - Đã thêm đặc trưng mùa vụ
+2025-05-17 01:27:02,506 - INFO - Loại bỏ đặc trưng tương quan thấp (< 0.5): ['cpi_yoy', 'gold_price', 'interest_rate', 'cpi_yoy_smoothed', 'cpi_yoy_log', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_mom_lag_2', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_mom_lag_7', 'cpi_mom_lag_8', 'cpi_mom_lag_9', 'cpi_mom_lag_10', 'cpi_mom_lag_11', 'cpi_mom_lag_12', 'oil_price_lag_1', 'oil_price_lag_2', 'oil_price_lag_3', 'oil_price_lag_4', 'oil_price_lag_5', 'oil_price_lag_6', 'oil_price_lag_7', 'oil_price_lag_8', 'oil_price_lag_9', 'oil_price_lag_10', 'oil_price_lag_11', 'oil_price_lag_12', 'oil_price_roll_mean_3', 'oil_price_roll_mean_6', 'month_1', 'month_2', 'month_3', 'month_4', 'month_5', 'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11', 'month_12', 'month_sin', 'month_cos', 'quarter']
+2025-05-17 01:27:02,622 - INFO - PCA: 4 thành phần, tỷ lệ phương sai: 0.9900
+2025-05-17 01:27:02,623 - INFO - Đặc trưng sau xử lý: ['cpi_mom', 'oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:27:02,623 - INFO - Kích thước tập dữ liệu: Train=337, Test=12
+2025-05-17 01:27:02,624 - INFO - Đặc trưng cho cpi_mom: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:27:02,634 - INFO - Chạy các mô hình cho cpi_mom
+2025-05-17 01:27:02,634 - INFO - Chạy Random Forest cho cpi_mom
+2025-05-17 01:27:02,642 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:27:02,643 - INFO - Chạy Random Forest cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:27:14,582 - INFO - Tham số tốt nhất: {'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 10, 'n_estimators': 52}, CV RMSE: 0.4820
+2025-05-17 01:27:14,906 - INFO - Đã lưu biểu đồ: cpi_mom_random_forest_forecast.png
+2025-05-17 01:27:18,449 - INFO - Đã lưu learning curves: cpi_mom_random_forest_learning_curve.png
+2025-05-17 01:27:18,449 - INFO - Overfitting gap cho Random Forest (cpi_mom): 0.0469
+2025-05-17 01:27:18,449 - INFO - Random Forest (cpi_mom): Train RMSE=0.3884, Test RMSE=0.2290, CV RMSE=0.4820, Test MAE=0.1661, Test MAPE=0.1656, Best Params={'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 10, 'n_estimators': 52}, Overfitting Gap=0.0469, Time=15.81s
+2025-05-17 01:27:18,449 - INFO - Hoàn thành Random Forest trong 15.81s
+2025-05-17 01:27:18,449 - INFO - Chạy XGBoost cho cpi_mom
+2025-05-17 01:27:18,456 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:27:18,456 - INFO - Chạy XGBoost cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:27:25,697 - INFO - Tham số tốt nhất: {'colsample_bytree': 0.8123620356542087, 'learning_rate': 0.05753571532049581, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 70, 'reg_alpha': 0.6560186404424365, 'reg_lambda': 1.7799726016810133, 'subsample': 0.7174250836504598}, CV RMSE: 0.3662
+2025-05-17 01:27:26,007 - INFO - Đã lưu biểu đồ: cpi_mom_xgboost_forecast.png
+2025-05-17 01:27:28,613 - INFO - Đã lưu learning curves: cpi_mom_xgboost_learning_curve.png
+2025-05-17 01:27:28,613 - INFO - Overfitting gap cho XGBoost (cpi_mom): -0.1197
+2025-05-17 01:27:28,613 - INFO - XGBoost (cpi_mom): Train RMSE=0.2598, Test RMSE=0.1934, CV RMSE=0.3662, Test MAE=0.1500, Test MAPE=0.1494, Best Params={'colsample_bytree': 0.8123620356542087, 'learning_rate': 0.05753571532049581, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 70, 'reg_alpha': 0.6560186404424365, 'reg_lambda': 1.7799726016810133, 'subsample': 0.7174250836504598}, Overfitting Gap=-0.1197, Time=10.16s
+2025-05-17 01:27:28,613 - INFO - Hoàn thành XGBoost trong 10.16s
+2025-05-17 01:27:28,613 - INFO - Chạy LightGBM cho cpi_mom
+2025-05-17 01:27:28,619 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:27:28,620 - INFO - Chạy LightGBM cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:27:32,344 - INFO - Tham số tốt nhất: {'colsample_bytree': 0.9687290787020557, 'lambda_l1': 2.8768511159105588, 'lambda_l2': 3.3163778598819182, 'learning_rate': 0.04477580432130638, 'max_depth': 3, 'min_data_in_leaf': 20, 'n_estimators': 88, 'subsample': 0.8231148769106889}, CV RMSE: 0.4286
+2025-05-17 01:27:32,623 - INFO - Đã lưu biểu đồ: cpi_mom_lightgbm_forecast.png
+2025-05-17 01:27:33,474 - INFO - Đã lưu learning curves: cpi_mom_lightgbm_learning_curve.png
+2025-05-17 01:27:33,474 - INFO - Overfitting gap cho LightGBM (cpi_mom): 0.0252
+2025-05-17 01:27:33,474 - INFO - LightGBM (cpi_mom): Train RMSE=0.3235, Test RMSE=0.1795, CV RMSE=0.4286, Test MAE=0.1322, Test MAPE=0.1316, Best Params={'colsample_bytree': 0.9687290787020557, 'lambda_l1': 2.8768511159105588, 'lambda_l2': 3.3163778598819182, 'learning_rate': 0.04477580432130638, 'max_depth': 3, 'min_data_in_leaf': 20, 'n_estimators': 88, 'subsample': 0.8231148769106889}, Overfitting Gap=0.0252, Time=4.86s
+2025-05-17 01:27:33,475 - INFO - Hoàn thành LightGBM trong 4.86s
+2025-05-17 01:27:33,475 - INFO - Chạy SVR cho cpi_mom
+2025-05-17 01:27:33,481 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:27:33,481 - INFO - Chạy SVR cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:27:34,935 - INFO - Tham số tốt nhất: {'C': 1.1292247147901224, 'epsilon': 0.10699098521619943, 'kernel': 'rbf'}, CV RMSE: 0.4036
+2025-05-17 01:27:35,186 - INFO - Đã lưu biểu đồ: cpi_mom_svr_forecast.png
+2025-05-17 01:27:35,562 - INFO - Đã lưu learning curves: cpi_mom_svr_learning_curve.png
+2025-05-17 01:27:35,562 - INFO - Overfitting gap cho SVR (cpi_mom): -0.1132
+2025-05-17 01:27:35,562 - INFO - SVR (cpi_mom): Train RMSE=0.2406, Test RMSE=0.1973, CV RMSE=0.4036, Test MAE=0.1307, Test MAPE=0.1300, Best Params={'C': 1.1292247147901224, 'epsilon': 0.10699098521619943, 'kernel': 'rbf'}, Overfitting Gap=-0.1132, Time=2.09s
+2025-05-17 01:27:35,562 - INFO - Hoàn thành SVR trong 2.09s
+2025-05-17 01:27:35,562 - INFO - Chạy ElasticNet cho cpi_mom
+2025-05-17 01:27:35,569 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:27:35,571 - INFO - Chạy ElasticNet cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:27:35,997 - INFO - Tham số tốt nhất: {'alpha': 0.06024145688620425, 'l1_ratio': 0.3325152889039984}, CV RMSE: 0.2862
+2025-05-17 01:27:36,292 - INFO - Đã lưu biểu đồ: cpi_mom_elasticnet_forecast.png
+2025-05-17 01:27:36,691 - INFO - Đã lưu learning curves: cpi_mom_elasticnet_learning_curve.png
+2025-05-17 01:27:36,691 - INFO - Overfitting gap cho ElasticNet (cpi_mom): 0.1367
+2025-05-17 01:27:36,691 - INFO - ElasticNet (cpi_mom): Train RMSE=0.3267, Test RMSE=0.2047, CV RMSE=0.2862, Test MAE=0.1559, Test MAPE=0.1552, Best Params={'alpha': 0.06024145688620425, 'l1_ratio': 0.3325152889039984}, Overfitting Gap=0.1367, Time=1.13s
+2025-05-17 01:27:36,691 - INFO - Hoàn thành ElasticNet trong 1.13s
+2025-05-17 01:27:36,691 - INFO - Chạy Linear Regression cho cpi_mom
+2025-05-17 01:27:36,698 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:27:36,699 - INFO - Chạy Linear Regression cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:27:36,973 - INFO - Đã lưu biểu đồ: cpi_mom_linear_regression_forecast.png
+2025-05-17 01:27:37,409 - INFO - Đã lưu learning curves: cpi_mom_linear_regression_learning_curve.png
+2025-05-17 01:27:37,409 - INFO - Overfitting gap cho Linear Regression (cpi_mom): -1.1440
+2025-05-17 01:27:37,409 - INFO - Linear Regression (cpi_mom): Train RMSE=0.3204, Test RMSE=0.2035, CV RMSE=0.3516, Test MAE=0.1426, Test MAPE=0.1419, Best Params={}, Overfitting Gap=-1.1440, Time=0.72s
+2025-05-17 01:27:37,409 - INFO - Hoàn thành Linear Regression trong 0.72s
+2025-05-17 01:27:37,409 - INFO - Chạy Ridge cho cpi_mom
+2025-05-17 01:27:37,416 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:27:37,418 - INFO - Chạy Ridge cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:27:37,770 - INFO - Tham số tốt nhất: {'alpha': 15.061457009902096}, CV RMSE: 0.2860
+2025-05-17 01:27:37,989 - INFO - Đã lưu biểu đồ: cpi_mom_ridge_forecast.png
+2025-05-17 01:27:38,396 - INFO - Đã lưu learning curves: cpi_mom_ridge_learning_curve.png
+2025-05-17 01:27:38,396 - INFO - Overfitting gap cho Ridge (cpi_mom): 0.1621
+2025-05-17 01:27:38,396 - INFO - Ridge (cpi_mom): Train RMSE=0.3218, Test RMSE=0.2040, CV RMSE=0.2860, Test MAE=0.1469, Test MAPE=0.1463, Best Params={'alpha': 15.061457009902096}, Overfitting Gap=0.1621, Time=0.99s
+2025-05-17 01:27:38,396 - INFO - Hoàn thành Ridge trong 0.99s
+2025-05-17 01:27:38,834 - INFO - Đã lưu biểu đồ so sánh: cpi_mom_ml_model_comparison.png
+2025-05-17 01:27:38,841 - INFO - Kết quả lưu tại ml_model_results\ml_model_results.csv
+2025-05-17 01:27:38,843 - INFO - Tham số tối ưu lưu tại ml_model_results\best_params.csv
+2025-05-17 01:27:38,846 - INFO - Dự báo kết hợp lưu tại ml_model_results/combined_forecast_cpi_mom.csv
+2025-05-17 01:28:36,370 - INFO - Kiểm tra NaN/Inf trong dữ liệu gốc: {'cpi_mom': 0, 'oil_price': 0}
+2025-05-17 01:28:36,371 - INFO - Kiểm tra Inf trong dữ liệu gốc: {'cpi_mom': 0, 'oil_price': 0}
+2025-05-17 01:28:36,372 - INFO - Kích thước dữ liệu gốc: 349
+2025-05-17 01:28:36,372 - INFO - Tạo đặc trưng cho cpi_mom, kích thước dữ liệu: (349, 17)
+2025-05-17 01:28:36,387 - INFO - Đã thêm đặc trưng mùa vụ
+2025-05-17 01:28:36,414 - INFO - Loại bỏ đặc trưng tương quan thấp (< 0.5): ['cpi_yoy', 'gold_price', 'interest_rate', 'cpi_yoy_smoothed', 'cpi_yoy_log', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_mom_lag_2', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_mom_lag_7', 'cpi_mom_lag_8', 'cpi_mom_lag_9', 'cpi_mom_lag_10', 'cpi_mom_lag_11', 'cpi_mom_lag_12', 'cpi_mom_roll_mean_12', 'oil_price_lag_1', 'oil_price_lag_2', 'oil_price_lag_3', 'oil_price_lag_4', 'oil_price_lag_5', 'oil_price_lag_6', 'oil_price_lag_7', 'oil_price_lag_8', 'oil_price_lag_9', 'oil_price_lag_10', 'oil_price_lag_11', 'oil_price_lag_12', 'oil_price_roll_mean_3', 'oil_price_roll_mean_6', 'oil_price_roll_mean_12', 'month_1', 'month_2', 'month_3', 'month_4', 'month_5', 'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11', 'month_12', 'month_sin', 'month_cos', 'quarter']
+2025-05-17 01:28:36,419 - INFO - PCA: 4 thành phần, tỷ lệ phương sai: 0.9900
+2025-05-17 01:28:36,420 - INFO - Đặc trưng sau xử lý: ['cpi_mom', 'oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:28:36,420 - INFO - Kích thước tập dữ liệu: Train=337, Test=12
+2025-05-17 01:28:36,420 - INFO - Đặc trưng cho cpi_mom: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:28:36,431 - INFO - Chạy các mô hình cho cpi_mom
+2025-05-17 01:28:36,431 - INFO - Chạy Random Forest cho cpi_mom
+2025-05-17 01:28:36,439 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:28:36,440 - INFO - Chạy Random Forest cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:29:06,220 - INFO - Tham số tốt nhất: {'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 5, 'min_samples_split': 10, 'n_estimators': 67}, CV RMSE: 0.4558
+2025-05-17 01:29:06,549 - INFO - Đã lưu biểu đồ: cpi_mom_random_forest_forecast.png
+2025-05-17 01:29:10,895 - INFO - Đã lưu learning curves: cpi_mom_random_forest_learning_curve.png
+2025-05-17 01:29:10,895 - INFO - Overfitting gap cho Random Forest (cpi_mom): -0.0407
+2025-05-17 01:29:10,895 - INFO - Random Forest (cpi_mom): Train RMSE=0.3331, Test RMSE=0.2271, CV RMSE=0.4558, Test MAE=0.1649, Test MAPE=0.1643, Best Params={'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 5, 'min_samples_split': 10, 'n_estimators': 67}, Overfitting Gap=-0.0407, Time=34.46s
+2025-05-17 01:29:10,895 - INFO - Hoàn thành Random Forest trong 34.46s
+2025-05-17 01:29:10,895 - INFO - Chạy XGBoost cho cpi_mom
+2025-05-17 01:29:10,903 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:29:10,904 - INFO - Chạy XGBoost cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:29:22,729 - INFO - Tham số tốt nhất: {'colsample_bytree': 0.8123620356542087, 'learning_rate': 0.05753571532049581, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 70, 'reg_alpha': 0.6560186404424365, 'reg_lambda': 1.7799726016810133, 'subsample': 0.7174250836504598}, CV RMSE: 0.3662
+2025-05-17 01:29:22,976 - INFO - Đã lưu biểu đồ: cpi_mom_xgboost_forecast.png
+2025-05-17 01:29:25,479 - INFO - Đã lưu learning curves: cpi_mom_xgboost_learning_curve.png
+2025-05-17 01:29:25,479 - INFO - Overfitting gap cho XGBoost (cpi_mom): -0.1197
+2025-05-17 01:29:25,479 - INFO - XGBoost (cpi_mom): Train RMSE=0.2598, Test RMSE=0.1934, CV RMSE=0.3662, Test MAE=0.1500, Test MAPE=0.1494, Best Params={'colsample_bytree': 0.8123620356542087, 'learning_rate': 0.05753571532049581, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 70, 'reg_alpha': 0.6560186404424365, 'reg_lambda': 1.7799726016810133, 'subsample': 0.7174250836504598}, Overfitting Gap=-0.1197, Time=14.58s
+2025-05-17 01:29:25,479 - INFO - Hoàn thành XGBoost trong 14.58s
+2025-05-17 01:29:25,479 - INFO - Chạy LightGBM cho cpi_mom
+2025-05-17 01:29:25,485 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:29:25,486 - INFO - Chạy LightGBM cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:29:29,312 - INFO - Tham số tốt nhất: {'colsample_bytree': 0.8481681145550304, 'lambda_l1': 1.394113546106644, 'lambda_l2': 2.3323439229142995, 'learning_rate': 0.04720852615282812, 'max_depth': 3, 'min_data_in_leaf': 20, 'n_estimators': 82, 'subsample': 0.8627620691664697}, CV RMSE: 0.4173
+2025-05-17 01:29:29,572 - INFO - Đã lưu biểu đồ: cpi_mom_lightgbm_forecast.png
+2025-05-17 01:29:30,449 - INFO - Đã lưu learning curves: cpi_mom_lightgbm_learning_curve.png
+2025-05-17 01:29:30,449 - INFO - Overfitting gap cho LightGBM (cpi_mom): -0.0049
+2025-05-17 01:29:30,449 - INFO - LightGBM (cpi_mom): Train RMSE=0.3108, Test RMSE=0.1717, CV RMSE=0.4173, Test MAE=0.1271, Test MAPE=0.1266, Best Params={'colsample_bytree': 0.8481681145550304, 'lambda_l1': 1.394113546106644, 'lambda_l2': 2.3323439229142995, 'learning_rate': 0.04720852615282812, 'max_depth': 3, 'min_data_in_leaf': 20, 'n_estimators': 82, 'subsample': 0.8627620691664697}, Overfitting Gap=-0.0049, Time=4.97s
+2025-05-17 01:29:30,450 - INFO - Hoàn thành LightGBM trong 4.97s
+2025-05-17 01:29:30,450 - INFO - Chạy SVR cho cpi_mom
+2025-05-17 01:29:30,455 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:29:30,456 - INFO - Chạy SVR cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:29:33,783 - INFO - Tham số tốt nhất: {'C': 1.3709563372047595, 'epsilon': 0.020789142699330444, 'kernel': 'rbf'}, CV RMSE: 0.3952
+2025-05-17 01:29:34,011 - INFO - Đã lưu biểu đồ: cpi_mom_svr_forecast.png
+2025-05-17 01:29:34,415 - INFO - Đã lưu learning curves: cpi_mom_svr_learning_curve.png
+2025-05-17 01:29:34,415 - INFO - Overfitting gap cho SVR (cpi_mom): -0.1288
+2025-05-17 01:29:34,415 - INFO - SVR (cpi_mom): Train RMSE=0.2239, Test RMSE=0.2019, CV RMSE=0.3952, Test MAE=0.1275, Test MAPE=0.1268, Best Params={'C': 1.3709563372047595, 'epsilon': 0.020789142699330444, 'kernel': 'rbf'}, Overfitting Gap=-0.1288, Time=3.97s
+2025-05-17 01:29:34,415 - INFO - Hoàn thành SVR trong 3.97s
+2025-05-17 01:29:34,415 - INFO - Chạy ElasticNet cho cpi_mom
+2025-05-17 01:29:34,422 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:29:34,423 - INFO - Chạy ElasticNet cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:29:35,337 - INFO - Tham số tốt nhất: {'alpha': 0.06024145688620425, 'l1_ratio': 0.3325152889039984}, CV RMSE: 0.2862
+2025-05-17 01:29:35,551 - INFO - Đã lưu biểu đồ: cpi_mom_elasticnet_forecast.png
+2025-05-17 01:29:35,930 - INFO - Đã lưu learning curves: cpi_mom_elasticnet_learning_curve.png
+2025-05-17 01:29:35,931 - INFO - Overfitting gap cho ElasticNet (cpi_mom): 0.1367
+2025-05-17 01:29:35,931 - INFO - ElasticNet (cpi_mom): Train RMSE=0.3267, Test RMSE=0.2047, CV RMSE=0.2862, Test MAE=0.1559, Test MAPE=0.1552, Best Params={'alpha': 0.06024145688620425, 'l1_ratio': 0.3325152889039984}, Overfitting Gap=0.1367, Time=1.52s
+2025-05-17 01:29:35,931 - INFO - Hoàn thành ElasticNet trong 1.52s
+2025-05-17 01:29:35,931 - INFO - Chạy Linear Regression cho cpi_mom
+2025-05-17 01:29:35,938 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:29:35,939 - INFO - Chạy Linear Regression cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:29:36,159 - INFO - Đã lưu biểu đồ: cpi_mom_linear_regression_forecast.png
+2025-05-17 01:29:36,548 - INFO - Đã lưu learning curves: cpi_mom_linear_regression_learning_curve.png
+2025-05-17 01:29:36,548 - INFO - Overfitting gap cho Linear Regression (cpi_mom): -1.1440
+2025-05-17 01:29:36,548 - INFO - Linear Regression (cpi_mom): Train RMSE=0.3204, Test RMSE=0.2035, CV RMSE=0.3516, Test MAE=0.1426, Test MAPE=0.1419, Best Params={}, Overfitting Gap=-1.1440, Time=0.62s
+2025-05-17 01:29:36,548 - INFO - Hoàn thành Linear Regression trong 0.62s
+2025-05-17 01:29:36,548 - INFO - Chạy Ridge cho cpi_mom
+2025-05-17 01:29:36,554 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:29:36,555 - INFO - Chạy Ridge cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:29:37,324 - INFO - Tham số tốt nhất: {'alpha': 13.438999080000846}, CV RMSE: 0.2859
+2025-05-17 01:29:37,528 - INFO - Đã lưu biểu đồ: cpi_mom_ridge_forecast.png
+2025-05-17 01:29:37,894 - INFO - Đã lưu learning curves: cpi_mom_ridge_learning_curve.png
+2025-05-17 01:29:37,894 - INFO - Overfitting gap cho Ridge (cpi_mom): 0.1596
+2025-05-17 01:29:37,894 - INFO - Ridge (cpi_mom): Train RMSE=0.3215, Test RMSE=0.2038, CV RMSE=0.2859, Test MAE=0.1463, Test MAPE=0.1456, Best Params={'alpha': 13.438999080000846}, Overfitting Gap=0.1596, Time=1.35s
+2025-05-17 01:29:37,894 - INFO - Hoàn thành Ridge trong 1.35s
+2025-05-17 01:29:38,168 - INFO - Đã lưu biểu đồ so sánh: cpi_mom_ml_model_comparison.png
+2025-05-17 01:29:38,173 - INFO - Kết quả lưu tại ml_model_results\ml_model_results.csv
+2025-05-17 01:29:38,174 - INFO - Tham số tối ưu lưu tại ml_model_results\best_params.csv
+2025-05-17 01:29:38,178 - INFO - Dự báo kết hợp lưu tại ml_model_results/combined_forecast_cpi_mom.csv
+2025-05-17 01:32:39,349 - INFO - Kiểm tra NaN/Inf trong dữ liệu gốc: {'cpi_mom': 0, 'oil_price': 0}
+2025-05-17 01:32:39,350 - INFO - Kiểm tra Inf trong dữ liệu gốc: {'cpi_mom': 0, 'oil_price': 0}
+2025-05-17 01:32:39,351 - INFO - Kích thước dữ liệu gốc: 349
+2025-05-17 01:32:39,351 - INFO - Tạo đặc trưng cho cpi_mom, kích thước dữ liệu: (349, 17)
+2025-05-17 01:32:39,362 - INFO - Đã thêm đặc trưng mùa vụ
+2025-05-17 01:32:39,394 - INFO - Loại bỏ đặc trưng tương quan thấp (< 0.5): ['cpi_yoy', 'gold_price', 'interest_rate', 'cpi_yoy_smoothed', 'cpi_yoy_log', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_mom_lag_2', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_mom_lag_7', 'cpi_mom_lag_8', 'cpi_mom_lag_9', 'cpi_mom_lag_10', 'cpi_mom_lag_11', 'cpi_mom_lag_12', 'cpi_mom_roll_mean_12', 'oil_price_lag_1', 'oil_price_lag_2', 'oil_price_lag_3', 'oil_price_lag_4', 'oil_price_lag_5', 'oil_price_lag_6', 'oil_price_lag_7', 'oil_price_lag_8', 'oil_price_lag_9', 'oil_price_lag_10', 'oil_price_lag_11', 'oil_price_lag_12', 'oil_price_roll_mean_3', 'oil_price_roll_mean_6', 'oil_price_roll_mean_12', 'month_1', 'month_2', 'month_3', 'month_4', 'month_5', 'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11', 'month_12', 'month_sin', 'month_cos', 'quarter']
+2025-05-17 01:32:39,399 - INFO - PCA: 4 thành phần, tỷ lệ phương sai: 0.9900
+2025-05-17 01:32:39,400 - INFO - Đặc trưng sau xử lý: ['cpi_mom', 'oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:32:39,400 - INFO - Kích thước tập dữ liệu: Train=337, Test=12
+2025-05-17 01:32:39,400 - INFO - Đặc trưng cho cpi_mom: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:32:39,409 - INFO - Chạy các mô hình cho cpi_mom
+2025-05-17 01:32:39,410 - INFO - Chạy Random Forest cho cpi_mom
+2025-05-17 01:32:39,416 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:32:39,417 - INFO - Chạy Random Forest cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:33:13,888 - INFO - Tham số tốt nhất: {'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 5, 'min_samples_split': 10, 'n_estimators': 67}, CV RMSE: 0.4558
+2025-05-17 01:33:14,375 - INFO - Đã lưu biểu đồ: cpi_mom_random_forest_forecast.png
+2025-05-17 01:33:19,873 - INFO - Đã lưu learning curves: cpi_mom_random_forest_learning_curve.png
+2025-05-17 01:33:19,873 - INFO - Overfitting gap cho Random Forest (cpi_mom): -0.0407
+2025-05-17 01:33:19,873 - INFO - Random Forest (cpi_mom): Train RMSE=0.3331, Test RMSE=0.2271, CV RMSE=0.4558, Test MAE=0.1649, Test MAPE=0.1643, Best Params={'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 5, 'min_samples_split': 10, 'n_estimators': 67}, Overfitting Gap=-0.0407, Time=40.46s
+2025-05-17 01:33:19,874 - INFO - Hoàn thành Random Forest trong 40.46s
+2025-05-17 01:33:19,874 - INFO - Chạy XGBoost cho cpi_mom
+2025-05-17 01:33:19,880 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:33:19,882 - INFO - Chạy XGBoost cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:33:34,149 - INFO - Tham số tốt nhất: {'colsample_bytree': 0.8123620356542087, 'learning_rate': 0.05753571532049581, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 70, 'reg_alpha': 0.6560186404424365, 'reg_lambda': 1.7799726016810133, 'subsample': 0.7174250836504598}, CV RMSE: 0.3662
+2025-05-17 01:33:34,444 - INFO - Đã lưu biểu đồ: cpi_mom_xgboost_forecast.png
+2025-05-17 01:33:37,224 - INFO - Đã lưu learning curves: cpi_mom_xgboost_learning_curve.png
+2025-05-17 01:33:37,224 - INFO - Overfitting gap cho XGBoost (cpi_mom): -0.1197
+2025-05-17 01:33:37,224 - INFO - XGBoost (cpi_mom): Train RMSE=0.2598, Test RMSE=0.1934, CV RMSE=0.3662, Test MAE=0.1500, Test MAPE=0.1494, Best Params={'colsample_bytree': 0.8123620356542087, 'learning_rate': 0.05753571532049581, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 70, 'reg_alpha': 0.6560186404424365, 'reg_lambda': 1.7799726016810133, 'subsample': 0.7174250836504598}, Overfitting Gap=-0.1197, Time=17.35s
+2025-05-17 01:33:37,224 - INFO - Hoàn thành XGBoost trong 17.35s
+2025-05-17 01:33:37,224 - INFO - Chạy LightGBM cho cpi_mom
+2025-05-17 01:33:37,234 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:33:37,236 - INFO - Chạy LightGBM cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:33:41,917 - INFO - Tham số tốt nhất: {'colsample_bytree': 0.8481681145550304, 'lambda_l1': 1.394113546106644, 'lambda_l2': 2.3323439229142995, 'learning_rate': 0.04720852615282812, 'max_depth': 3, 'min_data_in_leaf': 20, 'n_estimators': 82, 'subsample': 0.8627620691664697}, CV RMSE: 0.4173
+2025-05-17 01:33:42,189 - INFO - Đã lưu biểu đồ: cpi_mom_lightgbm_forecast.png
+2025-05-17 01:33:43,126 - INFO - Đã lưu learning curves: cpi_mom_lightgbm_learning_curve.png
+2025-05-17 01:33:43,126 - INFO - Overfitting gap cho LightGBM (cpi_mom): -0.0049
+2025-05-17 01:33:43,126 - INFO - LightGBM (cpi_mom): Train RMSE=0.3108, Test RMSE=0.1717, CV RMSE=0.4173, Test MAE=0.1271, Test MAPE=0.1266, Best Params={'colsample_bytree': 0.8481681145550304, 'lambda_l1': 1.394113546106644, 'lambda_l2': 2.3323439229142995, 'learning_rate': 0.04720852615282812, 'max_depth': 3, 'min_data_in_leaf': 20, 'n_estimators': 82, 'subsample': 0.8627620691664697}, Overfitting Gap=-0.0049, Time=5.90s
+2025-05-17 01:33:43,126 - INFO - Hoàn thành LightGBM trong 5.90s
+2025-05-17 01:33:43,126 - INFO - Chạy SVR cho cpi_mom
+2025-05-17 01:33:43,133 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:33:43,134 - INFO - Chạy SVR cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:33:47,000 - INFO - Tham số tốt nhất: {'C': 1.3709563372047595, 'epsilon': 0.020789142699330444, 'kernel': 'rbf'}, CV RMSE: 0.3952
+2025-05-17 01:33:47,404 - INFO - Đã lưu biểu đồ: cpi_mom_svr_forecast.png
+2025-05-17 01:33:48,065 - INFO - Đã lưu learning curves: cpi_mom_svr_learning_curve.png
+2025-05-17 01:33:48,065 - INFO - Overfitting gap cho SVR (cpi_mom): -0.1288
+2025-05-17 01:33:48,065 - INFO - SVR (cpi_mom): Train RMSE=0.2239, Test RMSE=0.2019, CV RMSE=0.3952, Test MAE=0.1275, Test MAPE=0.1268, Best Params={'C': 1.3709563372047595, 'epsilon': 0.020789142699330444, 'kernel': 'rbf'}, Overfitting Gap=-0.1288, Time=4.94s
+2025-05-17 01:33:48,065 - INFO - Hoàn thành SVR trong 4.94s
+2025-05-17 01:33:48,065 - INFO - Chạy ElasticNet cho cpi_mom
+2025-05-17 01:33:48,075 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:33:48,077 - INFO - Chạy ElasticNet cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:33:49,624 - INFO - Tham số tốt nhất: {'alpha': 0.06024145688620425, 'l1_ratio': 0.3325152889039984}, CV RMSE: 0.2862
+2025-05-17 01:33:49,997 - INFO - Đã lưu biểu đồ: cpi_mom_elasticnet_forecast.png
+2025-05-17 01:33:50,642 - INFO - Đã lưu learning curves: cpi_mom_elasticnet_learning_curve.png
+2025-05-17 01:33:50,642 - INFO - Overfitting gap cho ElasticNet (cpi_mom): 0.1367
+2025-05-17 01:33:50,642 - INFO - ElasticNet (cpi_mom): Train RMSE=0.3267, Test RMSE=0.2047, CV RMSE=0.2862, Test MAE=0.1559, Test MAPE=0.1552, Best Params={'alpha': 0.06024145688620425, 'l1_ratio': 0.3325152889039984}, Overfitting Gap=0.1367, Time=2.58s
+2025-05-17 01:33:50,643 - INFO - Hoàn thành ElasticNet trong 2.58s
+2025-05-17 01:33:50,643 - INFO - Chạy Linear Regression cho cpi_mom
+2025-05-17 01:33:50,655 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:33:50,658 - INFO - Chạy Linear Regression cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:33:51,018 - INFO - Đã lưu biểu đồ: cpi_mom_linear_regression_forecast.png
+2025-05-17 01:33:51,613 - INFO - Đã lưu learning curves: cpi_mom_linear_regression_learning_curve.png
+2025-05-17 01:33:51,613 - INFO - Overfitting gap cho Linear Regression (cpi_mom): -1.1440
+2025-05-17 01:33:51,614 - INFO - Linear Regression (cpi_mom): Train RMSE=0.3204, Test RMSE=0.2035, CV RMSE=0.3516, Test MAE=0.1426, Test MAPE=0.1419, Best Params={}, Overfitting Gap=-1.1440, Time=0.97s
+2025-05-17 01:33:51,614 - INFO - Hoàn thành Linear Regression trong 0.97s
+2025-05-17 01:33:51,614 - INFO - Chạy Ridge cho cpi_mom
+2025-05-17 01:33:51,622 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:33:51,625 - INFO - Chạy Ridge cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:33:52,967 - INFO - Tham số tốt nhất: {'alpha': 13.438999080000846}, CV RMSE: 0.2859
+2025-05-17 01:33:53,349 - INFO - Đã lưu biểu đồ: cpi_mom_ridge_forecast.png
+2025-05-17 01:33:53,862 - INFO - Đã lưu learning curves: cpi_mom_ridge_learning_curve.png
+2025-05-17 01:33:53,862 - INFO - Overfitting gap cho Ridge (cpi_mom): 0.1596
+2025-05-17 01:33:53,863 - INFO - Ridge (cpi_mom): Train RMSE=0.3215, Test RMSE=0.2038, CV RMSE=0.2859, Test MAE=0.1463, Test MAPE=0.1456, Best Params={'alpha': 13.438999080000846}, Overfitting Gap=0.1596, Time=2.25s
+2025-05-17 01:33:53,863 - INFO - Hoàn thành Ridge trong 2.25s
+2025-05-17 01:33:54,151 - INFO - Đã lưu biểu đồ so sánh: cpi_mom_ml_model_comparison.png
+2025-05-17 01:33:54,155 - INFO - Kết quả lưu tại ml_model_results\ml_model_results.csv
+2025-05-17 01:33:54,156 - INFO - Tham số tối ưu lưu tại ml_model_results\best_params.csv
+2025-05-17 01:33:54,160 - INFO - Dự báo kết hợp lưu tại ml_model_results/combined_forecast_cpi_mom.csv
+2025-05-17 01:37:20,751 - INFO - Kiểm tra NaN/Inf trong dữ liệu gốc: {'cpi_mom': 0, 'oil_price': 0}
+2025-05-17 01:37:20,752 - INFO - Kiểm tra Inf trong dữ liệu gốc: {'cpi_mom': 0, 'oil_price': 0}
+2025-05-17 01:37:20,753 - INFO - Kích thước dữ liệu gốc: 349
+2025-05-17 01:37:20,753 - INFO - Tạo đặc trưng cho cpi_mom, kích thước dữ liệu: (349, 17)
+2025-05-17 01:37:20,766 - INFO - Đã thêm đặc trưng mùa vụ
+2025-05-17 01:37:20,794 - INFO - Loại bỏ đặc trưng tương quan thấp (< 0.5): ['cpi_yoy', 'gold_price', 'interest_rate', 'cpi_yoy_smoothed', 'cpi_yoy_log', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_mom_lag_2', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_mom_lag_7', 'cpi_mom_lag_8', 'cpi_mom_lag_9', 'cpi_mom_lag_10', 'cpi_mom_lag_11', 'cpi_mom_lag_12', 'cpi_mom_roll_mean_12', 'oil_price_lag_1', 'oil_price_lag_2', 'oil_price_lag_3', 'oil_price_lag_4', 'oil_price_lag_5', 'oil_price_lag_6', 'oil_price_lag_7', 'oil_price_lag_8', 'oil_price_lag_9', 'oil_price_lag_10', 'oil_price_lag_11', 'oil_price_lag_12', 'oil_price_roll_mean_3', 'oil_price_roll_mean_6', 'oil_price_roll_mean_12', 'month_1', 'month_2', 'month_3', 'month_4', 'month_5', 'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11', 'month_12', 'month_sin', 'month_cos', 'quarter']
+2025-05-17 01:37:20,798 - INFO - PCA: 4 thành phần, tỷ lệ phương sai: 0.9900
+2025-05-17 01:37:20,799 - INFO - Đặc trưng sau xử lý: ['cpi_mom', 'oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:37:20,799 - INFO - Kích thước tập dữ liệu: Train=337, Test=12
+2025-05-17 01:37:20,799 - INFO - Đặc trưng cho cpi_mom: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:37:20,808 - INFO - Chạy các mô hình cho cpi_mom
+2025-05-17 01:37:20,809 - INFO - Chạy Random Forest cho cpi_mom
+2025-05-17 01:37:20,815 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:37:20,816 - INFO - Chạy Random Forest cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:37:32,614 - INFO - Tham số tốt nhất: {'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 10, 'n_estimators': 52}, CV RMSE: 0.4820
+2025-05-17 01:37:32,914 - INFO - Đã lưu biểu đồ: cpi_mom_random_forest_forecast.png
+2025-05-17 01:37:36,113 - INFO - Đã lưu learning curves: cpi_mom_random_forest_learning_curve.png
+2025-05-17 01:37:36,113 - INFO - Overfitting gap cho Random Forest (cpi_mom): 0.0469
+2025-05-17 01:37:36,113 - INFO - Random Forest (cpi_mom): Train RMSE=0.3884, Test RMSE=0.2290, CV RMSE=0.4820, Test MAE=0.1661, Test MAPE=0.1656, Best Params={'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 10, 'n_estimators': 52}, Overfitting Gap=0.0469, Time=15.30s
+2025-05-17 01:37:36,113 - INFO - Hoàn thành Random Forest trong 15.30s
+2025-05-17 01:37:36,113 - INFO - Chạy XGBoost cho cpi_mom
+2025-05-17 01:37:36,119 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:37:36,120 - INFO - Chạy XGBoost cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:37:41,331 - INFO - Tham số tốt nhất: {'colsample_bytree': 0.8123620356542087, 'learning_rate': 0.05753571532049581, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 70, 'reg_alpha': 0.6560186404424365, 'reg_lambda': 1.7799726016810133, 'subsample': 0.7174250836504598}, CV RMSE: 0.3662
+2025-05-17 01:37:41,605 - INFO - Đã lưu biểu đồ: cpi_mom_xgboost_forecast.png
+2025-05-17 01:37:44,436 - INFO - Đã lưu learning curves: cpi_mom_xgboost_learning_curve.png
+2025-05-17 01:37:44,436 - INFO - Overfitting gap cho XGBoost (cpi_mom): -0.1197
+2025-05-17 01:37:44,436 - INFO - XGBoost (cpi_mom): Train RMSE=0.2598, Test RMSE=0.1934, CV RMSE=0.3662, Test MAE=0.1500, Test MAPE=0.1494, Best Params={'colsample_bytree': 0.8123620356542087, 'learning_rate': 0.05753571532049581, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 70, 'reg_alpha': 0.6560186404424365, 'reg_lambda': 1.7799726016810133, 'subsample': 0.7174250836504598}, Overfitting Gap=-0.1197, Time=8.32s
+2025-05-17 01:37:44,436 - INFO - Hoàn thành XGBoost trong 8.32s
+2025-05-17 01:37:44,437 - INFO - Chạy LightGBM cho cpi_mom
+2025-05-17 01:37:44,444 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:37:44,445 - INFO - Chạy LightGBM cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:37:46,019 - INFO - Tham số tốt nhất: {'colsample_bytree': 0.9687290787020557, 'lambda_l1': 2.8768511159105588, 'lambda_l2': 3.3163778598819182, 'learning_rate': 0.04477580432130638, 'max_depth': 3, 'min_data_in_leaf': 20, 'n_estimators': 88, 'subsample': 0.8231148769106889}, CV RMSE: 0.4286
+2025-05-17 01:37:46,389 - INFO - Đã lưu biểu đồ: cpi_mom_lightgbm_forecast.png
+2025-05-17 01:37:47,240 - INFO - Đã lưu learning curves: cpi_mom_lightgbm_learning_curve.png
+2025-05-17 01:37:47,240 - INFO - Overfitting gap cho LightGBM (cpi_mom): 0.0252
+2025-05-17 01:37:47,240 - INFO - LightGBM (cpi_mom): Train RMSE=0.3235, Test RMSE=0.1795, CV RMSE=0.4286, Test MAE=0.1322, Test MAPE=0.1316, Best Params={'colsample_bytree': 0.9687290787020557, 'lambda_l1': 2.8768511159105588, 'lambda_l2': 3.3163778598819182, 'learning_rate': 0.04477580432130638, 'max_depth': 3, 'min_data_in_leaf': 20, 'n_estimators': 88, 'subsample': 0.8231148769106889}, Overfitting Gap=0.0252, Time=2.80s
+2025-05-17 01:37:47,240 - INFO - Hoàn thành LightGBM trong 2.80s
+2025-05-17 01:37:47,240 - INFO - Chạy SVR cho cpi_mom
+2025-05-17 01:37:47,246 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:37:47,247 - INFO - Chạy SVR cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:37:48,624 - INFO - Tham số tốt nhất: {'C': 1.1292247147901224, 'epsilon': 0.10699098521619943, 'kernel': 'rbf'}, CV RMSE: 0.4036
+2025-05-17 01:37:48,862 - INFO - Đã lưu biểu đồ: cpi_mom_svr_forecast.png
+2025-05-17 01:37:49,328 - INFO - Đã lưu learning curves: cpi_mom_svr_learning_curve.png
+2025-05-17 01:37:49,328 - INFO - Overfitting gap cho SVR (cpi_mom): -0.1132
+2025-05-17 01:37:49,328 - INFO - SVR (cpi_mom): Train RMSE=0.2406, Test RMSE=0.1973, CV RMSE=0.4036, Test MAE=0.1307, Test MAPE=0.1300, Best Params={'C': 1.1292247147901224, 'epsilon': 0.10699098521619943, 'kernel': 'rbf'}, Overfitting Gap=-0.1132, Time=2.09s
+2025-05-17 01:37:49,328 - INFO - Hoàn thành SVR trong 2.09s
+2025-05-17 01:37:49,328 - INFO - Chạy ElasticNet cho cpi_mom
+2025-05-17 01:37:49,336 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:37:49,337 - INFO - Chạy ElasticNet cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:37:49,884 - INFO - Tham số tốt nhất: {'alpha': 0.06024145688620425, 'l1_ratio': 0.3325152889039984}, CV RMSE: 0.2862
+2025-05-17 01:37:50,158 - INFO - Đã lưu biểu đồ: cpi_mom_elasticnet_forecast.png
+2025-05-17 01:37:50,578 - INFO - Đã lưu learning curves: cpi_mom_elasticnet_learning_curve.png
+2025-05-17 01:37:50,578 - INFO - Overfitting gap cho ElasticNet (cpi_mom): 0.1367
+2025-05-17 01:37:50,578 - INFO - ElasticNet (cpi_mom): Train RMSE=0.3267, Test RMSE=0.2047, CV RMSE=0.2862, Test MAE=0.1559, Test MAPE=0.1552, Best Params={'alpha': 0.06024145688620425, 'l1_ratio': 0.3325152889039984}, Overfitting Gap=0.1367, Time=1.25s
+2025-05-17 01:37:50,578 - INFO - Hoàn thành ElasticNet trong 1.25s
+2025-05-17 01:37:50,578 - INFO - Chạy Linear Regression cho cpi_mom
+2025-05-17 01:37:50,588 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:37:50,591 - INFO - Chạy Linear Regression cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:37:51,057 - INFO - Đã lưu biểu đồ: cpi_mom_linear_regression_forecast.png
+2025-05-17 01:37:51,507 - INFO - Đã lưu learning curves: cpi_mom_linear_regression_learning_curve.png
+2025-05-17 01:37:51,507 - INFO - Overfitting gap cho Linear Regression (cpi_mom): -1.1440
+2025-05-17 01:37:51,508 - INFO - Linear Regression (cpi_mom): Train RMSE=0.3204, Test RMSE=0.2035, CV RMSE=0.3516, Test MAE=0.1426, Test MAPE=0.1419, Best Params={}, Overfitting Gap=-1.1440, Time=0.93s
+2025-05-17 01:37:51,508 - INFO - Hoàn thành Linear Regression trong 0.93s
+2025-05-17 01:37:51,508 - INFO - Chạy Ridge cho cpi_mom
+2025-05-17 01:37:51,513 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 01:37:51,514 - INFO - Chạy Ridge cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 01:37:51,958 - INFO - Tham số tốt nhất: {'alpha': 15.061457009902096}, CV RMSE: 0.2860
+2025-05-17 01:37:52,219 - INFO - Đã lưu biểu đồ: cpi_mom_ridge_forecast.png
+2025-05-17 01:37:52,643 - INFO - Đã lưu learning curves: cpi_mom_ridge_learning_curve.png
+2025-05-17 01:37:52,643 - INFO - Overfitting gap cho Ridge (cpi_mom): 0.1621
+2025-05-17 01:37:52,643 - INFO - Ridge (cpi_mom): Train RMSE=0.3218, Test RMSE=0.2040, CV RMSE=0.2860, Test MAE=0.1469, Test MAPE=0.1463, Best Params={'alpha': 15.061457009902096}, Overfitting Gap=0.1621, Time=1.14s
+2025-05-17 01:37:52,643 - INFO - Hoàn thành Ridge trong 1.14s
+2025-05-17 01:37:53,041 - INFO - Đã lưu biểu đồ so sánh: cpi_mom_ml_model_comparison.png
+2025-05-17 01:37:53,046 - INFO - Kết quả lưu tại ml_model_results\ml_model_results.csv
+2025-05-17 01:37:53,047 - INFO - Tham số tối ưu lưu tại ml_model_results\best_params.csv
+2025-05-17 01:37:53,051 - INFO - Dự báo kết hợp lưu tại ml_model_results/combined_forecast_cpi_mom.csv
+2025-05-17 15:00:15,102 - INFO - Kiểm tra NaN/Inf trong dữ liệu gốc: {'cpi_mom': 0, 'oil_price': 0}
+2025-05-17 15:00:15,105 - INFO - Kiểm tra Inf trong dữ liệu gốc: {'cpi_mom': 0, 'oil_price': 0}
+2025-05-17 15:00:15,118 - INFO - Kích thước dữ liệu gốc: 349
+2025-05-17 15:00:15,118 - INFO - Tạo đặc trưng cho cpi_mom, kích thước dữ liệu: (349, 17)
+2025-05-17 15:00:15,143 - INFO - Đã thêm đặc trưng mùa vụ
+2025-05-17 15:00:15,183 - INFO - Loại bỏ đặc trưng tương quan thấp (< 0.5): ['cpi_yoy', 'gold_price', 'interest_rate', 'cpi_yoy_smoothed', 'cpi_yoy_log', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_mom_lag_2', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_mom_lag_7', 'cpi_mom_lag_8', 'cpi_mom_lag_9', 'cpi_mom_lag_10', 'cpi_mom_lag_11', 'cpi_mom_lag_12', 'oil_price_lag_1', 'oil_price_lag_2', 'oil_price_lag_3', 'oil_price_lag_4', 'oil_price_lag_5', 'oil_price_lag_6', 'oil_price_lag_7', 'oil_price_lag_8', 'oil_price_lag_9', 'oil_price_lag_10', 'oil_price_lag_11', 'oil_price_lag_12', 'oil_price_roll_mean_3', 'oil_price_roll_mean_6', 'month_1', 'month_2', 'month_3', 'month_4', 'month_5', 'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11', 'month_12', 'month_sin', 'month_cos', 'quarter']
+2025-05-17 15:00:15,490 - INFO - PCA: 4 thành phần, tỷ lệ phương sai: 0.9900
+2025-05-17 15:00:15,491 - INFO - Đặc trưng sau xử lý: ['cpi_mom', 'oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:00:15,496 - INFO - Kích thước tập dữ liệu: Train=337, Test=12
+2025-05-17 15:00:15,503 - INFO - Đặc trưng cho cpi_mom: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:00:15,512 - INFO - Chạy các mô hình cho cpi_mom
+2025-05-17 15:00:15,512 - INFO - Chạy XGBoost cho cpi_mom
+2025-05-17 15:00:15,529 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:00:15,531 - INFO - Chạy XGBoost cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:00:26,221 - INFO - Tham số tốt nhất: {'colsample_bytree': 0.8123620356542087, 'learning_rate': 0.05753571532049581, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 70, 'reg_alpha': 0.6560186404424365, 'reg_lambda': 1.7799726016810133, 'subsample': 0.7174250836504598}, CV RMSE: 0.3662
+2025-05-17 15:00:26,729 - INFO - Đã lưu biểu đồ: cpi_mom_xgboost_forecast.png
+2025-05-17 15:00:29,903 - INFO - Đã lưu learning curves: cpi_mom_xgboost_learning_curve.png
+2025-05-17 15:00:29,904 - INFO - Overfitting gap cho XGBoost (cpi_mom): -0.1197
+2025-05-17 15:00:29,904 - INFO - XGBoost (cpi_mom): Train RMSE=0.2598, Test RMSE=0.1934, CV RMSE=0.3662, Test MAE=0.1500, Test MAPE=0.1494, Best Params={'colsample_bytree': 0.8123620356542087, 'learning_rate': 0.05753571532049581, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 70, 'reg_alpha': 0.6560186404424365, 'reg_lambda': 1.7799726016810133, 'subsample': 0.7174250836504598}, Overfitting Gap=-0.1197, Time=14.39s
+2025-05-17 15:00:29,904 - INFO - Hoàn thành XGBoost trong 14.39s
+2025-05-17 15:00:29,905 - INFO - Chạy LightGBM cho cpi_mom
+2025-05-17 15:00:29,913 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:00:29,913 - INFO - Chạy LightGBM cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:00:34,746 - INFO - Tham số tốt nhất: {'colsample_bytree': 0.9687290787020557, 'lambda_l1': 2.8768511159105588, 'lambda_l2': 3.3163778598819182, 'learning_rate': 0.04477580432130638, 'max_depth': 3, 'min_data_in_leaf': 20, 'n_estimators': 88, 'subsample': 0.8231148769106889}, CV RMSE: 0.4286
+2025-05-17 15:00:35,060 - INFO - Đã lưu biểu đồ: cpi_mom_lightgbm_forecast.png
+2025-05-17 15:00:36,016 - INFO - Đã lưu learning curves: cpi_mom_lightgbm_learning_curve.png
+2025-05-17 15:00:36,016 - INFO - Overfitting gap cho LightGBM (cpi_mom): 0.0252
+2025-05-17 15:00:36,016 - INFO - LightGBM (cpi_mom): Train RMSE=0.3235, Test RMSE=0.1795, CV RMSE=0.4286, Test MAE=0.1322, Test MAPE=0.1316, Best Params={'colsample_bytree': 0.9687290787020557, 'lambda_l1': 2.8768511159105588, 'lambda_l2': 3.3163778598819182, 'learning_rate': 0.04477580432130638, 'max_depth': 3, 'min_data_in_leaf': 20, 'n_estimators': 88, 'subsample': 0.8231148769106889}, Overfitting Gap=0.0252, Time=6.11s
+2025-05-17 15:00:36,016 - INFO - Hoàn thành LightGBM trong 6.11s
+2025-05-17 15:00:36,016 - INFO - Chạy SVR cho cpi_mom
+2025-05-17 15:00:36,026 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:00:36,027 - INFO - Chạy SVR cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:00:37,530 - INFO - Tham số tốt nhất: {'C': 1.1292247147901224, 'epsilon': 0.10699098521619943, 'kernel': 'rbf'}, CV RMSE: 0.4036
+2025-05-17 15:00:37,785 - INFO - Đã lưu biểu đồ: cpi_mom_svr_forecast.png
+2025-05-17 15:00:38,210 - INFO - Đã lưu learning curves: cpi_mom_svr_learning_curve.png
+2025-05-17 15:00:38,210 - INFO - Overfitting gap cho SVR (cpi_mom): -0.1132
+2025-05-17 15:00:38,210 - INFO - SVR (cpi_mom): Train RMSE=0.2406, Test RMSE=0.1973, CV RMSE=0.4036, Test MAE=0.1307, Test MAPE=0.1300, Best Params={'C': 1.1292247147901224, 'epsilon': 0.10699098521619943, 'kernel': 'rbf'}, Overfitting Gap=-0.1132, Time=2.19s
+2025-05-17 15:00:38,210 - INFO - Hoàn thành SVR trong 2.19s
+2025-05-17 15:00:38,673 - INFO - Đã lưu biểu đồ so sánh: cpi_mom_ml_model_comparison.png
+2025-05-17 15:00:38,700 - INFO - Kết quả lưu tại ml_model_results\machine_learning_model_results.csv
+2025-05-17 15:00:38,703 - INFO - Tham số tối ưu lưu tại ml_model_results\best_params.csv
+2025-05-17 15:00:38,710 - INFO - Dự báo kết hợp lưu tại ml_model_results/combined_forecast_cpi_mom.csv
+2025-05-17 15:02:41,354 - INFO - Kiểm tra NaN/Inf trong dữ liệu gốc: {'cpi_mom': 0, 'oil_price': 0}
+2025-05-17 15:02:41,359 - INFO - Kiểm tra Inf trong dữ liệu gốc: {'cpi_mom': 0, 'oil_price': 0}
+2025-05-17 15:02:41,376 - INFO - Kích thước dữ liệu gốc: 349
+2025-05-17 15:02:41,376 - INFO - Tạo đặc trưng cho cpi_mom, kích thước dữ liệu: (349, 17)
+2025-05-17 15:02:41,416 - INFO - Đã thêm đặc trưng mùa vụ
+2025-05-17 15:02:41,454 - INFO - Loại bỏ đặc trưng tương quan thấp (< 0.5): ['cpi_yoy', 'gold_price', 'interest_rate', 'cpi_yoy_smoothed', 'cpi_yoy_log', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_mom_lag_2', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_mom_lag_7', 'cpi_mom_lag_8', 'cpi_mom_lag_9', 'cpi_mom_lag_10', 'cpi_mom_lag_11', 'cpi_mom_lag_12', 'oil_price_lag_1', 'oil_price_lag_2', 'oil_price_lag_3', 'oil_price_lag_4', 'oil_price_lag_5', 'oil_price_lag_6', 'oil_price_lag_7', 'oil_price_lag_8', 'oil_price_lag_9', 'oil_price_lag_10', 'oil_price_lag_11', 'oil_price_lag_12', 'oil_price_roll_mean_3', 'oil_price_roll_mean_6', 'month_1', 'month_2', 'month_3', 'month_4', 'month_5', 'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11', 'month_12', 'month_sin', 'month_cos', 'quarter']
+2025-05-17 15:02:41,491 - INFO - PCA: 4 thành phần, tỷ lệ phương sai: 0.9900
+2025-05-17 15:02:41,492 - INFO - Đặc trưng sau xử lý: ['cpi_mom', 'oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:02:41,492 - INFO - Kích thước tập dữ liệu: Train=337, Test=12
+2025-05-17 15:02:41,496 - INFO - Đặc trưng cho cpi_mom: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:02:41,521 - INFO - Chạy các mô hình cho cpi_mom
+2025-05-17 15:02:41,522 - INFO - Chạy Random Forest cho cpi_mom
+2025-05-17 15:02:41,543 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:02:41,545 - INFO - Chạy Random Forest cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:02:54,395 - INFO - Tham số tốt nhất: {'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 10, 'n_estimators': 52}, CV RMSE: 0.4820
+2025-05-17 15:02:54,798 - INFO - Đã lưu biểu đồ: cpi_mom_random_forest_forecast.png
+2025-05-17 15:02:58,627 - INFO - Đã lưu learning curves: cpi_mom_random_forest_learning_curve.png
+2025-05-17 15:02:58,627 - INFO - Overfitting gap cho Random Forest (cpi_mom): 0.0469
+2025-05-17 15:02:58,627 - INFO - Random Forest (cpi_mom): Train RMSE=0.3884, Test RMSE=0.2290, CV RMSE=0.4820, Test MAE=0.1661, Test MAPE=0.1656, Best Params={'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 10, 'n_estimators': 52}, Overfitting Gap=0.0469, Time=17.11s
+2025-05-17 15:02:58,628 - INFO - Hoàn thành Random Forest trong 17.11s
+2025-05-17 15:02:58,628 - INFO - Chạy XGBoost cho cpi_mom
+2025-05-17 15:02:58,636 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:02:58,637 - INFO - Chạy XGBoost cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:03:06,103 - INFO - Tham số tốt nhất: {'colsample_bytree': 0.8123620356542087, 'learning_rate': 0.05753571532049581, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 70, 'reg_alpha': 0.6560186404424365, 'reg_lambda': 1.7799726016810133, 'subsample': 0.7174250836504598}, CV RMSE: 0.3662
+2025-05-17 15:03:06,522 - INFO - Đã lưu biểu đồ: cpi_mom_xgboost_forecast.png
+2025-05-17 15:03:10,054 - INFO - Đã lưu learning curves: cpi_mom_xgboost_learning_curve.png
+2025-05-17 15:03:10,054 - INFO - Overfitting gap cho XGBoost (cpi_mom): -0.1197
+2025-05-17 15:03:10,054 - INFO - XGBoost (cpi_mom): Train RMSE=0.2598, Test RMSE=0.1934, CV RMSE=0.3662, Test MAE=0.1500, Test MAPE=0.1494, Best Params={'colsample_bytree': 0.8123620356542087, 'learning_rate': 0.05753571532049581, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 70, 'reg_alpha': 0.6560186404424365, 'reg_lambda': 1.7799726016810133, 'subsample': 0.7174250836504598}, Overfitting Gap=-0.1197, Time=11.43s
+2025-05-17 15:03:10,054 - INFO - Hoàn thành XGBoost trong 11.43s
+2025-05-17 15:03:10,054 - INFO - Chạy LightGBM cho cpi_mom
+2025-05-17 15:03:10,061 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:03:10,064 - INFO - Chạy LightGBM cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:03:11,873 - INFO - Tham số tốt nhất: {'colsample_bytree': 0.9687290787020557, 'lambda_l1': 2.8768511159105588, 'lambda_l2': 3.3163778598819182, 'learning_rate': 0.04477580432130638, 'max_depth': 3, 'min_data_in_leaf': 20, 'n_estimators': 88, 'subsample': 0.8231148769106889}, CV RMSE: 0.4286
+2025-05-17 15:03:14,160 - INFO - Đã lưu biểu đồ: cpi_mom_lightgbm_forecast.png
+2025-05-17 15:03:15,386 - INFO - Đã lưu learning curves: cpi_mom_lightgbm_learning_curve.png
+2025-05-17 15:03:15,386 - INFO - Overfitting gap cho LightGBM (cpi_mom): 0.0252
+2025-05-17 15:03:15,386 - INFO - LightGBM (cpi_mom): Train RMSE=0.3235, Test RMSE=0.1795, CV RMSE=0.4286, Test MAE=0.1322, Test MAPE=0.1316, Best Params={'colsample_bytree': 0.9687290787020557, 'lambda_l1': 2.8768511159105588, 'lambda_l2': 3.3163778598819182, 'learning_rate': 0.04477580432130638, 'max_depth': 3, 'min_data_in_leaf': 20, 'n_estimators': 88, 'subsample': 0.8231148769106889}, Overfitting Gap=0.0252, Time=5.33s
+2025-05-17 15:03:15,386 - INFO - Hoàn thành LightGBM trong 5.33s
+2025-05-17 15:03:15,386 - INFO - Chạy SVR cho cpi_mom
+2025-05-17 15:03:15,393 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:03:15,394 - INFO - Chạy SVR cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:03:17,034 - INFO - Tham số tốt nhất: {'C': 1.1292247147901224, 'epsilon': 0.10699098521619943, 'kernel': 'rbf'}, CV RMSE: 0.4036
+2025-05-17 15:03:17,315 - INFO - Đã lưu biểu đồ: cpi_mom_svr_forecast.png
+2025-05-17 15:03:17,767 - INFO - Đã lưu learning curves: cpi_mom_svr_learning_curve.png
+2025-05-17 15:03:17,767 - INFO - Overfitting gap cho SVR (cpi_mom): -0.1132
+2025-05-17 15:03:17,767 - INFO - SVR (cpi_mom): Train RMSE=0.2406, Test RMSE=0.1973, CV RMSE=0.4036, Test MAE=0.1307, Test MAPE=0.1300, Best Params={'C': 1.1292247147901224, 'epsilon': 0.10699098521619943, 'kernel': 'rbf'}, Overfitting Gap=-0.1132, Time=2.38s
+2025-05-17 15:03:17,767 - INFO - Hoàn thành SVR trong 2.38s
+2025-05-17 15:03:17,767 - INFO - Chạy ElasticNet cho cpi_mom
+2025-05-17 15:03:17,779 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:03:17,782 - INFO - Chạy ElasticNet cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:03:18,220 - INFO - Tham số tốt nhất: {'alpha': 0.06024145688620425, 'l1_ratio': 0.3325152889039984}, CV RMSE: 0.2862
+2025-05-17 15:03:18,470 - INFO - Đã lưu biểu đồ: cpi_mom_elasticnet_forecast.png
+2025-05-17 15:03:18,918 - INFO - Đã lưu learning curves: cpi_mom_elasticnet_learning_curve.png
+2025-05-17 15:03:18,918 - INFO - Overfitting gap cho ElasticNet (cpi_mom): 0.1367
+2025-05-17 15:03:18,918 - INFO - ElasticNet (cpi_mom): Train RMSE=0.3267, Test RMSE=0.2047, CV RMSE=0.2862, Test MAE=0.1559, Test MAPE=0.1552, Best Params={'alpha': 0.06024145688620425, 'l1_ratio': 0.3325152889039984}, Overfitting Gap=0.1367, Time=1.15s
+2025-05-17 15:03:18,918 - INFO - Hoàn thành ElasticNet trong 1.15s
+2025-05-17 15:03:18,918 - INFO - Chạy Linear Regression cho cpi_mom
+2025-05-17 15:03:18,926 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:03:18,927 - INFO - Chạy Linear Regression cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:03:19,213 - INFO - Đã lưu biểu đồ: cpi_mom_linear_regression_forecast.png
+2025-05-17 15:03:19,764 - INFO - Đã lưu learning curves: cpi_mom_linear_regression_learning_curve.png
+2025-05-17 15:03:19,764 - INFO - Overfitting gap cho Linear Regression (cpi_mom): -1.1440
+2025-05-17 15:03:19,764 - INFO - Linear Regression (cpi_mom): Train RMSE=0.3204, Test RMSE=0.2035, CV RMSE=0.3516, Test MAE=0.1426, Test MAPE=0.1419, Best Params={}, Overfitting Gap=-1.1440, Time=0.85s
+2025-05-17 15:03:19,765 - INFO - Hoàn thành Linear Regression trong 0.85s
+2025-05-17 15:03:19,765 - INFO - Chạy Ridge cho cpi_mom
+2025-05-17 15:03:19,773 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:03:19,775 - INFO - Chạy Ridge cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:03:20,198 - INFO - Tham số tốt nhất: {'alpha': 15.061457009902096}, CV RMSE: 0.2860
+2025-05-17 15:03:20,436 - INFO - Đã lưu biểu đồ: cpi_mom_ridge_forecast.png
+2025-05-17 15:03:20,959 - INFO - Đã lưu learning curves: cpi_mom_ridge_learning_curve.png
+2025-05-17 15:03:20,959 - INFO - Overfitting gap cho Ridge (cpi_mom): 0.1621
+2025-05-17 15:03:20,959 - INFO - Ridge (cpi_mom): Train RMSE=0.3218, Test RMSE=0.2040, CV RMSE=0.2860, Test MAE=0.1469, Test MAPE=0.1463, Best Params={'alpha': 15.061457009902096}, Overfitting Gap=0.1621, Time=1.19s
+2025-05-17 15:03:20,959 - INFO - Hoàn thành Ridge trong 1.19s
+2025-05-17 15:03:21,350 - INFO - Đã lưu biểu đồ so sánh: cpi_mom_ml_model_comparison.png
+2025-05-17 15:03:21,360 - INFO - Kết quả lưu tại ml_model_results\ml_model_results.csv
+2025-05-17 15:03:21,363 - INFO - Tham số tối ưu lưu tại ml_model_results\best_params.csv
+2025-05-17 15:03:21,371 - INFO - Dự báo kết hợp lưu tại ml_model_results/combined_forecast_cpi_mom.csv
+2025-05-17 15:03:21,495 - INFO - Kiểm tra NaN/Inf trong dữ liệu gốc: {'cpi_mom': 0, 'oil_price': 0}
+2025-05-17 15:03:21,496 - INFO - Kiểm tra Inf trong dữ liệu gốc: {'cpi_mom': 0, 'oil_price': 0}
+2025-05-17 15:03:21,498 - INFO - Kích thước dữ liệu gốc: 349
+2025-05-17 15:03:21,498 - INFO - Tạo đặc trưng cho cpi_mom, kích thước dữ liệu: (349, 17)
+2025-05-17 15:03:21,510 - INFO - Đã thêm đặc trưng mùa vụ
+2025-05-17 15:03:21,542 - INFO - Loại bỏ đặc trưng tương quan thấp (< 0.5): ['cpi_yoy', 'gold_price', 'interest_rate', 'cpi_yoy_smoothed', 'cpi_yoy_log', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_mom_lag_2', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_mom_lag_7', 'cpi_mom_lag_8', 'cpi_mom_lag_9', 'cpi_mom_lag_10', 'cpi_mom_lag_11', 'cpi_mom_lag_12', 'oil_price_lag_1', 'oil_price_lag_2', 'oil_price_lag_3', 'oil_price_lag_4', 'oil_price_lag_5', 'oil_price_lag_6', 'oil_price_lag_7', 'oil_price_lag_8', 'oil_price_lag_9', 'oil_price_lag_10', 'oil_price_lag_11', 'oil_price_lag_12', 'oil_price_roll_mean_3', 'oil_price_roll_mean_6', 'month_1', 'month_2', 'month_3', 'month_4', 'month_5', 'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11', 'month_12', 'month_sin', 'month_cos', 'quarter']
+2025-05-17 15:03:21,547 - INFO - PCA: 4 thành phần, tỷ lệ phương sai: 0.9900
+2025-05-17 15:03:21,548 - INFO - Đặc trưng sau xử lý: ['cpi_mom', 'oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:03:21,548 - INFO - Kích thước tập dữ liệu: Train=337, Test=12
+2025-05-17 15:03:21,548 - INFO - Đặc trưng cho cpi_mom: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:03:21,558 - INFO - Chạy các mô hình cho cpi_mom
+2025-05-17 15:03:21,558 - INFO - Chạy XGBoost cho cpi_mom
+2025-05-17 15:03:21,566 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:03:21,567 - INFO - Chạy XGBoost cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:03:28,223 - INFO - Tham số tốt nhất: {'colsample_bytree': 0.8123620356542087, 'learning_rate': 0.05753571532049581, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 70, 'reg_alpha': 0.6560186404424365, 'reg_lambda': 1.7799726016810133, 'subsample': 0.7174250836504598}, CV RMSE: 0.3662
+2025-05-17 15:03:28,542 - INFO - Đã lưu biểu đồ: cpi_mom_xgboost_forecast.png
+2025-05-17 15:03:31,797 - INFO - Đã lưu learning curves: cpi_mom_xgboost_learning_curve.png
+2025-05-17 15:03:31,797 - INFO - Overfitting gap cho XGBoost (cpi_mom): -0.1197
+2025-05-17 15:03:31,797 - INFO - XGBoost (cpi_mom): Train RMSE=0.2598, Test RMSE=0.1934, CV RMSE=0.3662, Test MAE=0.1500, Test MAPE=0.1494, Best Params={'colsample_bytree': 0.8123620356542087, 'learning_rate': 0.05753571532049581, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 70, 'reg_alpha': 0.6560186404424365, 'reg_lambda': 1.7799726016810133, 'subsample': 0.7174250836504598}, Overfitting Gap=-0.1197, Time=10.24s
+2025-05-17 15:03:31,797 - INFO - Hoàn thành XGBoost trong 10.24s
+2025-05-17 15:03:31,797 - INFO - Chạy LightGBM cho cpi_mom
+2025-05-17 15:03:31,805 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:03:31,806 - INFO - Chạy LightGBM cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:03:33,890 - INFO - Tham số tốt nhất: {'colsample_bytree': 0.9687290787020557, 'lambda_l1': 2.8768511159105588, 'lambda_l2': 3.3163778598819182, 'learning_rate': 0.04477580432130638, 'max_depth': 3, 'min_data_in_leaf': 20, 'n_estimators': 88, 'subsample': 0.8231148769106889}, CV RMSE: 0.4286
+2025-05-17 15:03:34,188 - INFO - Đã lưu biểu đồ: cpi_mom_lightgbm_forecast.png
+2025-05-17 15:03:35,474 - INFO - Đã lưu learning curves: cpi_mom_lightgbm_learning_curve.png
+2025-05-17 15:03:35,474 - INFO - Overfitting gap cho LightGBM (cpi_mom): 0.0252
+2025-05-17 15:03:35,474 - INFO - LightGBM (cpi_mom): Train RMSE=0.3235, Test RMSE=0.1795, CV RMSE=0.4286, Test MAE=0.1322, Test MAPE=0.1316, Best Params={'colsample_bytree': 0.9687290787020557, 'lambda_l1': 2.8768511159105588, 'lambda_l2': 3.3163778598819182, 'learning_rate': 0.04477580432130638, 'max_depth': 3, 'min_data_in_leaf': 20, 'n_estimators': 88, 'subsample': 0.8231148769106889}, Overfitting Gap=0.0252, Time=3.68s
+2025-05-17 15:03:35,474 - INFO - Hoàn thành LightGBM trong 3.68s
+2025-05-17 15:03:35,474 - INFO - Chạy SVR cho cpi_mom
+2025-05-17 15:03:35,483 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:03:35,484 - INFO - Chạy SVR cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:03:37,115 - INFO - Tham số tốt nhất: {'C': 1.1292247147901224, 'epsilon': 0.10699098521619943, 'kernel': 'rbf'}, CV RMSE: 0.4036
+2025-05-17 15:03:37,410 - INFO - Đã lưu biểu đồ: cpi_mom_svr_forecast.png
+2025-05-17 15:03:37,979 - INFO - Đã lưu learning curves: cpi_mom_svr_learning_curve.png
+2025-05-17 15:03:37,980 - INFO - Overfitting gap cho SVR (cpi_mom): -0.1132
+2025-05-17 15:03:37,980 - INFO - SVR (cpi_mom): Train RMSE=0.2406, Test RMSE=0.1973, CV RMSE=0.4036, Test MAE=0.1307, Test MAPE=0.1300, Best Params={'C': 1.1292247147901224, 'epsilon': 0.10699098521619943, 'kernel': 'rbf'}, Overfitting Gap=-0.1132, Time=2.51s
+2025-05-17 15:03:37,980 - INFO - Hoàn thành SVR trong 2.51s
+2025-05-17 15:03:38,340 - INFO - Đã lưu biểu đồ so sánh: cpi_mom_ml_model_comparison.png
+2025-05-17 15:03:38,348 - INFO - Kết quả lưu tại ml_model_results\machine_learning_model_results.csv
+2025-05-17 15:03:38,350 - INFO - Tham số tối ưu lưu tại ml_model_results\best_params.csv
+2025-05-17 15:03:38,355 - INFO - Dự báo kết hợp lưu tại ml_model_results/combined_forecast_cpi_mom.csv
+2025-05-17 15:04:10,061 - INFO - Kiểm tra NaN/Inf trong dữ liệu gốc: {'cpi_mom': 0, 'oil_price': 0}
+2025-05-17 15:04:10,061 - INFO - Kiểm tra Inf trong dữ liệu gốc: {'cpi_mom': 0, 'oil_price': 0}
+2025-05-17 15:04:10,063 - INFO - Kích thước dữ liệu gốc: 349
+2025-05-17 15:04:10,063 - INFO - Tạo đặc trưng cho cpi_mom, kích thước dữ liệu: (349, 17)
+2025-05-17 15:04:10,073 - INFO - Đã thêm đặc trưng mùa vụ
+2025-05-17 15:04:10,109 - INFO - Loại bỏ đặc trưng tương quan thấp (< 0.5): ['cpi_yoy', 'gold_price', 'interest_rate', 'cpi_yoy_smoothed', 'cpi_yoy_log', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_mom_lag_2', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_mom_lag_7', 'cpi_mom_lag_8', 'cpi_mom_lag_9', 'cpi_mom_lag_10', 'cpi_mom_lag_11', 'cpi_mom_lag_12', 'oil_price_lag_1', 'oil_price_lag_2', 'oil_price_lag_3', 'oil_price_lag_4', 'oil_price_lag_5', 'oil_price_lag_6', 'oil_price_lag_7', 'oil_price_lag_8', 'oil_price_lag_9', 'oil_price_lag_10', 'oil_price_lag_11', 'oil_price_lag_12', 'oil_price_roll_mean_3', 'oil_price_roll_mean_6', 'month_1', 'month_2', 'month_3', 'month_4', 'month_5', 'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11', 'month_12', 'month_sin', 'month_cos', 'quarter']
+2025-05-17 15:04:10,114 - INFO - PCA: 4 thành phần, tỷ lệ phương sai: 0.9900
+2025-05-17 15:04:10,115 - INFO - Đặc trưng sau xử lý: ['cpi_mom', 'oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:04:10,116 - INFO - Kích thước tập dữ liệu: Train=337, Test=12
+2025-05-17 15:04:10,116 - INFO - Đặc trưng cho cpi_mom: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:04:10,127 - INFO - Chạy các mô hình cho cpi_mom
+2025-05-17 15:04:10,127 - INFO - Chạy Random Forest cho cpi_mom
+2025-05-17 15:04:10,136 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:04:10,137 - INFO - Chạy Random Forest cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:04:23,223 - INFO - Tham số tốt nhất: {'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 10, 'n_estimators': 52}, CV RMSE: 0.4820
+2025-05-17 15:04:23,839 - INFO - Đã lưu biểu đồ: cpi_mom_random_forest_forecast.png
+2025-05-17 15:04:27,755 - INFO - Đã lưu learning curves: cpi_mom_random_forest_learning_curve.png
+2025-05-17 15:04:27,755 - INFO - Overfitting gap cho Random Forest (cpi_mom): 0.0469
+2025-05-17 15:04:27,755 - INFO - Random Forest (cpi_mom): Train RMSE=0.3884, Test RMSE=0.2290, CV RMSE=0.4820, Test MAE=0.1661, Test MAPE=0.1656, Best Params={'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 10, 'n_estimators': 52}, Overfitting Gap=0.0469, Time=17.63s
+2025-05-17 15:04:27,755 - INFO - Hoàn thành Random Forest trong 17.63s
+2025-05-17 15:04:27,755 - INFO - Chạy XGBoost cho cpi_mom
+2025-05-17 15:04:27,766 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:04:27,767 - INFO - Chạy XGBoost cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:04:35,137 - INFO - Tham số tốt nhất: {'colsample_bytree': 0.8123620356542087, 'learning_rate': 0.05753571532049581, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 70, 'reg_alpha': 0.6560186404424365, 'reg_lambda': 1.7799726016810133, 'subsample': 0.7174250836504598}, CV RMSE: 0.3662
+2025-05-17 15:04:35,537 - INFO - Đã lưu biểu đồ: cpi_mom_xgboost_forecast.png
+2025-05-17 15:04:39,565 - INFO - Đã lưu learning curves: cpi_mom_xgboost_learning_curve.png
+2025-05-17 15:04:39,568 - INFO - Overfitting gap cho XGBoost (cpi_mom): -0.1197
+2025-05-17 15:04:39,569 - INFO - XGBoost (cpi_mom): Train RMSE=0.2598, Test RMSE=0.1934, CV RMSE=0.3662, Test MAE=0.1500, Test MAPE=0.1494, Best Params={'colsample_bytree': 0.8123620356542087, 'learning_rate': 0.05753571532049581, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 70, 'reg_alpha': 0.6560186404424365, 'reg_lambda': 1.7799726016810133, 'subsample': 0.7174250836504598}, Overfitting Gap=-0.1197, Time=11.81s
+2025-05-17 15:04:39,579 - INFO - Hoàn thành XGBoost trong 11.82s
+2025-05-17 15:04:39,579 - INFO - Chạy LightGBM cho cpi_mom
+2025-05-17 15:04:39,613 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:04:39,641 - INFO - Chạy LightGBM cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:04:42,972 - INFO - Tham số tốt nhất: {'colsample_bytree': 0.9687290787020557, 'lambda_l1': 2.8768511159105588, 'lambda_l2': 3.3163778598819182, 'learning_rate': 0.04477580432130638, 'max_depth': 3, 'min_data_in_leaf': 20, 'n_estimators': 88, 'subsample': 0.8231148769106889}, CV RMSE: 0.4286
+2025-05-17 15:04:43,269 - INFO - Đã lưu biểu đồ: cpi_mom_lightgbm_forecast.png
+2025-05-17 15:04:44,303 - INFO - Đã lưu learning curves: cpi_mom_lightgbm_learning_curve.png
+2025-05-17 15:04:44,304 - INFO - Overfitting gap cho LightGBM (cpi_mom): 0.0252
+2025-05-17 15:04:44,304 - INFO - LightGBM (cpi_mom): Train RMSE=0.3235, Test RMSE=0.1795, CV RMSE=0.4286, Test MAE=0.1322, Test MAPE=0.1316, Best Params={'colsample_bytree': 0.9687290787020557, 'lambda_l1': 2.8768511159105588, 'lambda_l2': 3.3163778598819182, 'learning_rate': 0.04477580432130638, 'max_depth': 3, 'min_data_in_leaf': 20, 'n_estimators': 88, 'subsample': 0.8231148769106889}, Overfitting Gap=0.0252, Time=4.72s
+2025-05-17 15:04:44,304 - INFO - Hoàn thành LightGBM trong 4.72s
+2025-05-17 15:04:44,304 - INFO - Chạy SVR cho cpi_mom
+2025-05-17 15:04:44,313 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:04:44,315 - INFO - Chạy SVR cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:04:45,880 - INFO - Tham số tốt nhất: {'C': 1.1292247147901224, 'epsilon': 0.10699098521619943, 'kernel': 'rbf'}, CV RMSE: 0.4036
+2025-05-17 15:04:46,120 - INFO - Đã lưu biểu đồ: cpi_mom_svr_forecast.png
+2025-05-17 15:04:46,623 - INFO - Đã lưu learning curves: cpi_mom_svr_learning_curve.png
+2025-05-17 15:04:46,625 - INFO - Overfitting gap cho SVR (cpi_mom): -0.1132
+2025-05-17 15:04:46,625 - INFO - SVR (cpi_mom): Train RMSE=0.2406, Test RMSE=0.1973, CV RMSE=0.4036, Test MAE=0.1307, Test MAPE=0.1300, Best Params={'C': 1.1292247147901224, 'epsilon': 0.10699098521619943, 'kernel': 'rbf'}, Overfitting Gap=-0.1132, Time=2.32s
+2025-05-17 15:04:46,625 - INFO - Hoàn thành SVR trong 2.32s
+2025-05-17 15:04:46,625 - INFO - Chạy ElasticNet cho cpi_mom
+2025-05-17 15:04:46,636 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:04:46,637 - INFO - Chạy ElasticNet cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:04:47,203 - INFO - Tham số tốt nhất: {'alpha': 0.06024145688620425, 'l1_ratio': 0.3325152889039984}, CV RMSE: 0.2862
+2025-05-17 15:04:47,466 - INFO - Đã lưu biểu đồ: cpi_mom_elasticnet_forecast.png
+2025-05-17 15:04:47,914 - INFO - Đã lưu learning curves: cpi_mom_elasticnet_learning_curve.png
+2025-05-17 15:04:47,914 - INFO - Overfitting gap cho ElasticNet (cpi_mom): 0.1367
+2025-05-17 15:04:47,914 - INFO - ElasticNet (cpi_mom): Train RMSE=0.3267, Test RMSE=0.2047, CV RMSE=0.2862, Test MAE=0.1559, Test MAPE=0.1552, Best Params={'alpha': 0.06024145688620425, 'l1_ratio': 0.3325152889039984}, Overfitting Gap=0.1367, Time=1.29s
+2025-05-17 15:04:47,914 - INFO - Hoàn thành ElasticNet trong 1.29s
+2025-05-17 15:04:47,914 - INFO - Chạy Linear Regression cho cpi_mom
+2025-05-17 15:04:47,921 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:04:47,922 - INFO - Chạy Linear Regression cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:04:48,212 - INFO - Đã lưu biểu đồ: cpi_mom_linear_regression_forecast.png
+2025-05-17 15:04:48,600 - INFO - Đã lưu learning curves: cpi_mom_linear_regression_learning_curve.png
+2025-05-17 15:04:48,600 - INFO - Overfitting gap cho Linear Regression (cpi_mom): -1.1440
+2025-05-17 15:04:48,601 - INFO - Linear Regression (cpi_mom): Train RMSE=0.3204, Test RMSE=0.2035, CV RMSE=0.3516, Test MAE=0.1426, Test MAPE=0.1419, Best Params={}, Overfitting Gap=-1.1440, Time=0.69s
+2025-05-17 15:04:48,601 - INFO - Hoàn thành Linear Regression trong 0.69s
+2025-05-17 15:04:48,601 - INFO - Chạy Ridge cho cpi_mom
+2025-05-17 15:04:48,606 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:04:48,609 - INFO - Chạy Ridge cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:04:49,067 - INFO - Tham số tốt nhất: {'alpha': 15.061457009902096}, CV RMSE: 0.2860
+2025-05-17 15:04:49,411 - INFO - Đã lưu biểu đồ: cpi_mom_ridge_forecast.png
+2025-05-17 15:04:49,813 - INFO - Đã lưu learning curves: cpi_mom_ridge_learning_curve.png
+2025-05-17 15:04:49,814 - INFO - Overfitting gap cho Ridge (cpi_mom): 0.1621
+2025-05-17 15:04:49,814 - INFO - Ridge (cpi_mom): Train RMSE=0.3218, Test RMSE=0.2040, CV RMSE=0.2860, Test MAE=0.1469, Test MAPE=0.1463, Best Params={'alpha': 15.061457009902096}, Overfitting Gap=0.1621, Time=1.21s
+2025-05-17 15:04:49,814 - INFO - Hoàn thành Ridge trong 1.21s
+2025-05-17 15:04:50,129 - INFO - Đã lưu biểu đồ so sánh: cpi_mom_ml_model_comparison.png
+2025-05-17 15:04:50,141 - INFO - Kết quả lưu tại ml_model_results\ml_model_results.csv
+2025-05-17 15:04:50,144 - INFO - Tham số tối ưu lưu tại ml_model_results\best_params.csv
+2025-05-17 15:04:50,153 - INFO - Dự báo kết hợp lưu tại ml_model_results/combined_forecast_cpi_mom.csv
+2025-05-17 15:04:50,282 - INFO - Kiểm tra NaN/Inf trong dữ liệu gốc: {'cpi_mom': 0, 'oil_price': 0}
+2025-05-17 15:04:50,283 - INFO - Kiểm tra Inf trong dữ liệu gốc: {'cpi_mom': 0, 'oil_price': 0}
+2025-05-17 15:04:50,287 - INFO - Kích thước dữ liệu gốc: 349
+2025-05-17 15:04:50,287 - INFO - Tạo đặc trưng cho cpi_mom, kích thước dữ liệu: (349, 17)
+2025-05-17 15:04:50,303 - INFO - Đã thêm đặc trưng mùa vụ
+2025-05-17 15:04:50,338 - INFO - Loại bỏ đặc trưng tương quan thấp (< 0.5): ['cpi_yoy', 'gold_price', 'interest_rate', 'cpi_yoy_smoothed', 'cpi_yoy_log', 'year', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_mean', 'cpi_yoy_rolling_std', 'cpi_mom_lag_2', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_mom_lag_7', 'cpi_mom_lag_8', 'cpi_mom_lag_9', 'cpi_mom_lag_10', 'cpi_mom_lag_11', 'cpi_mom_lag_12', 'oil_price_lag_1', 'oil_price_lag_2', 'oil_price_lag_3', 'oil_price_lag_4', 'oil_price_lag_5', 'oil_price_lag_6', 'oil_price_lag_7', 'oil_price_lag_8', 'oil_price_lag_9', 'oil_price_lag_10', 'oil_price_lag_11', 'oil_price_lag_12', 'oil_price_roll_mean_3', 'oil_price_roll_mean_6', 'month_1', 'month_2', 'month_3', 'month_4', 'month_5', 'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11', 'month_12', 'month_sin', 'month_cos', 'quarter']
+2025-05-17 15:04:50,347 - INFO - PCA: 4 thành phần, tỷ lệ phương sai: 0.9900
+2025-05-17 15:04:50,348 - INFO - Đặc trưng sau xử lý: ['cpi_mom', 'oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:04:50,348 - INFO - Kích thước tập dữ liệu: Train=337, Test=12
+2025-05-17 15:04:50,348 - INFO - Đặc trưng cho cpi_mom: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:04:50,358 - INFO - Chạy các mô hình cho cpi_mom
+2025-05-17 15:04:50,358 - INFO - Chạy XGBoost cho cpi_mom
+2025-05-17 15:04:50,369 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:04:50,371 - INFO - Chạy XGBoost cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:04:56,940 - INFO - Tham số tốt nhất: {'colsample_bytree': 0.8123620356542087, 'learning_rate': 0.05753571532049581, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 70, 'reg_alpha': 0.6560186404424365, 'reg_lambda': 1.7799726016810133, 'subsample': 0.7174250836504598}, CV RMSE: 0.3662
+2025-05-17 15:04:57,369 - INFO - Đã lưu biểu đồ: cpi_mom_xgboost_forecast.png
+2025-05-17 15:05:00,818 - INFO - Đã lưu learning curves: cpi_mom_xgboost_learning_curve.png
+2025-05-17 15:05:00,818 - INFO - Overfitting gap cho XGBoost (cpi_mom): -0.1197
+2025-05-17 15:05:00,818 - INFO - XGBoost (cpi_mom): Train RMSE=0.2598, Test RMSE=0.1934, CV RMSE=0.3662, Test MAE=0.1500, Test MAPE=0.1494, Best Params={'colsample_bytree': 0.8123620356542087, 'learning_rate': 0.05753571532049581, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 70, 'reg_alpha': 0.6560186404424365, 'reg_lambda': 1.7799726016810133, 'subsample': 0.7174250836504598}, Overfitting Gap=-0.1197, Time=10.46s
+2025-05-17 15:05:00,818 - INFO - Hoàn thành XGBoost trong 10.46s
+2025-05-17 15:05:00,818 - INFO - Chạy LightGBM cho cpi_mom
+2025-05-17 15:05:00,828 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:05:00,830 - INFO - Chạy LightGBM cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:05:03,142 - INFO - Tham số tốt nhất: {'colsample_bytree': 0.9687290787020557, 'lambda_l1': 2.8768511159105588, 'lambda_l2': 3.3163778598819182, 'learning_rate': 0.04477580432130638, 'max_depth': 3, 'min_data_in_leaf': 20, 'n_estimators': 88, 'subsample': 0.8231148769106889}, CV RMSE: 0.4286
+2025-05-17 15:05:03,574 - INFO - Đã lưu biểu đồ: cpi_mom_lightgbm_forecast.png
+2025-05-17 15:05:04,867 - INFO - Đã lưu learning curves: cpi_mom_lightgbm_learning_curve.png
+2025-05-17 15:05:04,868 - INFO - Overfitting gap cho LightGBM (cpi_mom): 0.0252
+2025-05-17 15:05:04,868 - INFO - LightGBM (cpi_mom): Train RMSE=0.3235, Test RMSE=0.1795, CV RMSE=0.4286, Test MAE=0.1322, Test MAPE=0.1316, Best Params={'colsample_bytree': 0.9687290787020557, 'lambda_l1': 2.8768511159105588, 'lambda_l2': 3.3163778598819182, 'learning_rate': 0.04477580432130638, 'max_depth': 3, 'min_data_in_leaf': 20, 'n_estimators': 88, 'subsample': 0.8231148769106889}, Overfitting Gap=0.0252, Time=4.05s
+2025-05-17 15:05:04,868 - INFO - Hoàn thành LightGBM trong 4.05s
+2025-05-17 15:05:04,868 - INFO - Chạy SVR cho cpi_mom
+2025-05-17 15:05:04,881 - INFO - Đặc trưng được chọn: ['oil_price', 'pca_1', 'pca_2', 'pca_3', 'pca_4']
+2025-05-17 15:05:04,882 - INFO - Chạy SVR cho cpi_mom, X_train shape: (337, 5)
+2025-05-17 15:05:06,508 - INFO - Tham số tốt nhất: {'C': 1.1292247147901224, 'epsilon': 0.10699098521619943, 'kernel': 'rbf'}, CV RMSE: 0.4036
+2025-05-17 15:05:06,767 - INFO - Đã lưu biểu đồ: cpi_mom_svr_forecast.png
+2025-05-17 15:05:07,285 - INFO - Đã lưu learning curves: cpi_mom_svr_learning_curve.png
+2025-05-17 15:05:07,285 - INFO - Overfitting gap cho SVR (cpi_mom): -0.1132
+2025-05-17 15:05:07,285 - INFO - SVR (cpi_mom): Train RMSE=0.2406, Test RMSE=0.1973, CV RMSE=0.4036, Test MAE=0.1307, Test MAPE=0.1300, Best Params={'C': 1.1292247147901224, 'epsilon': 0.10699098521619943, 'kernel': 'rbf'}, Overfitting Gap=-0.1132, Time=2.42s
+2025-05-17 15:05:07,285 - INFO - Hoàn thành SVR trong 2.42s
+2025-05-17 15:05:07,626 - INFO - Đã lưu biểu đồ so sánh: cpi_mom_ml_model_comparison.png
+2025-05-17 15:05:07,634 - INFO - Kết quả lưu tại machine_learning_model_results\machine_learning_model_results.csv
+2025-05-17 15:05:07,636 - INFO - Tham số tối ưu lưu tại machine_learning_model_results\best_params.csv
+2025-05-17 15:05:07,639 - INFO - Dự báo kết hợp lưu tại machine_learning_model_results/combined_forecast_cpi_mom.csv

@@ -1,0 +1,7 @@
+Target,Model,Best Params
+cpi_mom,Random Forest,"{'max_depth': 5, 'max_features': 'sqrt', 'min_samples_leaf': 10, 'min_samples_split': 10, 'n_estimators': 52}"
+cpi_mom,XGBoost,"{'colsample_bytree': 0.8123620356542087, 'learning_rate': 0.05753571532049581, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 70, 'reg_alpha': 0.6560186404424365, 'reg_lambda': 1.7799726016810133, 'subsample': 0.7174250836504598}"
+cpi_mom,LightGBM,"{'colsample_bytree': 0.9687290787020557, 'lambda_l1': 2.8768511159105588, 'lambda_l2': 3.3163778598819182, 'learning_rate': 0.04477580432130638, 'max_depth': 3, 'min_data_in_leaf': 20, 'n_estimators': 88, 'subsample': 0.8231148769106889}"
+cpi_mom,SVR,"{'C': 1.1292247147901224, 'epsilon': 0.10699098521619943, 'kernel': 'rbf'}"
+cpi_mom,ElasticNet,"{'alpha': 0.06024145688620425, 'l1_ratio': 0.3325152889039984}"
+cpi_mom,Ridge,{'alpha': 15.061457009902096}

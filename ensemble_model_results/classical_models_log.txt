@@ -1,0 +1,6 @@
+2025-05-17 22:59:47,640 - INFO - Detected 6 outliers in series
+2025-05-17 22:59:47,641 - INFO - Detected 10 outliers in series
+2025-05-17 22:59:47,642 - INFO - Creating features for cpi_mom, data shape: (349, 17)
+2025-05-17 22:59:47,648 - INFO - Added seasonal features
+2025-05-17 22:59:47,651 - INFO - Dropping low-correlation features: ['cpi_mom_lag_2', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_yoy_lag_5', 'cpi_yoy_lag_6', 'month_sin', 'quarter']
+2025-05-17 22:59:47,651 - INFO - Features after processing: ['cpi_mom', 'cpi_yoy', 'cpi_mom_lag_1', 'cpi_mom_roll_mean_3', 'cpi_mom_roll_mean_12', 'cpi_yoy_lag_1', 'cpi_yoy_lag_2', 'cpi_yoy_lag_3', 'cpi_yoy_lag_4', 'cpi_yoy_roll_mean_3', 'cpi_yoy_roll_mean_12', 'month_cos']

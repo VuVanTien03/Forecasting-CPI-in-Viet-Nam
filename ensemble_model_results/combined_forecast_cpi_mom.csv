@@ -1,0 +1,13 @@
+Date,ARIMA_cpi_mom,Exponential Smoothing_cpi_mom,Prophet_cpi_mom,SARIMA_cpi_mom,SARIMAX_cpi_mom,Linear Regression_cpi_mom,XGBoost_cpi_mom,ARIMA-XGBoost Hybrid_cpi_mom,SARIMA-LSTM Hybrid_cpi_mom,ETS-Gradient Boosting Hybrid_cpi_mom,SARIMA-GRU Hybrid_cpi_mom,Weighted Ensemble_cpi_mom,Stacking Ensemble_cpi_mom,Voting Ensemble_cpi_mom,BMA Ensemble_cpi_mom,DES Ensemble_cpi_mom,Temporal Weighted Ensemble_cpi_mom,Rank-Based Ensemble_cpi_mom
+2024-01-01,,,,,,,,,,,,,,,,,,
+2024-02-01,,,,,,,,,,,,,,,,,,
+2024-03-01,,,,,,,,,,,,,,,,,,
+2024-04-01,,,,,,,,,,,,,,,,,,
+2024-05-01,,,,,,,,,,,,,,,,,,
+2024-06-01,,,,,,,,,,,,,,,,,,
+2024-07-01,,,,,,,,,,,,,,,,,,
+2024-08-01,,,,,,,,,,,,,,,,,,
+2024-09-01,,,,,,,,,,,,,,,,,,
+2024-10-01,,,,,,,,,,,,,,,,,,
+2024-11-01,,,,,,,,,,,,,,,,,,
+2024-12-01,,,,,,,,,,,,,,,,,,
