@@ -1,52 +1,55 @@
-2025-05-17 23:00:37,394 - INFO - Detected 6 outliers in series
-2025-05-17 23:00:37,396 - INFO - Detected 10 outliers in series
-2025-05-17 23:00:37,397 - INFO - Creating features for cpi_mom, data shape: (349, 17)
-2025-05-17 23:00:37,498 - INFO - Added seasonal features
-2025-05-17 23:00:37,506 - INFO - Filled NaN in interest_rate with ffill and mean
-2025-05-17 23:00:37,511 - INFO - Filled NaN in cpi_yoy_diff with ffill and mean
-2025-05-17 23:00:37,513 - INFO - Filled NaN in cpi_mom_diff with ffill and mean
-2025-05-17 23:00:37,516 - INFO - Filled NaN in cpi_mom_rolling_mean with ffill and mean
-2025-05-17 23:00:37,519 - INFO - Filled NaN in cpi_mom_rolling_std with ffill and mean
-2025-05-17 23:00:37,521 - INFO - Filled NaN in cpi_yoy_rolling_mean with ffill and mean
-2025-05-17 23:00:37,523 - INFO - Filled NaN in cpi_yoy_rolling_std with ffill and mean
-2025-05-17 23:00:37,525 - INFO - Filled NaN in cpi_mom_lag_1 with ffill and mean
-2025-05-17 23:00:37,527 - INFO - Filled NaN in cpi_mom_lag_2 with ffill and mean
-2025-05-17 23:00:37,529 - INFO - Filled NaN in cpi_mom_lag_3 with ffill and mean
-2025-05-17 23:00:37,531 - INFO - Filled NaN in cpi_mom_lag_4 with ffill and mean
-2025-05-17 23:00:37,532 - INFO - Filled NaN in cpi_mom_lag_5 with ffill and mean
-2025-05-17 23:00:37,533 - INFO - Filled NaN in cpi_mom_lag_6 with ffill and mean
-2025-05-17 23:00:37,535 - INFO - Filled NaN in cpi_mom_lag_7 with ffill and mean
-2025-05-17 23:00:37,538 - INFO - Filled NaN in cpi_mom_lag_8 with ffill and mean
-2025-05-17 23:00:37,539 - INFO - Filled NaN in cpi_mom_lag_9 with ffill and mean
-2025-05-17 23:00:37,541 - INFO - Filled NaN in cpi_mom_lag_10 with ffill and mean
-2025-05-17 23:00:37,543 - INFO - Filled NaN in cpi_mom_lag_11 with ffill and mean
-2025-05-17 23:00:37,545 - INFO - Filled NaN in cpi_mom_lag_12 with ffill and mean
-2025-05-17 23:00:37,546 - INFO - Filled NaN in cpi_mom_roll_mean_3 with ffill and mean
-2025-05-17 23:00:37,548 - INFO - Filled NaN in cpi_mom_roll_std_3 with ffill and mean
-2025-05-17 23:00:37,551 - INFO - Filled NaN in cpi_mom_roll_mean_6 with ffill and mean
-2025-05-17 23:00:37,552 - INFO - Filled NaN in cpi_mom_roll_std_6 with ffill and mean
-2025-05-17 23:00:37,553 - INFO - Filled NaN in cpi_mom_roll_mean_12 with ffill and mean
-2025-05-17 23:00:37,553 - INFO - Filled NaN in cpi_mom_roll_std_12 with ffill and mean
-2025-05-17 23:00:37,554 - INFO - Filled NaN in cpi_yoy_lag_1 with ffill and mean
-2025-05-17 23:00:37,555 - INFO - Filled NaN in cpi_yoy_lag_2 with ffill and mean
-2025-05-17 23:00:37,556 - INFO - Filled NaN in cpi_yoy_lag_3 with ffill and mean
-2025-05-17 23:00:37,557 - INFO - Filled NaN in cpi_yoy_lag_4 with ffill and mean
-2025-05-17 23:00:37,558 - INFO - Filled NaN in cpi_yoy_lag_5 with ffill and mean
-2025-05-17 23:00:37,559 - INFO - Filled NaN in cpi_yoy_lag_6 with ffill and mean
-2025-05-17 23:00:37,560 - INFO - Filled NaN in cpi_yoy_lag_7 with ffill and mean
-2025-05-17 23:00:37,561 - INFO - Filled NaN in cpi_yoy_lag_8 with ffill and mean
-2025-05-17 23:00:37,562 - INFO - Filled NaN in cpi_yoy_lag_9 with ffill and mean
-2025-05-17 23:00:37,563 - INFO - Filled NaN in cpi_yoy_lag_10 with ffill and mean
-2025-05-17 23:00:37,564 - INFO - Filled NaN in cpi_yoy_lag_11 with ffill and mean
-2025-05-17 23:00:37,566 - INFO - Filled NaN in cpi_yoy_lag_12 with ffill and mean
-2025-05-17 23:00:37,567 - INFO - Filled NaN in cpi_yoy_roll_mean_3 with ffill and mean
-2025-05-17 23:00:37,567 - INFO - Filled NaN in cpi_yoy_roll_std_3 with ffill and mean
-2025-05-17 23:00:37,569 - INFO - Filled NaN in cpi_yoy_roll_mean_6 with ffill and mean
-2025-05-17 23:00:37,569 - INFO - Filled NaN in cpi_yoy_roll_std_6 with ffill and mean
-2025-05-17 23:00:37,572 - INFO - Filled NaN in cpi_yoy_roll_mean_12 with ffill and mean
-2025-05-17 23:00:37,573 - INFO - Filled NaN in cpi_yoy_roll_std_12 with ffill and mean
-2025-05-17 23:00:37,587 - INFO - Dropping low-correlation features: ['gold_price', 'interest_rate', 'year', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_std', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_mom_lag_7', 'cpi_mom_lag_8', 'cpi_mom_lag_9', 'cpi_mom_lag_10', 'cpi_mom_roll_std_3', 'cpi_mom_roll_std_6', 'cpi_mom_roll_std_12', 'cpi_yoy_roll_std_3', 'cpi_yoy_roll_std_6', 'cpi_yoy_roll_std_12', 'month_4', 'month_5', 'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11', 'month_12', 'month_sin', 'quarter']
-2025-05-17 23:00:37,589 - INFO - Features after processing: ['cpi_mom', 'cpi_yoy', 'oil_price', 'cpi_mom_smoothed', 'cpi_yoy_smoothed', 'cpi_mom_log', 'cpi_yoy_log', 'cpi_yoy_diff', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_yoy_rolling_mean', 'cpi_mom_lag_1', 'cpi_mom_lag_2', 'cpi_mom_lag_11', 'cpi_mom_lag_12', 'cpi_mom_roll_mean_3', 'cpi_mom_roll_mean_6', 'cpi_mom_roll_mean_12', 'cpi_yoy_lag_1', 'cpi_yoy_lag_2', 'cpi_yoy_lag_3', 'cpi_yoy_lag_4', 'cpi_yoy_lag_5', 'cpi_yoy_lag_6', 'cpi_yoy_lag_7', 'cpi_yoy_lag_8', 'cpi_yoy_lag_9', 'cpi_yoy_lag_10', 'cpi_yoy_lag_11', 'cpi_yoy_lag_12', 'cpi_yoy_roll_mean_3', 'cpi_yoy_roll_mean_6', 'cpi_yoy_roll_mean_12', 'month_1', 'month_2', 'month_3', 'month_cos']
-2025-05-17 23:00:42,249 - INFO - Saved decomposition plot: cpi_mom_decomposition.png
-2025-05-17 23:00:42,250 - INFO - Running models for cpi_mom
-2025-05-17 23:01:15,662 - ERROR - Main program error: name 'run_ensemble' is not defined
+2025-05-22 16:42:14,920 - INFO - Detected 6 outliers in series
+2025-05-22 16:42:14,922 - INFO - Detected 10 outliers in series
+2025-05-22 16:42:14,922 - INFO - Creating features for cpi_mom, data shape: (349, 17)
+2025-05-22 16:42:14,942 - INFO - Added seasonal features
+2025-05-22 16:42:14,946 - INFO - Filled NaN in interest_rate with ffill and mean
+2025-05-22 16:42:14,947 - INFO - Filled NaN in cpi_yoy_diff with ffill and mean
+2025-05-22 16:42:14,948 - INFO - Filled NaN in cpi_mom_diff with ffill and mean
+2025-05-22 16:42:14,948 - INFO - Filled NaN in cpi_mom_rolling_mean with ffill and mean
+2025-05-22 16:42:14,949 - INFO - Filled NaN in cpi_mom_rolling_std with ffill and mean
+2025-05-22 16:42:14,949 - INFO - Filled NaN in cpi_yoy_rolling_mean with ffill and mean
+2025-05-22 16:42:14,951 - INFO - Filled NaN in cpi_yoy_rolling_std with ffill and mean
+2025-05-22 16:42:14,951 - INFO - Filled NaN in cpi_mom_lag_1 with ffill and mean
+2025-05-22 16:42:14,952 - INFO - Filled NaN in cpi_mom_lag_2 with ffill and mean
+2025-05-22 16:42:14,952 - INFO - Filled NaN in cpi_mom_lag_3 with ffill and mean
+2025-05-22 16:42:14,953 - INFO - Filled NaN in cpi_mom_lag_4 with ffill and mean
+2025-05-22 16:42:14,953 - INFO - Filled NaN in cpi_mom_lag_5 with ffill and mean
+2025-05-22 16:42:14,954 - INFO - Filled NaN in cpi_mom_lag_6 with ffill and mean
+2025-05-22 16:42:14,954 - INFO - Filled NaN in cpi_mom_lag_7 with ffill and mean
+2025-05-22 16:42:14,955 - INFO - Filled NaN in cpi_mom_lag_8 with ffill and mean
+2025-05-22 16:42:14,955 - INFO - Filled NaN in cpi_mom_lag_9 with ffill and mean
+2025-05-22 16:42:14,956 - INFO - Filled NaN in cpi_mom_lag_10 with ffill and mean
+2025-05-22 16:42:14,956 - INFO - Filled NaN in cpi_mom_lag_11 with ffill and mean
+2025-05-22 16:42:14,957 - INFO - Filled NaN in cpi_mom_lag_12 with ffill and mean
+2025-05-22 16:42:14,957 - INFO - Filled NaN in cpi_mom_roll_mean_3 with ffill and mean
+2025-05-22 16:42:14,958 - INFO - Filled NaN in cpi_mom_roll_std_3 with ffill and mean
+2025-05-22 16:42:14,958 - INFO - Filled NaN in cpi_mom_roll_mean_6 with ffill and mean
+2025-05-22 16:42:14,959 - INFO - Filled NaN in cpi_mom_roll_std_6 with ffill and mean
+2025-05-22 16:42:14,960 - INFO - Filled NaN in cpi_mom_roll_mean_12 with ffill and mean
+2025-05-22 16:42:14,960 - INFO - Filled NaN in cpi_mom_roll_std_12 with ffill and mean
+2025-05-22 16:42:14,961 - INFO - Filled NaN in cpi_yoy_lag_1 with ffill and mean
+2025-05-22 16:42:14,961 - INFO - Filled NaN in cpi_yoy_lag_2 with ffill and mean
+2025-05-22 16:42:14,962 - INFO - Filled NaN in cpi_yoy_lag_3 with ffill and mean
+2025-05-22 16:42:14,962 - INFO - Filled NaN in cpi_yoy_lag_4 with ffill and mean
+2025-05-22 16:42:14,963 - INFO - Filled NaN in cpi_yoy_lag_5 with ffill and mean
+2025-05-22 16:42:14,963 - INFO - Filled NaN in cpi_yoy_lag_6 with ffill and mean
+2025-05-22 16:42:14,964 - INFO - Filled NaN in cpi_yoy_lag_7 with ffill and mean
+2025-05-22 16:42:14,964 - INFO - Filled NaN in cpi_yoy_lag_8 with ffill and mean
+2025-05-22 16:42:14,965 - INFO - Filled NaN in cpi_yoy_lag_9 with ffill and mean
+2025-05-22 16:42:14,966 - INFO - Filled NaN in cpi_yoy_lag_10 with ffill and mean
+2025-05-22 16:42:14,966 - INFO - Filled NaN in cpi_yoy_lag_11 with ffill and mean
+2025-05-22 16:42:14,967 - INFO - Filled NaN in cpi_yoy_lag_12 with ffill and mean
+2025-05-22 16:42:14,967 - INFO - Filled NaN in cpi_yoy_roll_mean_3 with ffill and mean
+2025-05-22 16:42:14,968 - INFO - Filled NaN in cpi_yoy_roll_std_3 with ffill and mean
+2025-05-22 16:42:14,968 - INFO - Filled NaN in cpi_yoy_roll_mean_6 with ffill and mean
+2025-05-22 16:42:14,969 - INFO - Filled NaN in cpi_yoy_roll_std_6 with ffill and mean
+2025-05-22 16:42:14,969 - INFO - Filled NaN in cpi_yoy_roll_mean_12 with ffill and mean
+2025-05-22 16:42:14,969 - INFO - Filled NaN in cpi_yoy_roll_std_12 with ffill and mean
+2025-05-22 16:42:14,979 - INFO - Dropping low-correlation features: ['gold_price', 'interest_rate', 'year', 'cpi_mom_rolling_std', 'cpi_yoy_rolling_std', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_mom_lag_7', 'cpi_mom_lag_8', 'cpi_mom_lag_9', 'cpi_mom_lag_10', 'cpi_mom_roll_std_3', 'cpi_mom_roll_std_6', 'cpi_mom_roll_std_12', 'cpi_yoy_roll_std_3', 'cpi_yoy_roll_std_6', 'cpi_yoy_roll_std_12', 'month_4', 'month_5', 'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11', 'month_12', 'month_sin', 'quarter']
+2025-05-22 16:42:14,980 - INFO - Features after processing: ['cpi_mom', 'cpi_yoy', 'oil_price', 'cpi_mom_smoothed', 'cpi_yoy_smoothed', 'cpi_mom_log', 'cpi_yoy_log', 'cpi_yoy_diff', 'cpi_mom_diff', 'cpi_mom_rolling_mean', 'cpi_yoy_rolling_mean', 'cpi_mom_lag_1', 'cpi_mom_lag_2', 'cpi_mom_lag_11', 'cpi_mom_lag_12', 'cpi_mom_roll_mean_3', 'cpi_mom_roll_mean_6', 'cpi_mom_roll_mean_12', 'cpi_yoy_lag_1', 'cpi_yoy_lag_2', 'cpi_yoy_lag_3', 'cpi_yoy_lag_4', 'cpi_yoy_lag_5', 'cpi_yoy_lag_6', 'cpi_yoy_lag_7', 'cpi_yoy_lag_8', 'cpi_yoy_lag_9', 'cpi_yoy_lag_10', 'cpi_yoy_lag_11', 'cpi_yoy_lag_12', 'cpi_yoy_roll_mean_3', 'cpi_yoy_roll_mean_6', 'cpi_yoy_roll_mean_12', 'month_1', 'month_2', 'month_3', 'month_cos']
+2025-05-22 16:42:17,168 - INFO - Saved decomposition plot: cpi_mom_decomposition.png
+2025-05-22 16:42:17,168 - INFO - Running models for cpi_mom
+2025-05-22 16:42:49,605 - INFO - Saved comparison plot: cpi_mom_model_comparison.png
+2025-05-22 16:42:49,618 - INFO - Results saved to classical_model_results/classical_model_results.csv
+2025-05-22 16:42:50,910 - INFO - Saved metrics bar plot: cpi_mom_metrics_comparison.png
+2025-05-22 16:42:50,915 - INFO - Combined forecasts saved to classical_model_results/combined_forecast_cpi_mom.csv

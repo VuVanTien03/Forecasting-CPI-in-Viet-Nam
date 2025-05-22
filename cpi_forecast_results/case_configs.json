@@ -1,0 +1,35 @@
+[
+  {
+    "case_name": "none_ffill_mean_trendFalse_logFalse_exogFalse",
+    "outlier_method": "none",
+    "nan_method": "ffill",
+    "ensemble_method": "mean",
+    "feature_config": {
+      "trend": false,
+      "log_transform": false,
+      "use_exog": false
+    }
+  },
+  {
+    "case_name": "interpolate_regression_rmse_trendTrue_logTrue_exogTrue",
+    "outlier_method": "interpolate",
+    "nan_method": "regression",
+    "ensemble_method": "rmse",
+    "feature_config": {
+      "trend": true,
+      "log_transform": true,
+      "use_exog": true
+    }
+  },
+  {
+    "case_name": "rolling_mean_mean_diracc_trendFalse_logTrue_exogTrue",
+    "outlier_method": "rolling_mean",
+    "nan_method": "mean",
+    "ensemble_method": "diracc",
+    "feature_config": {
+      "trend": false,
+      "log_transform": true,
+      "use_exog": true
+    }
+  }
+]

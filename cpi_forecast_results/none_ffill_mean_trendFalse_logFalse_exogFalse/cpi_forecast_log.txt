@@ -1,0 +1,108 @@
+{"time": "2025-05-22 17:47:33,165", "level": "INFO", "message": "Đã đăng ký mô hình: SARIMA"}
+{"time": "2025-05-22 17:47:33,167", "level": "INFO", "message": "Đã đăng ký mô hình: Exponential Smoothing"}
+{"time": "2025-05-22 17:47:33,167", "level": "INFO", "message": "Đã đăng ký mô hình: Prophet"}
+{"time": "2025-05-22 17:47:33,251", "level": "INFO", "message": "Chạy SARIMA cho cpi (trường hợp: none_ffill_mean_trendFalse_logFalse_exogFalse)"}
+{"time": "2025-05-22 17:47:33,366", "level": "INFO", "message": "SARIMA đạt tính dừng tại bậc sai phân d=0"}
+{"time": "2025-05-22 17:49:41,854", "level": "INFO", "message": "SARIMA (order=(3, 0, 3), seasonal_order=(2, 0, 2, 12)): RMSE=0.3064, Time=128.60s"}
+{"time": "2025-05-22 17:49:43,703", "level": "INFO", "message": "Đã lưu biểu đồ: cpi_SARIMA_forecast.png"}
+{"time": "2025-05-22 17:49:43,704", "level": "INFO", "message": "Hoàn thành SARIMA cho cpi trong 130.45s"}
+{"time": "2025-05-22 17:49:43,706", "level": "INFO", "message": "Chạy Exponential Smoothing cho cpi (trường hợp: none_ffill_mean_trendFalse_logFalse_exogFalse)"}
+{"time": "2025-05-22 17:49:43,880", "level": "INFO", "message": "Exponential Smoothing: RMSE=0.2679, Time=0.17s"}
+{"time": "2025-05-22 17:49:44,837", "level": "INFO", "message": "Đã lưu biểu đồ: cpi_Exponential Smoothing_forecast.png"}
+{"time": "2025-05-22 17:49:44,838", "level": "INFO", "message": "Hoàn thành Exponential Smoothing cho cpi trong 1.13s"}
+{"time": "2025-05-22 17:49:44,838", "level": "INFO", "message": "Chạy Prophet cho cpi (trường hợp: none_ffill_mean_trendFalse_logFalse_exogFalse)"}
+{"time": "2025-05-22 17:49:45,324", "level": "INFO", "message": "Prophet: RMSE=0.2887, Time=0.48s"}
+{"time": "2025-05-22 17:49:46,137", "level": "INFO", "message": "Đã lưu biểu đồ: cpi_Prophet_forecast.png"}
+{"time": "2025-05-22 17:49:46,140", "level": "INFO", "message": "Hoàn thành Prophet cho cpi trong 1.30s"}
+{"time": "2025-05-22 17:49:47,024", "level": "INFO", "message": "Đã lưu biểu đồ: cpi_model_comparison_none_ffill_mean_trendFalse_logFalse_exogFalse.png"}
+{"time": "2025-05-22 17:49:47,036", "level": "INFO", "message": "Kết quả đã lưu vào cpi_forecast_results/none_ffill_mean_trendFalse_logFalse_exogFalse/cpi_forecast_results_none_ffill_mean_trendFalse_logFalse_exogFalse.csv"}
+{"time": "2025-05-22 17:49:48,781", "level": "INFO", "message": "Đã lưu biểu đồ cột: cpi_metrics_comparison_none_ffill_mean_trendFalse_logFalse_exogFalse.png"}
+{"time": "2025-05-22 17:49:48,788", "level": "INFO", "message": "Dự báo ensemble đã lưu vào cpi_forecast_results/none_ffill_mean_trendFalse_logFalse_exogFalse/ensemble_forecast_cpi_none_ffill_mean_trendFalse_logFalse_exogFalse.csv"}
+{"time": "2025-05-22 17:49:48,789", "level": "INFO", "message": "Mô hình tốt nhất (none_ffill_mean_trendFalse_logFalse_exogFalse): Exponential Smoothing với RMSE=0.2679"}
+{"time": "2025-05-22 17:49:48,790", "level": "INFO", "message": "Bắt đầu trường hợp interpolate_regression_rmse_trendTrue_logTrue_exogTrue"}
+{"time": "2025-05-22 17:49:48,791", "level": "INFO", "message": "Đã đăng ký mô hình: SARIMA"}
+{"time": "2025-05-22 17:49:48,792", "level": "INFO", "message": "Đã đăng ký mô hình: Exponential Smoothing"}
+{"time": "2025-05-22 17:49:48,792", "level": "INFO", "message": "Đã đăng ký mô hình: Prophet"}
+{"time": "2025-05-22 17:49:48,796", "level": "INFO", "message": "Đã phát hiện 8 giá trị ngoại lai trong chuỗi"}
+{"time": "2025-05-22 17:49:48,799", "level": "INFO", "message": "Đã phát hiện 0 giá trị ngoại lai trong chuỗi"}
+{"time": "2025-05-22 17:49:48,803", "level": "INFO", "message": "Đã phát hiện 0 giá trị ngoại lai trong chuỗi"}
+{"time": "2025-05-22 17:49:48,808", "level": "INFO", "message": "Đã phát hiện 0 giá trị ngoại lai trong chuỗi"}
+{"time": "2025-05-22 17:49:48,849", "level": "INFO", "message": "Chạy SARIMA cho cpi (trường hợp: interpolate_regression_rmse_trendTrue_logTrue_exogTrue)"}
+{"time": "2025-05-22 17:49:48,868", "level": "INFO", "message": "SARIMA đạt tính dừng tại bậc sai phân d=0"}
+{"time": "2025-05-22 17:53:00,970", "level": "INFO", "message": "SARIMA (order=(2, 0, 2), seasonal_order=(2, 0, 2, 12)): RMSE=95.6708, Time=192.12s"}
+{"time": "2025-05-22 17:53:01,675", "level": "INFO", "message": "Đã lưu biểu đồ: cpi_SARIMA_forecast.png"}
+{"time": "2025-05-22 17:53:01,681", "level": "INFO", "message": "Hoàn thành SARIMA cho cpi trong 192.83s"}
+{"time": "2025-05-22 17:53:01,681", "level": "INFO", "message": "Chạy Exponential Smoothing cho cpi (trường hợp: interpolate_regression_rmse_trendTrue_logTrue_exogTrue)"}
+{"time": "2025-05-22 17:53:01,825", "level": "INFO", "message": "Exponential Smoothing: RMSE=95.6433, Time=0.14s"}
+{"time": "2025-05-22 17:53:02,472", "level": "INFO", "message": "Đã lưu biểu đồ: cpi_Exponential Smoothing_forecast.png"}
+{"time": "2025-05-22 17:53:02,475", "level": "INFO", "message": "Hoàn thành Exponential Smoothing cho cpi trong 0.79s"}
+{"time": "2025-05-22 17:53:02,479", "level": "INFO", "message": "Chạy Prophet cho cpi (trường hợp: interpolate_regression_rmse_trendTrue_logTrue_exogTrue)"}
+{"time": "2025-05-22 17:53:02,626", "level": "ERROR", "message": "Prophet error: Name 'trend' is reserved."}
+{"time": "2025-05-22 17:53:02,627", "level": "ERROR", "message": "Prophet cho cpi không tạo được dự báo hợp lệ hoặc RMSE"}
+{"time": "2025-05-22 17:53:02,628", "level": "WARNING", "message": "Kết quả cho mô hình Prophet là None, bỏ qua! (trường hợp: interpolate_regression_rmse_trendTrue_logTrue_exogTrue)"}
+{"time": "2025-05-22 17:53:03,247", "level": "INFO", "message": "Đã lưu biểu đồ: cpi_model_comparison_interpolate_regression_rmse_trendTrue_logTrue_exogTrue.png"}
+{"time": "2025-05-22 17:53:03,261", "level": "INFO", "message": "Kết quả đã lưu vào cpi_forecast_results/interpolate_regression_rmse_trendTrue_logTrue_exogTrue/cpi_forecast_results_interpolate_regression_rmse_trendTrue_logTrue_exogTrue.csv"}
+{"time": "2025-05-22 17:53:04,952", "level": "INFO", "message": "Đã lưu biểu đồ cột: cpi_metrics_comparison_interpolate_regression_rmse_trendTrue_logTrue_exogTrue.png"}
+{"time": "2025-05-22 17:53:04,960", "level": "INFO", "message": "Dự báo ensemble đã lưu vào cpi_forecast_results/interpolate_regression_rmse_trendTrue_logTrue_exogTrue/ensemble_forecast_cpi_interpolate_regression_rmse_trendTrue_logTrue_exogTrue.csv"}
+{"time": "2025-05-22 17:53:04,961", "level": "INFO", "message": "Mô hình tốt nhất (interpolate_regression_rmse_trendTrue_logTrue_exogTrue): Exponential Smoothing với RMSE=95.6433"}
+{"time": "2025-05-22 17:53:04,962", "level": "INFO", "message": "Bắt đầu trường hợp rolling_mean_mean_diracc_trendFalse_logTrue_exogTrue"}
+{"time": "2025-05-22 17:53:04,964", "level": "INFO", "message": "Đã đăng ký mô hình: SARIMA"}
+{"time": "2025-05-22 17:53:04,965", "level": "INFO", "message": "Đã đăng ký mô hình: Exponential Smoothing"}
+{"time": "2025-05-22 17:53:04,966", "level": "INFO", "message": "Đã đăng ký mô hình: Prophet"}
+{"time": "2025-05-22 17:53:04,971", "level": "INFO", "message": "Đã phát hiện 8 giá trị ngoại lai trong chuỗi"}
+{"time": "2025-05-22 17:53:04,974", "level": "INFO", "message": "Đã phát hiện 0 giá trị ngoại lai trong chuỗi"}
+{"time": "2025-05-22 17:53:04,978", "level": "INFO", "message": "Đã phát hiện 0 giá trị ngoại lai trong chuỗi"}
+{"time": "2025-05-22 17:53:04,980", "level": "INFO", "message": "Đã phát hiện 0 giá trị ngoại lai trong chuỗi"}
+{"time": "2025-05-22 17:53:05,015", "level": "INFO", "message": "Chạy SARIMA cho cpi (trường hợp: rolling_mean_mean_diracc_trendFalse_logTrue_exogTrue)"}
+{"time": "2025-05-22 17:53:05,048", "level": "INFO", "message": "SARIMA đạt tính dừng tại bậc sai phân d=0"}
+{"time": "2025-05-22 17:54:00,367", "level": "INFO", "message": "SARIMA (order=(1, 0, 0), seasonal_order=(0, 0, 2, 12)): RMSE=95.7731, Time=55.35s"}
+{"time": "2025-05-22 17:54:01,408", "level": "INFO", "message": "Đã lưu biểu đồ: cpi_SARIMA_forecast.png"}
+{"time": "2025-05-22 17:54:01,413", "level": "INFO", "message": "Hoàn thành SARIMA cho cpi trong 56.40s"}
+{"time": "2025-05-22 17:54:01,416", "level": "INFO", "message": "Chạy Exponential Smoothing cho cpi (trường hợp: rolling_mean_mean_diracc_trendFalse_logTrue_exogTrue)"}
+{"time": "2025-05-22 17:54:01,648", "level": "INFO", "message": "Exponential Smoothing: RMSE=95.6154, Time=0.23s"}
+{"time": "2025-05-22 17:54:02,680", "level": "INFO", "message": "Đã lưu biểu đồ: cpi_Exponential Smoothing_forecast.png"}
+{"time": "2025-05-22 17:54:02,683", "level": "INFO", "message": "Hoàn thành Exponential Smoothing cho cpi trong 1.26s"}
+{"time": "2025-05-22 17:54:02,686", "level": "INFO", "message": "Chạy Prophet cho cpi (trường hợp: rolling_mean_mean_diracc_trendFalse_logTrue_exogTrue)"}
+{"time": "2025-05-22 17:54:03,447", "level": "INFO", "message": "Prophet: RMSE=94.8512, Time=0.74s"}
+{"time": "2025-05-22 17:54:04,601", "level": "INFO", "message": "Đã lưu biểu đồ: cpi_Prophet_forecast.png"}
+{"time": "2025-05-22 17:54:04,604", "level": "INFO", "message": "Hoàn thành Prophet cho cpi trong 1.92s"}
+{"time": "2025-05-22 17:54:05,773", "level": "INFO", "message": "Đã lưu biểu đồ: cpi_model_comparison_rolling_mean_mean_diracc_trendFalse_logTrue_exogTrue.png"}
+{"time": "2025-05-22 17:54:05,787", "level": "INFO", "message": "Kết quả đã lưu vào cpi_forecast_results/rolling_mean_mean_diracc_trendFalse_logTrue_exogTrue/cpi_forecast_results_rolling_mean_mean_diracc_trendFalse_logTrue_exogTrue.csv"}
+{"time": "2025-05-22 17:54:08,356", "level": "INFO", "message": "Đã lưu biểu đồ cột: cpi_metrics_comparison_rolling_mean_mean_diracc_trendFalse_logTrue_exogTrue.png"}
+{"time": "2025-05-22 17:54:08,372", "level": "INFO", "message": "Dự báo ensemble đã lưu vào cpi_forecast_results/rolling_mean_mean_diracc_trendFalse_logTrue_exogTrue/ensemble_forecast_cpi_rolling_mean_mean_diracc_trendFalse_logTrue_exogTrue.csv"}
+{"time": "2025-05-22 17:54:08,375", "level": "INFO", "message": "Mô hình tốt nhất (rolling_mean_mean_diracc_trendFalse_logTrue_exogTrue): Prophet với RMSE=94.8512"}
+{"time": "2025-05-22 17:54:08,380", "level": "INFO", "message": "Cấu hình các trường hợp đã lưu vào cpi_forecast_results/case_configs.json"}
+{"time": "2025-05-22 17:54:08,388", "level": "INFO", "message": "Báo cáo tổng hợp đã lưu vào cpi_forecast_results/all_cases_comparison.csv"}
+{"time": "2025-05-22 17:54:14,106", "level": "INFO", "message": "Xếp hạng mô hình đã lưu vào cpi_forecast_results/model_ranking.csv"}
+{"time": "2025-05-22 23:46:47,321", "level": "INFO", "message": "Creating features for cpi_mom, data shape: (360, 4)"}
+{"time": "2025-05-22 23:46:47,324", "level": "ERROR", "message": "Main program error: "None of [Index(['cpi_mom'], dtype='object')] are in the [columns]""}
+{"time": "2025-05-23 00:04:10,710", "level": "INFO", "message": "Creating features for cpi_mom, data shape: (360, 4)"}
+{"time": "2025-05-23 00:04:10,715", "level": "WARNING", "message": "Data contains NaN or Inf in ['cpi_mom'], filling..."}
+{"time": "2025-05-23 00:04:10,795", "level": "INFO", "message": "Dropping 28 low-correlation features (correlation < 0.2): ['oil_price', 'gold_price', 'interest_rate', 'cpi_mom_lag_2', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_mom_lag_7', 'cpi_mom_lag_8', 'cpi_mom_lag_9', 'cpi_mom_lag_10', 'cpi_mom_lag_11', 'cpi_mom_roll_mean_12', 'cpi_mom_roll_std_12', 'month_1', 'month_4', 'month_5', 'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11', 'month_12', 'month_sin', 'month_cos', 'quarter']"}
+{"time": "2025-05-23 00:04:10,813", "level": "ERROR", "message": "Main program error: This function does not handle missing values"}
+{"time": "2025-05-23 00:06:38,655", "level": "INFO", "message": "Creating features for cpi_mom, data shape: (360, 4)"}
+{"time": "2025-05-23 00:06:38,698", "level": "INFO", "message": "Dropping 28 low-correlation features (correlation < 0.2): ['oil_price', 'gold_price', 'interest_rate', 'cpi_mom_lag_2', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_mom_lag_7', 'cpi_mom_lag_8', 'cpi_mom_lag_9', 'cpi_mom_lag_10', 'cpi_mom_lag_11', 'cpi_mom_roll_mean_12', 'cpi_mom_roll_std_12', 'month_1', 'month_4', 'month_5', 'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11', 'month_12', 'month_sin', 'month_cos', 'quarter']"}
+{"time": "2025-05-23 00:06:40,484", "level": "INFO", "message": "Saved decomposition plot: cpi_mom_decomposition.png"}
+{"time": "2025-05-23 00:06:40,485", "level": "INFO", "message": "Running models for cpi_mom"}
+{"time": "2025-05-23 00:08:12,558", "level": "INFO", "message": "Saved comparison plot: cpi_mom_model_comparison.png"}
+{"time": "2025-05-23 00:08:12,578", "level": "INFO", "message": "Results saved to classical_model_results/classical_model_results.csv"}
+{"time": "2025-05-23 00:08:13,749", "level": "INFO", "message": "Saved metrics bar plot: cpi_mom_metrics_comparison.png"}
+{"time": "2025-05-23 00:08:13,754", "level": "INFO", "message": "Combined forecasts saved to classical_model_results/combined_forecast_cpi_mom.csv"}
+{"time": "2025-05-23 00:10:51,767", "level": "WARNING", "message": "Data contains NaN after join, filling..."}
+{"time": "2025-05-23 00:10:51,772", "level": "INFO", "message": "Creating features for cpi_mom, data shape: (359, 4)"}
+{"time": "2025-05-23 00:10:51,792", "level": "INFO", "message": "Dropping 27 low-correlation features: ['oil_price', 'gold_price', 'interest_rate', 'cpi_mom_lag_2', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_mom_lag_7', 'cpi_mom_lag_8', 'cpi_mom_lag_9', 'cpi_mom_lag_10', 'cpi_mom_roll_mean_12', 'cpi_mom_roll_std_12', 'month_sin', 'month_cos', 'quarter', 'month_1', 'month_4', 'month_5', 'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11', 'month_12']"}
+{"time": "2025-05-23 00:10:52,958", "level": "INFO", "message": "Saved decomposition plot: cpi_mom_decomposition.png"}
+{"time": "2025-05-23 00:10:52,960", "level": "INFO", "message": "Running models for cpi_mom"}
+{"time": "2025-05-23 00:11:17,469", "level": "INFO", "message": "Saved comparison plot: cpi_mom_model_comparison.png"}
+{"time": "2025-05-23 00:11:17,475", "level": "INFO", "message": "Results saved to classical_model_results/classical_model_results.csv"}
+{"time": "2025-05-23 00:11:18,441", "level": "INFO", "message": "Saved metrics bar plot: cpi_mom_metrics_comparison.png"}
+{"time": "2025-05-23 00:11:18,444", "level": "INFO", "message": "Combined forecasts saved to classical_model_results/combined_forecast_cpi_mom.csv"}
+{"time": "2025-05-23 00:26:02,005", "level": "WARNING", "message": "Data contains NaN after join, filling..."}
+{"time": "2025-05-23 00:26:02,007", "level": "INFO", "message": "Creating features for cpi_mom, data shape: (359, 4)"}
+{"time": "2025-05-23 00:26:02,018", "level": "INFO", "message": "Dropping 27 low-correlation features: ['oil_price', 'gold_price', 'interest_rate', 'cpi_mom_lag_2', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_mom_lag_7', 'cpi_mom_lag_8', 'cpi_mom_lag_9', 'cpi_mom_lag_10', 'cpi_mom_roll_mean_12', 'cpi_mom_roll_std_12', 'month_sin', 'month_cos', 'quarter', 'month_1', 'month_4', 'month_5', 'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11', 'month_12']"}
+{"time": "2025-05-23 00:26:02,654", "level": "INFO", "message": "Saved decomposition plot: cpi_mom_decomposition.png"}
+{"time": "2025-05-23 00:26:02,654", "level": "INFO", "message": "Running models for cpi_mom"}
+{"time": "2025-05-23 00:29:12,503", "level": "INFO", "message": "Saved comparison plot: cpi_mom_model_comparison.png"}
+{"time": "2025-05-23 00:29:12,524", "level": "INFO", "message": "Results saved to classical_model_results/classical_model_results.csv"}
+{"time": "2025-05-23 00:29:13,302", "level": "INFO", "message": "Saved metrics bar plot: cpi_mom_metrics_comparison.png"}
+{"time": "2025-05-23 00:29:13,310", "level": "INFO", "message": "Combined forecasts saved to classical_model_results/combined_forecast_cpi_mom.csv"}
