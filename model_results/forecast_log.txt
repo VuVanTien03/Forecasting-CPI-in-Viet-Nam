@@ -1,0 +1,139 @@
+2025-05-23 00:53:43,349 - WARNING - Data contains NaN after join, filling...
+2025-05-23 00:53:43,358 - INFO - Creating features for cpi_mom, data shape: (359, 4)
+2025-05-23 00:53:43,392 - INFO - Dropping 24 low-correlation features
+2025-05-23 00:53:44,615 - INFO - Saved decomposition plot: cpi_mom_decomposition.png
+2025-05-23 00:53:44,615 - INFO - Running base models for cpi_mom
+2025-05-23 00:54:09,898 - INFO - Results saved to model_results/model_results.csv
+2025-05-23 00:54:10,764 - INFO - Combined forecasts saved to model_results/combined_forecast_cpi_mom.csv
+2025-05-23 00:54:10,764 - INFO - Total execution time: 27.53s
+2025-05-23 00:59:31,524 - INFO - CPI data shape: (359, 1)
+2025-05-23 00:59:31,538 - INFO - Exogenous data shape: (365, 3)
+2025-05-23 00:59:31,547 - WARNING - Data contains NaN after join, filling...
+2025-05-23 00:59:31,555 - INFO - Joined data shape: (359, 4)
+2025-05-23 00:59:31,556 - INFO - Creating features for cpi_mom, data shape: (359, 4)
+2025-05-23 00:59:31,595 - INFO - Dropping 24 low-correlation features
+2025-05-23 00:59:31,597 - INFO - Train shape: (347, 13), Test shape: (12, 13)
+2025-05-23 00:59:31,606 - INFO - Forecast index: 2024-01-01 00:00:00 to 2024-12-01 00:00:00
+2025-05-23 00:59:32,367 - INFO - Saved decomposition plot: cpi_mom_decomposition.png
+2025-05-23 00:59:32,367 - INFO - Running base models for cpi_mom
+2025-05-23 00:59:59,043 - INFO - Results saved to model_results/model_results.csv
+2025-05-23 01:00:00,228 - INFO - Combined forecasts saved to model_results/combined_forecast_cpi_mom.csv
+2025-05-23 01:00:00,228 - INFO - Total execution time: 28.86s
+2025-05-23 01:12:53,933 - INFO - CPI data shape: (359, 1)
+2025-05-23 01:12:53,939 - INFO - Exogenous data shape: (365, 3)
+2025-05-23 01:12:53,939 - WARNING - NaN in exog_data, filling...
+2025-05-23 01:12:53,942 - INFO - Joined data shape: (359, 4)
+2025-05-23 01:12:53,943 - INFO - Creating features for cpi_mom, data shape: (359, 4)
+2025-05-23 01:12:53,951 - INFO - Low-correlation features: ['cpi_mom_lag_2', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_mom_lag_7', 'cpi_mom_lag_8', 'cpi_mom_lag_9', 'cpi_mom_lag_10', 'cpi_mom_roll_mean_12', 'cpi_mom_roll_std_12', 'month_sin', 'month_cos', 'quarter', 'month_1', 'month_4', 'month_5', 'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11', 'month_12']
+2025-05-23 01:12:53,951 - INFO - Dropping 24 low-correlation features
+2025-05-23 01:12:53,952 - INFO - Train shape: (347, 13), Test shape: (12, 13)
+2025-05-23 01:12:53,953 - INFO - Forecast index: 2024-01-01 00:00:00 to 2024-12-01 00:00:00
+2025-05-23 01:12:54,687 - INFO - Saved decomposition plot: cpi_mom_decomposition.png
+2025-05-23 01:12:54,687 - INFO - Running base models for cpi_mom
+2025-05-23 01:13:28,133 - INFO - Results saved to model_results/model_results.csv
+2025-05-23 01:13:29,250 - INFO - Combined forecasts saved to model_results/combined_forecast_cpi_mom.csv
+2025-05-23 01:13:29,250 - INFO - Total execution time: 35.33s
+2025-05-23 01:22:42,487 - INFO - CPI data shape: (359, 1)
+2025-05-23 01:22:42,498 - INFO - Exogenous data shape: (365, 3)
+2025-05-23 01:22:42,499 - WARNING - NaN in exog_data, filling...
+2025-05-23 01:22:42,500 - ERROR - Main program error: 'DataFrame' object has no attribute 'isinf'
+2025-05-23 01:23:34,217 - INFO - CPI data shape: (359, 1)
+2025-05-23 01:23:34,220 - INFO - Exogenous data shape: (365, 3)
+2025-05-23 01:23:34,221 - WARNING - NaN in exog_data, filling...
+2025-05-23 01:23:34,222 - ERROR - Main program error: 'DataFrame' object has no attribute 'isinf'
+2025-05-23 01:32:35,492 - INFO - CPI data shape: (359, 1)
+2025-05-23 01:32:35,503 - INFO - Exogenous data shape: (365, 3)
+2025-05-23 01:32:35,503 - WARNING - NaN/Inf in exog_data, filling...
+2025-05-23 01:32:35,516 - INFO - Joined data shape: (359, 4)
+2025-05-23 01:32:35,518 - INFO - Creating features for cpi_mom, data shape: (359, 4)
+2025-05-23 01:32:35,552 - INFO - Low-correlation features: ['cpi_mom_lag_2', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_mom_lag_7', 'cpi_mom_lag_8', 'cpi_mom_lag_9', 'cpi_mom_lag_10', 'cpi_mom_roll_mean_12', 'cpi_mom_roll_std_12', 'month_sin', 'month_cos', 'quarter', 'month_1', 'month_4', 'month_5', 'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11', 'month_12']
+2025-05-23 01:32:35,554 - INFO - Dropping 24 low-correlation features
+2025-05-23 01:32:35,556 - WARNING - NaN in features after creation, filling...
+2025-05-23 01:32:35,564 - INFO - Features shape: (359, 13)
+2025-05-23 01:32:35,566 - INFO - Train shape: (347, 13), Test shape: (12, 13)
+2025-05-23 01:32:35,575 - INFO - Forecast index: 2024-01-01 00:00:00 to 2024-12-01 00:00:00
+2025-05-23 01:32:36,760 - INFO - Saved decomposition plot: cpi_mom_decomposition.png
+2025-05-23 01:32:36,761 - INFO - Running base models for cpi_mom
+2025-05-23 01:33:00,446 - INFO - Results saved to model_results/model_results.csv
+2025-05-23 01:33:01,775 - INFO - Combined forecasts saved to model_results/combined_forecast_cpi_mom.csv
+2025-05-23 01:33:01,776 - INFO - Total execution time: 26.31s
+2025-05-23 02:04:45,652 - INFO - CPI data shape: (359, 1)
+2025-05-23 02:04:45,674 - INFO - Exogenous data shape: (365, 3)
+2025-05-23 02:04:45,675 - WARNING - NaN/Inf in exog_data, filling...
+2025-05-23 02:04:45,695 - INFO - Joined data shape: (359, 4)
+2025-05-23 02:04:45,696 - INFO - Creating features for cpi_mom, data shape: (359, 4)
+2025-05-23 02:04:45,731 - INFO - Low-correlation features: ['cpi_mom_lag_2', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_mom_lag_7', 'cpi_mom_lag_8', 'cpi_mom_lag_9', 'cpi_mom_lag_10', 'cpi_mom_roll_mean_12', 'cpi_mom_roll_std_12', 'month_sin', 'month_cos', 'quarter', 'month_1', 'month_4', 'month_5', 'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11', 'month_12']
+2025-05-23 02:04:45,732 - INFO - Dropping 24 low-correlation features
+2025-05-23 02:04:45,733 - WARNING - NaN in features after creation, filling...
+2025-05-23 02:04:45,738 - INFO - Features shape: (359, 13)
+2025-05-23 02:04:45,740 - INFO - Train shape: (347, 13), Test shape: (12, 13)
+2025-05-23 02:04:45,747 - INFO - Forecast index: 2024-01-01 00:00:00 to 2024-12-01 00:00:00
+2025-05-23 02:04:46,566 - INFO - Saved decomposition plot: cpi_mom_decomposition.png
+2025-05-23 02:04:46,567 - INFO - Running base models for cpi_mom
+2025-05-23 02:05:17,429 - INFO - Results saved to model_results/model_results.csv
+2025-05-23 02:05:20,247 - INFO - Combined forecasts saved to model_results/combined_forecast_cpi_mom.csv
+2025-05-23 02:05:20,247 - INFO - Total execution time: 34.72s
+2025-05-23 02:32:19,213 - INFO - CPI data shape: (359, 1)
+2025-05-23 02:32:19,223 - INFO - Exogenous data shape: (365, 3)
+2025-05-23 02:32:19,224 - WARNING - NaN/Inf in exog_data, filling...
+2025-05-23 02:32:19,233 - INFO - Joined data shape: (359, 4)
+2025-05-23 02:32:19,235 - INFO - Creating features for cpi_mom, data shape: (359, 4)
+2025-05-23 02:32:19,258 - INFO - Low-correlation features: ['cpi_mom_lag_2', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_mom_lag_7', 'cpi_mom_lag_8', 'cpi_mom_lag_9', 'cpi_mom_lag_10', 'cpi_mom_roll_mean_12', 'cpi_mom_roll_std_12', 'month_sin', 'month_cos', 'quarter', 'month_1', 'month_4', 'month_5', 'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11', 'month_12']
+2025-05-23 02:32:19,258 - INFO - Dropping 24 low-correlation features
+2025-05-23 02:32:19,260 - WARNING - NaN/Inf in features after creation, filling...
+2025-05-23 02:32:19,265 - INFO - Features shape: (359, 13)
+2025-05-23 02:32:19,266 - INFO - Train shape: (347, 13), Test shape: (12, 13)
+2025-05-23 02:32:19,267 - INFO - Forecast index: 2024-01-01 00:00:00 to 2024-12-01 00:00:00
+2025-05-23 02:32:20,633 - INFO - Saved decomposition plot: cpi_mom_decomposition.png
+2025-05-23 02:32:20,633 - INFO - Running base models for cpi_mom
+2025-05-23 02:32:44,975 - INFO - Results saved to model_results/model_results.csv
+2025-05-23 02:32:45,816 - INFO - Combined forecasts saved to model_results/combined_forecast_cpi_mom.csv
+2025-05-23 02:32:45,817 - INFO - Total execution time: 26.63s
+2025-05-23 02:50:48,744 - INFO - CPI data shape: (359, 1)
+2025-05-23 02:50:48,748 - INFO - Exogenous data shape: (365, 3)
+2025-05-23 02:50:48,748 - WARNING - NaN/Inf in exog_data, filling...
+2025-05-23 02:50:48,751 - INFO - Joined data shape: (359, 4)
+2025-05-23 02:50:48,751 - INFO - Creating features for cpi_mom, data shape: (359, 4)
+2025-05-23 02:50:48,761 - INFO - Low-correlation features: ['cpi_mom_lag_2', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_mom_lag_7', 'cpi_mom_lag_8', 'cpi_mom_lag_9', 'cpi_mom_lag_10', 'cpi_mom_roll_mean_12', 'cpi_mom_roll_std_12', 'month_sin', 'month_cos', 'quarter', 'month_1', 'month_4', 'month_5', 'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11', 'month_12']
+2025-05-23 02:50:48,762 - INFO - Dropping 24 low-correlation features
+2025-05-23 02:50:48,762 - WARNING - NaN/Inf in features after creation, filling...
+2025-05-23 02:50:48,765 - INFO - Features shape: (359, 13)
+2025-05-23 02:50:48,766 - INFO - Train shape: (347, 13), Test shape: (12, 13)
+2025-05-23 02:50:48,767 - INFO - Forecast index: 2024-01-01 00:00:00 to 2024-12-01 00:00:00
+2025-05-23 02:50:49,418 - INFO - Saved decomposition plot: cpi_mom_decomposition.png
+2025-05-23 02:50:49,418 - INFO - Running base models for cpi_mom
+2025-05-23 02:51:14,515 - INFO - Results saved to model_results/model_results.csv
+2025-05-23 02:51:15,785 - INFO - Combined forecasts saved to model_results/combined_forecast_cpi_mom.csv
+2025-05-23 02:51:15,785 - INFO - Total execution time: 27.05s
+2025-05-23 03:09:47,135 - INFO - CPI data shape: (359, 1)
+2025-05-23 03:09:47,144 - INFO - Exogenous data shape: (365, 3)
+2025-05-23 03:09:47,146 - WARNING - NaN/Inf in exog_data, filling...
+2025-05-23 03:09:47,152 - INFO - Joined data shape: (359, 4)
+2025-05-23 03:09:47,153 - INFO - Creating features for cpi_mom, data shape: (359, 4)
+2025-05-23 03:09:47,162 - INFO - Low-correlation features: ['cpi_mom_lag_2', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'month_sin', 'month_cos']
+2025-05-23 03:09:47,162 - INFO - Dropping 7 low-correlation features
+2025-05-23 03:09:47,164 - WARNING - NaN/Inf in features after creation, filling...
+2025-05-23 03:09:47,166 - INFO - Features shape: (359, 9)
+2025-05-23 03:09:47,167 - INFO - Train shape: (347, 9), Test shape: (12, 9)
+2025-05-23 03:09:47,173 - INFO - Forecast index: 2024-01-01 00:00:00 to 2024-12-01 00:00:00
+2025-05-23 03:09:47,853 - INFO - Saved decomposition plot: cpi_mom_decomposition.png
+2025-05-23 03:09:47,853 - INFO - Running base models for cpi_mom
+2025-05-23 03:10:13,377 - INFO - Results saved to model_results/model_results.csv
+2025-05-23 03:10:14,271 - INFO - Combined forecasts saved to model_results/combined_forecast_cpi_mom.csv
+2025-05-23 03:10:14,271 - INFO - Total execution time: 27.18s
+2025-05-23 09:28:08,056 - INFO - CPI data shape: (359, 1)
+2025-05-23 09:28:08,067 - INFO - Exogenous data shape: (365, 3)
+2025-05-23 09:28:08,068 - WARNING - NaN/Inf in exog_data, filling...
+2025-05-23 09:28:08,072 - INFO - Joined data shape: (359, 4)
+2025-05-23 09:28:08,073 - INFO - Creating features for cpi_mom, data shape: (359, 4)
+2025-05-23 09:28:08,087 - INFO - Low-correlation features: ['cpi_mom_lag_2', 'cpi_mom_lag_3', 'cpi_mom_lag_4', 'cpi_mom_lag_5', 'cpi_mom_lag_6', 'cpi_mom_lag_7', 'cpi_mom_lag_8', 'cpi_mom_lag_9', 'cpi_mom_lag_10', 'cpi_mom_roll_mean_12', 'cpi_mom_roll_std_12', 'month_sin', 'month_cos', 'quarter', 'month_1', 'month_4', 'month_5', 'month_6', 'month_7', 'month_8', 'month_9', 'month_10', 'month_11', 'month_12']
+2025-05-23 09:28:08,087 - INFO - Dropping 24 low-correlation features
+2025-05-23 09:28:08,089 - WARNING - NaN/Inf in features after creation, filling...
+2025-05-23 09:28:08,091 - INFO - Features shape: (359, 13)
+2025-05-23 09:28:08,093 - INFO - Train shape: (347, 13), Test shape: (12, 13)
+2025-05-23 09:28:08,095 - INFO - Forecast index: 2024-01-01 00:00:00 to 2024-12-01 00:00:00
+2025-05-23 09:28:09,877 - INFO - Saved decomposition plot: cpi_mom_decomposition.png
+2025-05-23 09:28:09,881 - INFO - Running base models for cpi_mom
+2025-05-23 09:39:42,498 - INFO - Results saved to model_results/model_results.csv
+2025-05-23 09:39:43,956 - INFO - Combined forecasts saved to model_results/combined_forecast_cpi_mom.csv
+2025-05-23 09:39:43,956 - INFO - Total execution time: 695.93s
